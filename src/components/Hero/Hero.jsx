@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Hero.css';
+import fotoAle from '../../../public/fotoAle.png'
+import cvAle from '../../../public/CV-Alejandro-Camacho.pdf'
 
 function Hero() {
   const [finished, setFinished] = useState(false);
@@ -11,7 +13,7 @@ function Hero() {
 
   return (
     <section className="hero" id="hero">
-      <img src="/fotoAle.png" alt="Foto de Alejandro Camacho" className="hero-profile" />
+      <img src={fotoAle} alt="Foto de Alejandro Camacho" className="hero-profile" />
 
       <h2 className="glitch" data-text="Hi, I'm Alejandro Camacho">
         Hi, I'm Alejandro Camacho
@@ -22,10 +24,10 @@ function Hero() {
       </p>
 
       <div className="hero-buttons">
-        <a href="/CV-Alejandro-Camacho.pdf" download="Alejandro-Camacho-CV.pdf" className="neon-btn">
+        <a href={cvAle} download="Alejandro-Camacho-CV.pdf" className="neon-btn">
           Download CV
         </a>
-        <a href="/CV-Alejandro-Camacho.pdf" download="Alejandro-Camacho-CV.pdf" className="neon-btn blue-btn">
+        <a href={cvAle} download="Alejandro-Camacho-CV.pdf" className="neon-btn blue-btn">
           Descargar CV
         </a>
       </div>

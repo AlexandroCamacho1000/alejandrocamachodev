@@ -2,8 +2,8 @@
 
 import './Projects.css';
 import ProjectCard from './ProjectCard';
-import testimonialsImg from "../../assets/testimonials.png";
-import clickCounterImg from "../../assets/clickcounter.png";
+import testimonialsImg from "../../../public/testimonials.png";
+import clickCounterImg from "../../../public/clickcounter.png";
 
 function Projects() {
   const projects = [

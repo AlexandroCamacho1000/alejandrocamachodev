@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "../../assets/alesoft.png";
+import logo from "../../../public/alesoft.png";
 
 export default function Navbar() {
   return (
