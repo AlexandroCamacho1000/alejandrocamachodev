@@ -1,0 +1,100 @@
+:root {
+  --blue-dark: #000918;   /* azul muy oscuro para fondo principal */
+  --blue-mid: #001220;    /* azul oscuro para contenedores */
+  --blue-light: #003a8c;  /* glow y detalles */
+  --white: #ffffff;
+  --fuchsia: #ec4899;     /* solo acento */
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  width: 100vw;
+  background: var(--blue-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 0 15px rgba(0,58,140,0.5);
+  transition: all 0.3s ease;
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 120px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: block;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 8px var(--blue-light));
+}
+
+/* Contenedor de links */
+.navbar-links {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  background: rgba(0, 18, 32, 0.4); /* contenedor azul oscuro */
+  padding: 15px 40px;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(0,58,140,0.6);
+}
+
+/* Links */
+.navbar-links li a {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-decoration: none;
+  position: relative;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 6px rgba(0,58,140,0.6);
+}
+
+/* Hover de links - solo fucsia */
+.navbar-links li a:hover {
+  transform: scale(1.15);
+  color: var(--fuchsia);
+  text-shadow: 0 0 10px var(--fuchsia);
+}
+
+/* Underline animado solo fucsia */
+.navbar-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: var(--fuchsia);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.navbar-links li a:hover::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 15px;
+  }
+  .navbar-logo img {
+    height: 100px;
+  }
+  .navbar-links {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+  .navbar-links li a {
+    font-size: 1.2rem;
+  }
+}

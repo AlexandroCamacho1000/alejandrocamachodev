@@ -1,0 +1,41 @@
+/* ───────── Botón de Projects / ProjectCard con estilo Hero (neon) ───────── */
+.project-card a {
+  margin-top: auto;
+  text-decoration: none;
+
+  padding: 14px 36px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  color: #ec4899;
+  border: 2px solid #ec4899;
+  border-radius: 999px;
+
+  background: transparent;
+
+  box-shadow:
+    0 0 10px rgba(236, 72, 153, 0.6),
+    0 0 25px rgba(236, 72, 153, 0.35);
+
+  transition: all 0.3s ease;
+
+  width: 100%;
+  max-width: 240px;
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* ───────── Hover efecto neon ───────── */
+.project-card a:hover {
+  color: #020617;
+  background: #ec4899;
+
+  box-shadow:
+    0 0 20px rgba(236, 72, 153, 0.9),
+    0 0 50px rgba(236, 72, 153, 0.7);
+
+  transform: translateY(-2px);
+}

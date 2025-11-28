@@ -1,0 +1,178 @@
+/* ================= Hero general ================= */
+.hero {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #000918 0%, #001220 70%);
+  color: #e0e8e8;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Glow animado de fondo */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0,58,140,0.12) 80%, rgba(236,72,153,0.06) 100%);
+  border-radius: 50%;
+  filter: blur(120px);
+  animation: floatGlow 12s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes floatGlow {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-50px) translateX(40px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+/* Imagen de perfil */
+.hero-profile {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #003a8c;
+  box-shadow:
+    0 0 15px rgba(0,58,140,0.7),
+    0 0 40px rgba(0,58,140,0.5),
+    0 0 80px rgba(236,72,153,0.2);
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-profile:hover {
+  transform: scale(1.06);
+  box-shadow:
+    0 0 25px rgba(0,58,140,0.9),
+    0 0 60px rgba(0,58,140,0.7),
+    0 0 120px rgba(236,72,153,0.25);
+}
+
+/* ================= H2 con efecto digital ================= */
+.glitch {
+  font-size: 3.6rem;
+  font-weight: 900;
+  color: #f0f5f5;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 2.5s forwards;
+  z-index: 1;
+  text-shadow:
+    0 0 12px rgba(0,58,140,0.8),
+    0 0 25px rgba(236,72,153,0.4),
+    0 0 35px rgba(236,72,153,0.3);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ================= P con efecto máquina de escribir ================= */
+.hero p {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #4b7cb6; 
+  margin-bottom: 40px;
+  z-index: 1;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #e0e8e8;
+  width: 0;
+  animation: typewriter 8s steps(50) forwards;
+  text-shadow:
+    0 0 8px rgba(75,124,182,0.9),
+    0 0 20px rgba(236,72,153,0.35),
+    0 0 40px rgba(236,72,153,0.25);
+}
+
+.hero p.finished {
+  border-right: none;
+}
+
+.hero-highlight {
+  font-weight: 900;
+  color: #4b7cb6;
+  text-shadow:
+    0 0 12px rgba(75,124,182,0.95),
+    0 0 25px rgba(236,72,153,0.35),
+    0 0 45px rgba(236,72,153,0.3);
+}
+
+/* ================= Botones ================= */
+.hero-buttons {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+}
+
+.neon-btn {
+  padding: 18px 42px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #e0e8e8;
+  text-decoration: none;
+  border: 2px solid #003a8c;
+  border-radius: 999px;
+  background: transparent;
+  box-shadow:
+    0 0 28px rgba(0,58,140,0.95),
+    0 0 60px rgba(0,58,140,0.6),
+    0 0 25px rgba(236,72,153,0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.neon-btn:hover {
+  color: #f0fefc;
+  background: #003a8c;
+  box-shadow:
+    0 0 40px rgba(0,58,140,1),
+    0 0 80px rgba(0,58,140,0.8),
+    0 0 35px rgba(236,72,153,0.35);
+}
+
+/* ================= Animaciones de escritura ================= */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 15px;
+  }
+  .hero-profile {
+    width: 180px;
+    height: 180px;
+  }
+  .glitch {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.5rem;
+  }
+  .neon-btn {
+    padding: 14px 36px;
+    font-size: 1.05rem;
+  }
+}

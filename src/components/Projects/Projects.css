@@ -1,0 +1,98 @@
+/* ───────── Projects.css (COMPLETO UNIFORME) ───────── */
+
+.projects {
+  min-height: 80vh;
+  padding: 80px 20px;
+  background: radial-gradient(circle at top, #1e1b2b 0%, #0f172a 70%);
+  color: #cbd5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.projects h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #ec4899; /* fucsia igual que About */
+  margin-bottom: 50px;
+  text-shadow: 0 0 10px rgba(236,72,153,0.5),
+               0 0 20px rgba(236,72,153,0.3);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.project-card {
+  background: #1e1b2b;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  justify-content: space-between;
+  border: 1px solid rgba(236,72,153,0.2);
+  box-shadow: 0 0 15px rgba(236,72,153,0.15);
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 0 25px rgba(236,72,153,0.35);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ec4899; /* fucsia uniforme */
+  text-shadow: 0 0 10px rgba(236,72,153,0.5);
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #cbd5f5; /* mismo color que About */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+.project-card a {
+  margin-top: auto;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, rgba(236,72,153,0.8), #ec4899);
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  width: 100%;
+  max-width: 240px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(236,72,153,0.5);
+  transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(236,72,153,0.7);
+}

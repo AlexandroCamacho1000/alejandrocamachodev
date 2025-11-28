@@ -1,0 +1,74 @@
+:root {
+  --blue-dark: #000818;      /* fondo del Hero */
+  --blue-mid: #00122a;       /* fondo del About */
+  --blue-light: #003366;     /* acentos */
+  --text-color-p: #a8b0b8;   /* gris apagado para párrafos */
+  --text-color-title: #ffffff; /* color del título H2 */
+  --fuchsia: #ec4899;        /* neon */
+}
+
+/* ===== About Section ===== */
+.about {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 100px 12vw;       
+  background: var(--blue-mid);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  line-height: 2.4;
+  font-size: 1.18rem;
+  font-weight: 400;
+}
+
+/* Neon line de transición desde Hero */
+.about::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 4px;
+  margin: 0 auto 60px auto;
+  background: linear-gradient(90deg, var(--blue-light), var(--fuchsia), var(--blue-light));
+  border-radius: 2px;
+  box-shadow: 0 0 15px var(--blue-light), 0 0 25px var(--fuchsia), 0 0 40px var(--blue-light);
+}
+
+/* Título */
+.about h2 {
+  font-size: 3rem;
+  text-align: center;  
+  margin-bottom: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-color-title);
+}
+
+/* Párrafos */
+.about p {
+  color: var(--text-color-p);  /* gris apagado cómodo para leer */
+  text-align: justify;
+  line-height: 2.2;
+  font-size: 1.18rem;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 6vw;
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  .about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+  }
+
+  .about p {
+    margin-bottom: 25px;
+  }
+}

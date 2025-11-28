@@ -1,0 +1,180 @@
+:root {
+  --blue-dark: #000818;
+  --blue-mid: #000f26;
+  --blue-light: #003366;
+
+  /* Textos más suaves (menos brillo) */
+  --text-main: #b2c0e0;
+  --text-soft: #97a8c8;
+  --text-muted: #7f8fb0;
+  --fuchsia: #ec4899;
+}
+
+/* ================= Reset ================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  background: var(--blue-mid);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-main);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ===== Fondo tech global ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(circle, rgba(0,58,140,0.06) 10%, transparent 70%),
+    linear-gradient(rgba(0,86,204,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,86,204,0.025) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridMove 25s linear infinite, floatGlow 12s ease-in-out infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ===================== Links ===================== */
+a {
+  color: var(--text-soft);
+  text-decoration: none;
+}
+
+/* ===================== Secciones ===================== */
+section {
+  width: 100vw;
+  min-width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===================== Textos ===================== */
+p {
+  color: var(--text-soft) !important;
+  font-size: 1.15rem;
+  line-height: 1.9;
+}
+
+span, label, li {
+  color: var(--text-soft);
+}
+
+small {
+  color: var(--text-muted);
+}
+
+/* ===================== Títulos ===================== */
+h1, h2, h3 {
+  color: var(--text-main);
+  text-shadow: 0 0 6px rgba(60,120,255,.18);
+}
+
+/* ===================== Botones ===================== */
+.button, .btn-neon {
+  border: 2px solid var(--blue-light);
+  color: var(--text-main);
+  background: transparent;
+  padding: 12px 30px;
+  border-radius: 999px;
+  transition: .3s ease;
+}
+
+.button:hover, .btn-neon:hover {
+  background: var(--blue-light);
+}
+
+/* ===================== Hero ===================== */
+.hero {
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.hero p {
+  color: var(--text-soft) !important;
+}
+
+/* ===================== Navbar ===================== */
+.navbar {
+  width: 100vw;
+  background: var(--blue-dark);
+  padding: 20px 40px;
+}
+
+.navbar a {
+  color: var(--text-soft);
+}
+
+/* ===================== About ===================== */
+.about {
+  width: 100%;
+}
+
+.about p {
+  color: var(--text-soft) !important;
+}
+
+/* ===================== Proyectos ===================== */
+.project-card {
+  background: var(--blue-dark);
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.project-card p {
+  color: var(--text-soft) !important;
+}
+
+/* ===================== Skills ===================== */
+.skill-item {
+  background: var(--blue-dark);
+  color: var(--text-soft);
+}
+
+/* ===================== Contact ===================== */
+.contact input,
+.contact textarea {
+  background: var(--blue-mid);
+  color: var(--text-soft);
+  border: 1px solid var(--blue-light);
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: var(--text-muted);
+}
+
+/* ===================== Footer ===================== */
+.footer {
+  width: 100vw;
+  background: var(--blue-dark);
+  color: var(--text-soft);
+}
+
+/* ===================== Responsive ===================== */
+@media(max-width:768px){
+  p { font-size:1rem; }
+}
+
+/* ===================== Animaciones ===================== */
+@keyframes floatGlow {
+  0% {transform: translateY(0) translateX(0);}
+  50% {transform: translateY(-50px) translateX(40px);}
+  100% {transform: translateY(0) translateX(0);}
+}
+
+@keyframes gridMove {
+  0% {background-position:0 0;}
+  100% {background-position:500px 500px;}
+}
