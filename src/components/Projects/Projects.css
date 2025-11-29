@@ -1,25 +1,67 @@
-/* ───────── Projects.css (COMPLETO UNIFORME) ───────── */
+/* ───────── Projects.css (OPTIMIZADO) ───────── */
 
+:root {
+  --blue-dark: #000818;
+  --blue-mid: #00122a;
+  --blue-light: #004080; /* azul más brillante para mejor contraste */
+  --text-color-title: #ffffff;
+  --text-color-p: #c0c8d0; /* más claro para accesibilidad */
+  --fuchsia: #ec4899;
+}
+
+/* Sección completa */
 .projects {
   min-height: 80vh;
-  padding: 80px 20px;
-  background: radial-gradient(circle at top, #1e1b2b 0%, #0f172a 70%);
-  color: #cbd5f5;
+  padding: 80px 20px 120px 20px;
+  background: radial-gradient(circle at top, var(--blue-dark) 0%, var(--blue-mid) 70%);
+  color: var(--text-color-p);
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  text-align: justify;
 }
 
+/* Línea neon superior */
+.projects::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 4px;
+  margin: 0 auto 60px auto;
+  background: linear-gradient(90deg, var(--blue-light), var(--fuchsia), var(--blue-light));
+  border-radius: 2px;
+  box-shadow:
+    0 0 12px var(--blue-light),
+    0 0 22px var(--fuchsia);
+}
+
+/* Línea neon inferior */
+.projects::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 4px;
+  margin: 80px auto 0 auto;
+  background: linear-gradient(90deg, var(--blue-light), #d900ff55, var(--blue-light));
+  border-radius: 2px;
+  box-shadow:
+    0 0 12px var(--blue-light),
+    0 0 22px #d900ff55;
+}
+
+/* Título */
 .projects h2 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 800;
-  color: #ec4899; /* fucsia igual que About */
+  color: var(--text-color-title);
   margin-bottom: 50px;
-  text-shadow: 0 0 10px rgba(236,72,153,0.5),
-               0 0 20px rgba(236,72,153,0.3);
+  text-shadow:
+    0 0 12px rgba(255,255,255,0.4),
+    0 0 28px rgba(79,70,229,0.35);
 }
 
+/* Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -28,8 +70,9 @@
   max-width: 1200px;
 }
 
+/* Tarjeta */
 .project-card {
-  background: #1e1b2b;
+  background: var(--blue-mid);
   border-radius: 16px;
   overflow: hidden;
   display: flex;
@@ -40,59 +83,82 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
   justify-content: space-between;
-  border: 1px solid rgba(236,72,153,0.2);
-  box-shadow: 0 0 15px rgba(236,72,153,0.15);
+  border: 1px solid rgba(79,70,229,0.25);
+  box-shadow: 0 0 15px rgba(79,70,229,0.15);
 }
 
 .project-card:hover {
   transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 0 25px rgba(236,72,153,0.35);
+  box-shadow: 0 0 25px rgba(79,70,229,0.35);
 }
 
 .project-card img {
   width: 100%;
-  height: auto;
   max-height: 250px;
-  object-fit: contain;
+  object-fit: cover; /* mejor llenado visual */
   border-radius: 12px;
   margin-bottom: 15px;
 }
 
+/* Título de tarjeta */
 .project-card h3 {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #ec4899; /* fucsia uniforme */
-  text-shadow: 0 0 10px rgba(236,72,153,0.5);
+  color: #ffffff;
 }
 
+/* Texto */
 .project-card p {
   font-size: 0.95rem;
-  color: #cbd5f5; /* mismo color que About */
+  color: var(--text-color-p);
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: justify;
   padding: 0 10px;
 }
 
+/* Botón */
 .project-card a {
   margin-top: auto;
   text-decoration: none;
-  color: white;
-  background: linear-gradient(135deg, rgba(236,72,153,0.8), #ec4899);
-  padding: 12px 28px;
-  border-radius: 12px;
-  font-weight: 700;
-  font-size: 0.9rem;
+  padding: 14px 36px;
+  font-size: 0.95rem;
+  font-weight: 600;
   letter-spacing: 1px;
+  color: #ffffff;
+  border: 2px solid var(--blue-light);
+  border-radius: 999px;
+  background: transparent;
+  box-shadow:
+    0 0 12px rgba(0, 64, 128, 0.6),
+    0 0 28px rgba(0, 64, 128, 0.4);
+  transition: all 0.3s ease;
   width: 100%;
   max-width: 240px;
   text-align: center;
-  box-shadow: 0 0 15px rgba(236,72,153,0.5);
-  transition: all 0.3s ease;
 }
 
+/* Hover botón */
 .project-card a:hover {
+  background: var(--blue-light);
+  box-shadow:
+    0 0 18px rgba(0, 64, 128, 0.9),
+    0 0 45px rgba(0, 64, 128, 0.7);
   transform: translateY(-2px);
-  box-shadow: 0 0 25px rgba(236,72,153,0.7);
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .projects {
+    padding: 40px 15px 60px 15px;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
 }

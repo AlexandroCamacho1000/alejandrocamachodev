@@ -1,3 +1,4 @@
+/* ================= Contact Section ================= */
 .contact {
   min-height: 60vh;
   padding: 80px 20px;
@@ -5,19 +6,18 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: radial-gradient(circle at top, #1e1b2b 0%, #0f172a 70%);
-  color: #cbd5f5;
+  background: radial-gradient(circle at top, var(--blue-dark) 0%, var(--blue-mid) 70%);
+  color: #ffffff; /* texto base blanco */
   position: relative;
   overflow: hidden;
 }
 
-/* Glow de fondo */
 .contact::before {
   content: "";
   position: absolute;
   width: 400px;
   height: 400px;
-  background: rgba(236, 72, 153, 0.12);
+  background: rgba(236, 72, 153, 0.10); /* fucsia muy suave */
   border-radius: 50%;
   filter: blur(140px);
   animation: floatGlowContact 14s ease-in-out infinite;
@@ -30,70 +30,80 @@
   100% { transform: translateY(0px) translateX(0px); }
 }
 
-/* Título */
 .contact h2 {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #ec4899;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff; /* título siempre blanco */
   margin-bottom: 50px;
-  text-shadow: 0 0 10px rgba(236,72,153,0.5),
-               0 0 20px rgba(236,72,153,0.3);
-  z-index: 1;
+  letter-spacing: 1px;
 }
 
-/* Lista de contactos en horizontal */
 .contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   gap: 30px;
-  justify-content: center;
   flex-wrap: wrap;
+  list-style: none;
   z-index: 1;
 }
 
-/* Cada item */
+/* Contact items */
 .contact-item {
   display: flex;
   align-items: center;
-  background: #1e1b2b;
+  background: var(--blue-mid);
   border-radius: 16px;
   padding: 14px 20px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #cbd5f5;
+  color: #ffffff; /* texto SIEMPRE blanco */
   border: 1px solid rgba(236,72,153,0.25);
-  box-shadow: 0 0 10px rgba(236,72,153,0.15);
+  box-shadow: 0 0 10px rgba(236,72,153,0.12);
   transition: all 0.3s ease;
 }
 
+/* Hover → solo borde y glow azul, tamaño, texto se mantiene blanco */
 .contact-item:hover {
   transform: translateY(-4px) scale(1.02);
-  color: #ec4899;
-  border-color: #ec4899;
-  box-shadow: 0 0 15px rgba(236,72,153,0.5),
-              0 0 30px rgba(236,72,153,0.3);
+  border-color: var(--blue-light);
+  box-shadow:
+    0 0 20px rgba(0,102,255,0.6),
+    0 0 40px rgba(0,102,255,0.4);
+  color: #ffffff; /* asegurado que no cambie el texto */
 }
 
 .contact-item a {
-  color: inherit;
+  color: #ffffff; /* siempre blanco */
   text-decoration: none;
   margin-left: 10px;
   transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-  color: #ec4899;
+  color: #ffffff; /* nunca rosa, nunca azul */
 }
 
-/* Iconos */
+/* Iconos con luz fucsia muy suave y azul */
 .contact-icon {
   font-size: 28px;
-  color: #ec4899;
+  color: #ffffff; /* icono blanco base */
+  text-shadow:
+    0 0 4px rgba(236,72,153,0.20),
+    0 0 8px var(--blue-light),
+    0 0 12px rgba(0,102,255,0.4);
+  filter: drop-shadow(0 0 4px rgba(236,72,153,0.15));
+  transition: all 0.3s ease;
 }
 
-/* Responsive */
+/* Hover → icono solo glow azul */
+.contact-item:hover .contact-icon {
+  text-shadow:
+    0 0 10px var(--blue-light),
+    0 0 20px rgba(0,102,255,0.8),
+    0 0 30px var(--blue-light);
+  filter: drop-shadow(0 0 6px rgba(0,102,255,0.6));
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .contact h2 {
     font-size: 2.2rem;

@@ -49,7 +49,7 @@ function Skills() {
     { name: "User Support", icon: <MdSupportAgent /> },
     { name: "Technical Issue Resolution", icon: <AiOutlineSolution /> },
     { name: "User Trust", icon: <FaHandshake /> },
-    { name: "Time Management and Prioritization", icon: <AiOutlineSchedule /> }
+    { name: "Time Management", icon: <AiOutlineSchedule /> }
   ];
 
   return (

@@ -23,16 +23,20 @@
   font-weight: 400;
 }
 
-/* Neon line de transición desde Hero */
+/* Neon line de transición debajo del título */
 .about::before {
   content: "";
+  position: relative;   /* asegura que se centre con margin auto */
   display: block;
-  width: 80%;
+  width: 80%;           /* mismo tamaño que otras secciones */
   height: 4px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 60px auto; /* centrada con espacio abajo */
   background: linear-gradient(90deg, var(--blue-light), var(--fuchsia), var(--blue-light));
   border-radius: 2px;
-  box-shadow: 0 0 15px var(--blue-light), 0 0 25px var(--fuchsia), 0 0 40px var(--blue-light);
+  box-shadow:
+    0 0 15px var(--blue-light),
+    0 0 25px var(--fuchsia),
+    0 0 40px var(--blue-light);
 }
 
 /* Título */
@@ -47,7 +51,7 @@
 
 /* Párrafos */
 .about p {
-  color: var(--text-color-p);  /* gris apagado cómodo para leer */
+  color: var(--text-color-p);
   text-align: justify;
   line-height: 2.2;
   font-size: 1.18rem;
@@ -55,20 +59,72 @@
   font-weight: 400;
 }
 
-/* Responsive */
+/* ===== Projects Section ===== */
+.projects {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 100px 12vw;
+  background: var(--blue-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  line-height: 2.4;
+  font-size: 1.18rem;
+  font-weight: 400;
+}
+
+/* Neon line de transición debajo del título */
+.projects::before {
+  content: "";
+  position: relative;   /* asegura que se centre con margin auto */
+  display: block;
+  width: 80%;           /* mismo tamaño que otras secciones */
+  height: 4px;
+  margin: 0 auto 60px auto; /* centrada con espacio abajo */
+  background: linear-gradient(90deg, var(--blue-light), var(--fuchsia), var(--blue-light));
+  border-radius: 2px;
+  box-shadow:
+    0 0 15px var(--blue-light),
+    0 0 25px var(--fuchsia),
+    0 0 40px var(--blue-light);
+}
+
+/* Título */
+.projects h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-color-title);
+}
+
+/* Párrafos */
+.projects p {
+  color: var(--text-color-p);
+  text-align: justify;
+  line-height: 2.2;
+  font-size: 1.18rem;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
-  .about {
+  .about, .projects {
     padding: 60px 6vw;
     font-size: 1rem;
     line-height: 2;
   }
 
-  .about h2 {
+  .about h2, .projects h2 {
     font-size: 2.2rem;
     margin-bottom: 35px;
   }
 
-  .about p {
+  .about p, .projects p {
     margin-bottom: 25px;
   }
 }
