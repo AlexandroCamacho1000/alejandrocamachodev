@@ -176,3 +176,13 @@
     font-size: 1.05rem;
   }
 }
+
+@media (max-width: 768px) {
+  .hero p {
+    white-space: normal !important;    
+    width: 100% !important;            
+    border-right: none !important;    
+    overflow: visible !important;      
+    animation: none !important;        
+  }
+}
