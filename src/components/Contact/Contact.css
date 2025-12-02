@@ -7,7 +7,7 @@
   align-items: center;
   text-align: center;
   background: radial-gradient(circle at top, var(--blue-dark) 0%, var(--blue-mid) 70%);
-  color: #ffffff; /* texto base blanco */
+  color: #ffffff; 
   position: relative;
   overflow: hidden;
 }
@@ -17,7 +17,7 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  background: rgba(236, 72, 153, 0.10); /* fucsia muy suave */
+  background: rgba(236, 72, 153, 0.10); 
   border-radius: 50%;
   filter: blur(140px);
   animation: floatGlowContact 14s ease-in-out infinite;
@@ -33,7 +33,7 @@
 .contact h2 {
   font-size: 3rem;
   font-weight: 700;
-  color: #ffffff; /* título siempre blanco */
+  color: #ffffff; 
   margin-bottom: 50px;
   letter-spacing: 1px;
 }
@@ -55,7 +55,7 @@
   padding: 14px 20px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #ffffff; /* texto SIEMPRE blanco */
+  color: #ffffff; 
   border: 1px solid rgba(236,72,153,0.25);
   box-shadow: 0 0 10px rgba(236,72,153,0.12);
   transition: all 0.3s ease;
@@ -68,24 +68,24 @@
   box-shadow:
     0 0 20px rgba(0,102,255,0.6),
     0 0 40px rgba(0,102,255,0.4);
-  color: #ffffff; /* asegurado que no cambie el texto */
+  color: #ffffff; 
 }
 
 .contact-item a {
-  color: #ffffff; /* siempre blanco */
+  color: #ffffff; 
   text-decoration: none;
   margin-left: 10px;
   transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-  color: #ffffff; /* nunca rosa, nunca azul */
+  color: #ffffff; 
 }
 
 /* Iconos con luz fucsia muy suave y azul */
 .contact-icon {
   font-size: 28px;
-  color: #ffffff; /* icono blanco base */
+  color: #ffffff;
   text-shadow:
     0 0 4px rgba(236,72,153,0.20),
     0 0 8px var(--blue-light),

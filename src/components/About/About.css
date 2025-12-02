@@ -1,10 +1,10 @@
 :root {
-  --blue-dark: #000818;      /* fondo del Hero */
-  --blue-mid: #00122a;       /* fondo del About */
-  --blue-light: #003366;     /* acentos */
-  --text-color-p: #a8b0b8;   /* gris apagado para párrafos */
-  --text-color-title: #ffffff; /* color del título H2 */
-  --fuchsia: #ec4899;        /* neon */
+  --blue-dark: #000818;      
+  --blue-mid: #00122a;       
+  --blue-light: #003366;     
+  --text-color-p: #a8b0b8;   
+  --text-color-title: #ffffff; 
+  --fuchsia: #ec4899;       
 }
 
 /* ===== About Section ===== */
@@ -26,11 +26,11 @@
 /* Neon line de transición debajo del título */
 .about::before {
   content: "";
-  position: relative;   /* asegura que se centre con margin auto */
+  position: relative;   
   display: block;
-  width: 80%;           /* mismo tamaño que otras secciones */
+  width: 80%;           
   height: 4px;
-  margin: 0 auto 60px auto; /* centrada con espacio abajo */
+  margin: 0 auto 60px auto;
   background: linear-gradient(90deg, var(--blue-light), var(--fuchsia), var(--blue-light));
   border-radius: 2px;
   box-shadow:
@@ -78,11 +78,11 @@
 /* Neon line de transición debajo del título */
 .projects::before {
   content: "";
-  position: relative;   /* asegura que se centre con margin auto */
+  position: relative;  
   display: block;
-  width: 80%;           /* mismo tamaño que otras secciones */
+  width: 80%;          
   height: 4px;
-  margin: 0 auto 60px auto; /* centrada con espacio abajo */
+  margin: 0 auto 60px auto; 
   background: linear-gradient(90deg, var(--blue-light), var(--fuchsia), var(--blue-light));
   border-radius: 2px;
   box-shadow:

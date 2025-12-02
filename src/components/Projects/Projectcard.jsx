@@ -1,17 +1,15 @@
-// ───────── ProjectCard.jsx ─────────
+import React from 'react';
+import './Projects.css';
 
-function ProjectCard({ title, description, image, link }) {
+function ProjectCard({ title, description, link, image }) {
   return (
     <div className="project-card">
-      <img src={image} alt={title} />
-
+      <div className="image-wrapper">
+        <img src={image} alt={title} />
+      </div>
       <h3>{title}</h3>
-
       <p>{description}</p>
-
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        VIEW PROJECT
-      </a>
+      <a href={link} target="_blank" rel="noopener noreferrer">View Project</a>
     </div>
   );
 }

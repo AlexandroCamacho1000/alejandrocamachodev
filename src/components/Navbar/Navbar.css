@@ -1,9 +1,9 @@
 :root {
-  --blue-dark: #000918;   /* azul muy oscuro para fondo principal */
-  --blue-mid: #001220;    /* azul oscuro para contenedores */
-  --blue-light: #003a8c;  /* glow y detalles */
+  --blue-dark: #000918;   
+  --blue-mid: #001220;    
+  --blue-light: #003a8c;  
   --white: #ffffff;
-  --fuchsia: #ec4899;     /* solo acento */
+  --fuchsia: #ec4899;     
 }
 
 /* ===== Navbar ===== */
@@ -37,7 +37,7 @@
   display: flex;
   gap: 50px;
   list-style: none;
-  background: rgba(0, 18, 32, 0.4); /* contenedor azul oscuro */
+  background: rgba(0, 18, 32, 0.4); 
   padding: 15px 40px;
   border-radius: 30px;
   box-shadow: 0 0 15px rgba(0,58,140,0.6);

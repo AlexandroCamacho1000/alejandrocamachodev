@@ -127,7 +127,7 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  background: rgba(236, 72, 153, 0.10); /* fucsia MUY suave */
+  background: rgba(236, 72, 153, 0.10); 
   border-radius: 50%;
   filter: blur(140px);
   animation: floatGlowSkills 14s ease-in-out infinite;
@@ -204,7 +204,7 @@
   transition: all 0.3s ease;
 }
 
-/* HOVER → solo luz azul */
+
 .skill-item:hover {
   transform: translateY(-4px) scale(1.02);
   color: var(--blue-light);
@@ -214,7 +214,7 @@
     0 0 40px rgba(0,102,255,0.4);
 }
 
-/* Iconos con luz fucsia MUY suave cuando están normales */
+
 .skill-icon {
   font-size: 32px;
   margin-right: 12px;
@@ -222,14 +222,14 @@
   align-items: center;
   color: rgba(255,255,255,0.9);
   text-shadow:
-    0 0 4px rgba(236, 72, 153, 0.20),  /* fucsia MUY suave base */
+    0 0 4px rgba(236, 72, 153, 0.20), 
     0 0 8px var(--blue-light),
     0 0 12px rgba(0,102,255,0.4);
   filter: drop-shadow(0 0 4px rgba(236,72,153,0.15));
   transition: all 0.3s ease;
 }
 
-/* Hover → icono solo AZUL */
+
 .skill-item:hover .skill-icon {
   text-shadow:
     0 0 10px var(--blue-light),
@@ -286,7 +286,7 @@
   z-index: 1;
 }
 
-/* Contact items */
+
 .contact-item {
   display: flex;
   align-items: center;
@@ -301,7 +301,7 @@
   transition: 0.3s;
 }
 
-/* Hover → azul solo */
+
 .contact-item:hover {
   transform: translateY(-4px) scale(1.02);
   color: var(--blue-light);
@@ -322,7 +322,7 @@
   transition: 0.3s;
 }
 
-/* Hover → icono azul */
+
 .contact-item:hover .contact-icon {
   text-shadow:
     0 0 10px var(--blue-light),
