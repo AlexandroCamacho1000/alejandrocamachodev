@@ -1,35 +1,37 @@
 // ───────── Projects.jsx ─────────
 
 import './Projects.css';
-import ProjectCard from './ProjectCard';
+import ProjectCard from './Projectcard';
 import testimonialsImg from "../../../public/testimonials.png";
 import clickCounterImg from "../../../public/clickcounter.png";
+import calculatorImg from "../../../public/calculator.png";
+import todoImg from "../../../public/to-do.png";
 
 function Projects() {
   const projects = [
     { 
       title: "Testimonials App", 
       description: "Built with React, reusable components, and CSS for layout and styling.",
-      link: "https://github.com/tuusuario/testimonials-app",
+      link: "https://github.com/AlexandroCamacho1000/TestimonialAppByAle",
       image: testimonialsImg
     },
     { 
       title: "Click Counter App", 
       description: "React app using state management and functional components with CSS styling.",
-      link: "https://github.com/tuusuario/click-counter-app",
+      link: "https://github.com/AlexandroCamacho1000/ClickCounterByAle",
       image: clickCounterImg
     },
     { 
-      title: "Task Manager App", 
-      description: "React app with local storage, functional components, and responsive CSS.",
-      link: "#",
-      image: testimonialsImg
+      title: "Calculator App", 
+      description: " Calculator is a React web application built with reusable components, allowing users to perform real-time arithmetic operations. The app demonstrates state management, component composition, and clean code practices in React.",
+      link: "https://github.com/AlexandroCamacho1000/CalculatorAppByAle",
+      image: calculatorImg
     },
     { 
-      title: "Weather Dashboard", 
-      description: "React app consuming public APIs, with reusable components and CSS layout.",
-      link: "#",
-      image: clickCounterImg
+      title: "To Do App", 
+      description: "This is a React web application built with reusable components, enabling users to add, complete, and delete tasks efficiently while demonstrating state management and clean component architecture.",
+      link: "https://github.com/AlexandroCamacho1000/To-DoAppByAle",
+      image: todoImg
     },
     { 
       title: "Portfolio Website", 
