@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import './Hero.css';
 import fotoAle from '../../../public/fotoAle.png'
-import cvAle from '../../../public/CV-Alejandro-Camacho.pdf'
+import cvAle from '../../../public/Alejandro-Camacho.pdf'
+import cvAle1 from '../../../public/Alejandro-Camacho-CV.pdf'
+
 
 function Hero() {
   const [finished, setFinished] = useState(false);
@@ -24,10 +26,10 @@ function Hero() {
       </p>
 
       <div className="hero-buttons">
-        <a href={cvAle} download="Alejandro-Camacho-CV.pdf" className="neon-btn">
+        <a href={cvAle} download="Alejandro-Camacho.pdf" className="neon-btn">
           Download CV
         </a>
-        <a href={cvAle} download="Alejandro-Camacho-CV.pdf" className="neon-btn blue-btn">
+        <a href={cvAle1} download="Alejandro-Camacho-CV.pdf" className="neon-btn blue-btn">
           Descargar CV
         </a>
       </div>
