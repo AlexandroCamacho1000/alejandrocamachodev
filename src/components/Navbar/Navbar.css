@@ -20,13 +20,40 @@
   transition: all 0.3s ease;
 }
 
-/* Logo */
-.navbar-logo img {
-  height: 120px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  display: block;
+/* Logo container */
+.navbar-logo {
+  position: relative;
+  display: inline-block;
 }
 
+/* Logo image */
+.navbar-logo img {
+  height: 84px; /* reduced to 70% */
+  display: block;
+  position: relative;
+  z-index: 1; /* ensures halo is behind */
+  transition: transform 0.3s ease;
+  filter: brightness(100%); /* keep logo fully white */
+}
+
+/* Very subtle fuchsia neon halo behind logo */
+.navbar-logo::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: var(--fuchsia);
+  opacity: 0.15; /* very subtle */
+  border-radius: 50%;
+  filter: blur(20px);
+  z-index: 0; /* behind the logo */
+  pointer-events: none; /* does not interfere with interactions */
+}
+
+/* Logo hover effect */
 .navbar-logo img:hover {
   transform: scale(1.08);
   filter: drop-shadow(0 0 8px var(--blue-light));
@@ -87,7 +114,7 @@
     gap: 15px;
   }
   .navbar-logo img {
-    height: 100px;
+    height: 70px; /* ajustado proporcionalmente */
   }
   .navbar-links {
     flex-direction: column;
