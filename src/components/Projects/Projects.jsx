@@ -37,7 +37,7 @@ function Projects() {
     },
     { 
       title: "Portfolio Website", 
-      description: "Built in React with component-based architecture and CSS for responsive design.",
+      description: "A personal portfolio web application built and designed in React with Vite, styled entirely with CSS. It showcases component-based architecture and highlights my skills as a Full-Stack Developer.",
       link: "https://github.com/AlexandroCamacho1000/alejandrocamachodev",
       image: portfolioImg
     },
