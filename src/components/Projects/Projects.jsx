@@ -6,6 +6,8 @@ import testimonialsImg from "../../../public/testimonials.png";
 import clickCounterImg from "../../../public/clickcounter.png";
 import calculatorImg from "../../../public/calculator.png";
 import todoImg from "../../../public/to-do.png";
+import portfolioImg from "../../../public/portfolio.png";
+import weatherImg from "../../../public/weather.png";
 
 function Projects() {
   const projects = [
@@ -36,14 +38,14 @@ function Projects() {
     { 
       title: "Portfolio Website", 
       description: "Built in React with component-based architecture and CSS for responsive design.",
-      link: "#",
-      image: testimonialsImg
+      link: "https://github.com/AlexandroCamacho1000/alejandrocamachodev",
+      image: portfolioImg
     },
     { 
-      title: "E-commerce UI", 
-      description: "React frontend with modular components and CSS styling for product display.",
-      link: "#",
-      image: clickCounterImg
+      title: "Weather App", 
+      description: "A React web application built with Vite and Tailwind CSS that consumes data from the OpenWeatherMap API. Users can check the current weather and forecast for any city, showcasing component-based architecture and state management.",
+      link: "https://github.com/AlexandroCamacho1000/WeatherAppByAle",
+      image: weatherImg
     }
   ];
 
