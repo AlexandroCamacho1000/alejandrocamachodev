@@ -8,6 +8,7 @@ import calculatorImg from "../../../public/calculator.png";
 import todoImg from "../../../public/to-do.png";
 import portfolioImg from "../../../public/portfolio.png";
 import weatherImg from "../../../public/weather.png";
+import pokemonImg from "../../../public/pokemon.png";
 
 function Projects() {
   const projects = [
@@ -46,6 +47,12 @@ function Projects() {
       description: "A React web application built with Vite and Tailwind CSS that consumes data from the OpenWeatherMap API. Users can check the current weather and forecast for any city, showcasing component-based architecture and state management.",
       link: "https://github.com/AlexandroCamacho1000/WeatherAppByAle",
       image: weatherImg
+    },
+     { 
+      title: "Pokemón App", 
+      description: "A web application built with React on the frontend and Node.js, Express, and PostgreSQL on the backend using Sequelize. It integrates data from a custom REST API and the PokéAPI, allowing full CRUD operations, filtering, sorting, and detailed Pokémon data management.",
+      link: "https://github.com/AlexandroCamacho1000/PokemonAppByAle",
+      image: pokemonImg
     }
   ];
 
