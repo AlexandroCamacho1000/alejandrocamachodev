@@ -148,6 +148,10 @@
   transform: translateY(-2px);
 }
 
+.project-card a + a {
+  margin-top: 16px;
+}
+
 
 @media (max-width: 600px) {
   .projects {

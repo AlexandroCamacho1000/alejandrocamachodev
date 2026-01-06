@@ -52,6 +52,7 @@ function Projects() {
       title: "Pokemón App", 
       description: "A web application built with React on the frontend and Node.js, Express, and PostgreSQL on the backend using Sequelize. It integrates data from a custom REST API and the PokéAPI, allowing full CRUD operations, filtering, sorting, and detailed Pokémon data management.",
       link: "https://github.com/AlexandroCamacho1000/PokemonAppByAle",
+      linkApp: "https://pokemon-app-by-ale-ncp5.vercel.app",
       image: pokemonImg
     }
   ];
