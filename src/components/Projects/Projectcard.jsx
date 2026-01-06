@@ -17,7 +17,7 @@ function ProjectCard({ title, description, link, image, linkApp }) {
 
       {title === 'Pokemón App' && (
         <a href={linkApp} target="_blank" rel="noopener noreferrer">
-          View App
+          Test the App
         </a>
       )}
     </div>
