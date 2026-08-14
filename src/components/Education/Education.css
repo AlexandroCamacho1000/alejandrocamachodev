@@ -1,0 +1,45 @@
+.education {
+  background: var(--bg-primary);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.education-card {
+  background: linear-gradient(180deg, var(--bg-card-hover), var(--bg-card));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.education-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.education-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.education-institution {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.education-year {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}

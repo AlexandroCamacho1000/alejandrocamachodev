@@ -1,22 +1,85 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import "./Navbar.css";
-import logo from "../../../public/aledev.png";
+import logo from "../../../public/logoaledev26.png";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import { useLanguage } from "../../i18n/useLanguage";
+import { FaBars, FaTimes } from "react-icons/fa";
+
+const SECTION_IDS = [
+  "hero",
+  "projects",
+  "skills",
+  "experience",
+  "education",
+  "about",
+  "contact",
+];
 
 export default function Navbar() {
+  const { t } = useLanguage();
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [active, setActive] = useState("hero");
+
+  const links = SECTION_IDS.map((id) => ({
+    id,
+    label: t(`nav.${id}`),
+  }));
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const sections = SECTION_IDS.map((id) => document.getElementById(id));
+    const onScroll = () => {
+      let current = "hero";
+      sections.forEach((sec) => {
+        if (sec && window.scrollY >= sec.offsetTop - 140) {
+          current = sec.id;
+        }
+      });
+      setActive(current);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-logo">
-        <a href="#hero">
-          <img src={logo} alt="Alex Logo" />
+        <a href="#hero" className="navbar-logo-link">
+          <div className="navbar-logo-box">
+            <img src={logo} alt="AleSoft Logo" />
+          </div>
+          <span className="navbar-logo-dot" />
         </a>
       </div>
-      <ul className="navbar-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Web Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul className={`navbar-links ${open ? "open" : ""}`}>
+        {links.map((link) => (
+          <li key={link.id}>
+            <a
+              href={`#${link.id}`}
+              className={active === link.id ? "active" : ""}
+              onClick={() => setOpen(false)}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
       </ul>
+      <div className="navbar-right">
+        <LanguageSwitcher />
+        <button
+          className="hamburger"
+          onClick={() => setOpen(!open)}
+          aria-label="Menu"
+        >
+          {open ? <FaTimes /> : <FaBars />}
+        </button>
+      </div>
     </nav>
   );
 }

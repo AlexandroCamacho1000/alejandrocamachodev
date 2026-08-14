@@ -1,14 +1,32 @@
 import './About.css';
+import { useLanguage } from '../../i18n/useLanguage';
+import { useReveal } from '../../hooks/useReveal';
 
 function About() {
+  const { t } = useLanguage();
+  const gridRef = useReveal();
+  const factsRef = useReveal();
+
   return (
     <section className="about" id="about">
-      <h2>About Me</h2>
-      <p>I’m a <strong>Full Stack Developer</strong> passionate about building modern, scalable, and efficient web applications. I work with technologies like <strong>React</strong>, <strong>Node.js</strong>, <strong>Express</strong>, <strong>PostgreSQL</strong>, and <strong>JavaScript</strong>, applying best practices to create clean, maintainable, and user-friendly software.</p>
-      <p>My background as an <strong>Electronic & Network Engineer</strong> has given me strong problem-solving skills, analytical thinking, and experience working under pressure. These skills help me design reliable and robust software solutions.</p>
-      <p>I’ve participated in real projects, collaborating with clients and teams to deliver solutions that meet both technical and business needs. I combine my infrastructure knowledge with web development to build <strong>secure and high-performing applications</strong>.</p>
-      <p>Currently, I focus on developing <strong>full-stack solutions</strong>, constantly learning new technologies and improving my skills to create applications that make an impact.</p>
-      <p>My goal is to deliver <strong>technology solutions</strong> that merge <strong>strong foundations</strong> with <strong>modern, efficient, and user-centered software</strong>.</p>
+      <div className="about-grid" ref={gridRef}>
+        <div className="about-text">
+          <h2 className="section-title" data-index="05">{t('about.title')}</h2>
+          <p>{t('about.p1')}</p>
+          <p>{t('about.p2')}</p>
+          <p>{t('about.p3')}</p>
+          <p>{t('about.p4')}</p>
+        </div>
+      </div>
+
+      <div className="about-facts" ref={factsRef}>
+        {t('about.facts').map((fact, i) => (
+          <div className="fact-card" key={i}>
+            <div className="fact-label">{fact.label}</div>
+            <div className="fact-value">{fact.value}</div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

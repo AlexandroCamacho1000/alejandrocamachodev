@@ -1,130 +1,58 @@
-:root {
-  --blue-dark: #000818;      
-  --blue-mid: #00122a;       
-  --blue-light: #003366;     
-  --text-color-p: #a8b0b8;   
-  --text-color-title: #ffffff; 
-  --fuchsia: #ec4899;       
-}
-
-/* ===== About Section ===== */
 .about {
-  width: 100vw;
-  min-height: 100vh;
-  padding: 100px 12vw;       
-  background: var(--blue-mid);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: relative;
-  text-align: justify;
-  line-height: 2.4;
-  font-size: 1.18rem;
-  font-weight: 400;
+  background: var(--bg-secondary);
 }
 
-/* Neon line de transición debajo del título */
-.about::before {
-  content: "";
-  position: relative;   
-  display: block;
-  width: 80%;           
-  height: 4px;
-  margin: 0 auto 60px auto;
-  background: linear-gradient(90deg, var(--blue-light), var(--fuchsia), var(--blue-light));
-  border-radius: 2px;
-  box-shadow:
-    0 0 15px var(--blue-light),
-    0 0 25px var(--fuchsia),
-    0 0 40px var(--blue-light);
+.about-grid {
+  max-width: 760px;
+  margin: 0 auto 56px;
 }
 
-/* Título */
-.about h2 {
-  font-size: 3rem;
-  text-align: center;  
-  margin-bottom: 50px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--text-color-title);
-}
-
-/* Párrafos */
-.about p {
-  color: var(--text-color-p);
-  text-align: justify;
-  line-height: 2.2;
-  font-size: 1.18rem;
-  margin-bottom: 35px;
-  font-weight: 400;
-}
-
-/* ===== Projects Section ===== */
-.projects {
-  width: 100vw;
-  min-height: 100vh;
-  padding: 100px 12vw;
-  background: var(--blue-dark);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: relative;
-  text-align: justify;
-  line-height: 2.4;
-  font-size: 1.18rem;
-  font-weight: 400;
-}
-
-/* Neon line de transición debajo del título */
-.projects::before {
-  content: "";
-  position: relative;  
-  display: block;
-  width: 80%;          
-  height: 4px;
-  margin: 0 auto 60px auto; 
-  background: linear-gradient(90deg, var(--blue-light), var(--fuchsia), var(--blue-light));
-  border-radius: 2px;
-  box-shadow:
-    0 0 15px var(--blue-light),
-    0 0 25px var(--fuchsia),
-    0 0 40px var(--blue-light);
-}
-
-/* Título */
-.projects h2 {
-  font-size: 3rem;
+.about-text {
   text-align: center;
-  margin-bottom: 50px;
-  font-weight: 700;
+}
+
+.about-text h2 {
+  text-align: center;
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.fact-card {
+  background: linear-gradient(180deg, var(--bg-card-hover), var(--bg-card));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.fact-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.fact-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--text-color-title);
+  color: var(--text-muted);
+  margin-bottom: 6px;
 }
 
-/* Párrafos */
-.projects p {
-  color: var(--text-color-p);
-  text-align: justify;
-  line-height: 2.2;
-  font-size: 1.18rem;
-  margin-bottom: 35px;
-  font-weight: 400;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .about, .projects {
-    padding: 60px 6vw;
-    font-size: 1rem;
-    line-height: 2;
-  }
-
-  .about h2, .projects h2 {
-    font-size: 2.2rem;
-    margin-bottom: 35px;
-  }
-
-  .about p, .projects p {
-    margin-bottom: 25px;
-  }
+.fact-value {
+  font-weight: 600;
+  color: var(--text-primary);
 }

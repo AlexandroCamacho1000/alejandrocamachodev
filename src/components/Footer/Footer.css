@@ -1,7 +1,43 @@
 .footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
   text-align: center;
-  padding: 20px;
-  background-color: var(--secondary-blue);
-  color: var(--white);
-  width: 100%;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.footer-socials a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.footer-socials a:hover {
+  color: #fff;
+  background: var(--gradient);
+  border-color: transparent;
+}
+
+.footer-sig {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.footer p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
 }

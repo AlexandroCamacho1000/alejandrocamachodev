@@ -1,12 +1,18 @@
 import './Contact.css';
 import { FaLinkedin, FaGithub, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import { useLanguage } from '../../i18n/useLanguage';
+import { useReveal } from '../../hooks/useReveal';
 
 function Contact() {
+  const { t } = useLanguage();
+  const listRef = useReveal();
+
   return (
     <section className="contact" id="contact">
-      <h2>Contact Me</h2>
+      <h2 className="section-title" data-index="06">{t('contact.title')}</h2>
+      <p className="section-subtitle">{t('contact.subtitle')}</p>
 
-      <ul className="contact-list">
+      <ul className="contact-list" ref={listRef}>
         <li className="contact-item">
           <FaEnvelope className="contact-icon" />
           <a href="mailto:alejandrocc1955@gmail.com">alejandrocc1955@gmail.com</a>
