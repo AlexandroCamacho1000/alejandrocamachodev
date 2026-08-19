@@ -15,9 +15,8 @@ const translations = {
       greeting: "Hello, I'm",
       name: "Alejandro Camacho",
       role: "Electronic Engineer | Full-Stack Developer",
-      subtitle: "Networking & Infrastructure Background",
       summary:
-        "As an Electronic Engineer who has worked in networking, infrastructure and technical support, I bring real engineering experience to software. I've already built applications that solve practical problems, and I'm committed to making software development the next chapter of my career.",
+        "I build software solutions that turn technical challenges into practical, reliable products. As an Electronic Engineer, I combine hands-on software development with professional experience in networking and infrastructure, bringing a systems-oriented mindset to every solution I build.",
       viewProjects: "View Projects",
       downloadCV: "Download Resume",
       alt: "Photo of Alejandro Camacho",
@@ -184,9 +183,8 @@ const translations = {
       greeting: "Hola, soy",
       name: "Alejandro Camacho",
       role: "Ingeniero Electrónico | Desarrollador Full Stack",
-      subtitle: "Formación en Redes e Infraestructura",
       summary:
-        "Como Ingeniero Electrónico que ha trabajado en redes, infraestructura y soporte técnico, aporto experiencia real de ingeniería al software. Ya he construido aplicaciones que resuelven problemas prácticos, y estoy decidido a hacer del desarrollo de software el próximo capítulo de mi carrera.",
+        "Construyo soluciones de software que convierten desafíos técnicos en productos prácticos y confiables. Como Ingeniero Electrónico, combino experiencia práctica en desarrollo de software con experiencia profesional en redes e infraestructura, aportando una perspectiva integral para diseñar y resolver problemas técnicos.",
       viewProjects: "Ver Proyectos",
       downloadCV: "Descargar CV",
       alt: "Foto de Alejandro Camacho",
