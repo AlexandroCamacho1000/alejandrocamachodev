@@ -11,11 +11,10 @@ function About() {
     <section className="about" id="about">
       <div className="about-grid" ref={gridRef}>
         <div className="about-text">
-          <h2 className="section-title" data-index="05">{t('about.title')}</h2>
+          <h2 className="section-title" data-index="07">{t('about.title')}</h2>
           <p>{t('about.p1')}</p>
           <p>{t('about.p2')}</p>
           <p>{t('about.p3')}</p>
-          <p>{t('about.p4')}</p>
         </div>
       </div>
 

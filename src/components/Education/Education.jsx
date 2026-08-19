@@ -20,7 +20,7 @@ function Education() {
 
   return (
     <section className="education" id="education">
-      <h2 className="section-title" data-index="04">{t('education.title')}</h2>
+      <h2 className="section-title" data-index="08">{t('education.title')}</h2>
       <p className="section-subtitle">{t('education.subtitle')}</p>
 
       <div className="education-grid">

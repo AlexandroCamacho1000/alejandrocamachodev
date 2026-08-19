@@ -18,18 +18,19 @@ function Hero() {
           <p className="hero-greeting">{t('hero.greeting')}</p>
           <h1 className="hero-name">{t('hero.name')}</h1>
           <h2 className="hero-role">{t('hero.role')}</h2>
+          <p className="hero-subtitle">{t('hero.subtitle')}</p>
           <p className="hero-summary">{t('hero.summary')}</p>
 
           <div className="hero-actions">
+            <a href="#projects" className="btn-primary">
+              {t('hero.viewProjects')}
+            </a>
             <a
               href={cvFile}
               download="Alejandro-Camacho-CV.pdf"
-              className="btn-primary"
+              className="btn-outline"
             >
               {t('hero.downloadCV')}
-            </a>
-            <a href="#contact" className="btn-outline">
-              {t('hero.contact')}
             </a>
           </div>
 

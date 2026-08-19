@@ -9,7 +9,7 @@ function Contact() {
 
   return (
     <section className="contact" id="contact">
-      <h2 className="section-title" data-index="06">{t('contact.title')}</h2>
+      <h2 className="section-title" data-index="09">{t('contact.title')}</h2>
       <p className="section-subtitle">{t('contact.subtitle')}</p>
 
       <ul className="contact-list" ref={listRef}>

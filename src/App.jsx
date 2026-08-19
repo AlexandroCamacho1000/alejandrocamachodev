@@ -3,11 +3,13 @@ import { LanguageProvider } from "./i18n/LanguageContext";
 import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import Projects from "./components/Projects/Projects";
-import Skills from "./components/Skills/Skills";
+import EngineeringBackground from "./components/EngineeringBackground/EngineeringBackground";
 import Experience from "./components/Experience/Experience";
-import Education from "./components/Education/Education";
+import Skills from "./components/Skills/Skills";
+import FeaturedProject from "./components/FeaturedProject/FeaturedProject";
+import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
+import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollProgress from "./components/ScrollProgress/ScrollProgress";
@@ -21,11 +23,13 @@ function App() {
       <ScrollProgress />
       <Navbar />
       <Hero />
-      <Projects />
-      <Skills />
+      <EngineeringBackground />
       <Experience />
-      <Education />
+      <Skills />
+      <FeaturedProject />
+      <Projects />
       <About />
+      <Education />
       <Contact />
       <Footer />
       </div>

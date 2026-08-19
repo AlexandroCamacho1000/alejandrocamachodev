@@ -1,120 +1,83 @@
 import './Skills.css';
-import { 
-  SiReact, 
-  SiJavascript, 
-  SiNodedotjs, 
-  SiExpress, 
-  SiPostgresql, 
-  SiCss3, 
-  SiTailwindcss, 
-  SiGithub, 
-  SiScrumalliance,
-  SiGithubcopilot, 
-  SiClaude, 
-  SiOpenai, 
-  SiGooglegemini,
-  SiDocker,
-  SiGithubactions,
-  SiJest,
-  SiTestinglibrary,
-  SiVercel
+import {
+  SiJavascript,
+  SiReact,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiPostgresql,
+  SiSupabase,
+  SiAmazonwebservices,
+  SiGit,
+  SiGithub,
+  SiLinux,
 } from 'react-icons/si';
-
-import { FaUsers, FaStopwatch } from 'react-icons/fa';
-
-import { MdOutlineMessage } from 'react-icons/md';
-
-import { AiOutlineSolution, AiOutlineSchedule } from 'react-icons/ai';
-
+import { FaServer } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
 import { useReveal } from '../../hooks/useReveal';
 
 function Skills() {
   const { t } = useLanguage();
-  const technicalRef = useReveal();
-  const softRef = useReveal();
-  const aiRef = useReveal();
-  const devopsRef = useReveal();
+  const frontendRef = useReveal();
+  const backendRef = useReveal();
+  const databaseRef = useReveal();
+  const cloudRef = useReveal();
 
-  const technicalSkills = [
-    { nameKey: "skills.technical.react", icon: <SiReact /> },
-    { nameKey: "skills.technical.javascript", icon: <SiJavascript /> },
-    { nameKey: "skills.technical.node", icon: <SiNodedotjs /> },
-    { nameKey: "skills.technical.express", icon: <SiExpress /> },
-    { nameKey: "skills.technical.postgresql", icon: <SiPostgresql /> },
-    { nameKey: "skills.technical.css", icon: <SiCss3 /> },
-    { nameKey: "skills.technical.tailwind", icon: <SiTailwindcss /> },
-    { nameKey: "skills.technical.github", icon: <SiGithub /> },
-    { nameKey: "skills.technical.scrum", icon: <SiScrumalliance /> },
-  ];
-
-  const softSkills = [
-    { nameKey: "skills.soft.teamwork", icon: <FaUsers /> },
-    { nameKey: "skills.soft.communication", icon: <MdOutlineMessage /> },
-    { nameKey: "skills.soft.pressure", icon: <FaStopwatch /> },
-    { nameKey: "skills.soft.resolution", icon: <AiOutlineSolution /> },
-    { nameKey: "skills.soft.time", icon: <AiOutlineSchedule /> },
-  ];
-
-  const aiSkills = [
-    { nameKey: "skills.ai.copilot", icon: <SiGithubcopilot /> },
-    { nameKey: "skills.ai.claude", icon: <SiClaude /> },
-    { nameKey: "skills.ai.chatgpt", icon: <SiOpenai /> },
-    { nameKey: "skills.ai.gemini", icon: <SiGooglegemini /> },
-  ];
-
-  const devopsSkills = [
-    { nameKey: "skills.devops.docker", icon: <SiDocker /> },
-    { nameKey: "skills.devops.githubactions", icon: <SiGithubactions /> },
-    { nameKey: "skills.devops.jest", icon: <SiJest /> },
-    { nameKey: "skills.devops.testingLibrary", icon: <SiTestinglibrary /> },
-    { nameKey: "skills.devops.vercel", icon: <SiVercel /> },
+  const groups = [
+    {
+      titleKey: 'skills.frontendTitle',
+      ref: frontendRef,
+      skills: [
+        { nameKey: 'skills.frontend.javascript', icon: <SiJavascript /> },
+        { nameKey: 'skills.frontend.react', icon: <SiReact /> },
+        { nameKey: 'skills.frontend.tailwind', icon: <SiTailwindcss /> },
+      ],
+    },
+    {
+      titleKey: 'skills.backendTitle',
+      ref: backendRef,
+      skills: [
+        { nameKey: 'skills.backend.node', icon: <SiNodedotjs /> },
+        { nameKey: 'skills.backend.rest', icon: <FaServer /> },
+      ],
+    },
+    {
+      titleKey: 'skills.databaseTitle',
+      ref: databaseRef,
+      skills: [
+        { nameKey: 'skills.database.postgresql', icon: <SiPostgresql /> },
+        { nameKey: 'skills.database.supabase', icon: <SiSupabase /> },
+      ],
+    },
+    {
+      titleKey: 'skills.cloudTitle',
+      ref: cloudRef,
+      skills: [
+        { nameKey: 'skills.cloud.aws', icon: <SiAmazonwebservices /> },
+        { nameKey: 'skills.cloud.git', icon: <SiGit /> },
+        { nameKey: 'skills.cloud.github', icon: <SiGithub /> },
+        { nameKey: 'skills.cloud.linux', icon: <SiLinux /> },
+      ],
+    },
   ];
 
   return (
     <section className="skills" id="skills">
-      <h2 className="section-title" data-index="02">{t('skills.title')}</h2>
+      <h2 className="section-title" data-index="04">{t('skills.title')}</h2>
       <p className="section-subtitle">{t('skills.subtitle')}</p>
 
-      <h3 className="skills-subtitle">{t('skills.technicalTitle')}</h3>
-      <ul className="skills-grid" ref={technicalRef}>
-        {technicalSkills.map((skill) => (
-          <li key={skill.nameKey} className="skill-item">
-            <span className="skill-icon">{skill.icon}</span>
-            <span className="skill-name">{t(skill.nameKey)}</span>
-          </li>
-        ))}
-      </ul>
-
-      <h3 className="skills-subtitle">{t('skills.softTitle')}</h3>
-      <ul className="skills-grid" ref={softRef}>
-        {softSkills.map((skill) => (
-          <li key={skill.nameKey} className="skill-item">
-            <span className="skill-icon">{skill.icon}</span>
-            <span className="skill-name">{t(skill.nameKey)}</span>
-          </li>
-        ))}
-      </ul>
-
-      <h3 className="skills-subtitle">{t('skills.aiTitle')}</h3>
-      <ul className="skills-grid" ref={aiRef}>
-        {aiSkills.map((skill) => (
-          <li key={skill.nameKey} className="skill-item">
-            <span className="skill-icon">{skill.icon}</span>
-            <span className="skill-name">{t(skill.nameKey)}</span>
-          </li>
-        ))}
-      </ul>
-
-      <h3 className="skills-subtitle">{t('skills.devopsTitle')}</h3>
-      <ul className="skills-grid" ref={devopsRef}>
-        {devopsSkills.map((skill) => (
-          <li key={skill.nameKey} className="skill-item">
-            <span className="skill-icon">{skill.icon}</span>
-            <span className="skill-name">{t(skill.nameKey)}</span>
-          </li>
-        ))}
-      </ul>
+      {groups.map((group) => (
+        <div className="skills-group" key={group.titleKey}>
+          <h3 className="skills-subtitle">{t(group.titleKey)}</h3>
+          <ul className="skills-grid" ref={group.ref}>
+            {group.skills.map((skill) => (
+              <li key={skill.nameKey} className="skill-item">
+                <span className="skill-icon">{skill.icon}</span>
+                <span className="skill-name">{t(skill.nameKey)}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </section>
   );
 }

@@ -3,6 +3,7 @@ const translations = {
     nav: {
       home: "Home",
       hero: "Home",
+      background: "Background",
       about: "About",
       projects: "Projects",
       skills: "Skills",
@@ -13,19 +14,19 @@ const translations = {
     hero: {
       greeting: "Hello, I'm",
       name: "Alejandro Camacho",
-      role: "Engineer & Full Stack Developer",
+      role: "Electronic Engineer | Full-Stack Developer",
+      subtitle: "Networking & Infrastructure Background",
       summary:
-        "Electronic Engineer with 6+ years running enterprise networks, servers and infrastructure. Today I build full-stack web apps with React, Node.js, Express and PostgreSQL — engineering discipline in every layer.",
-      downloadCV: "Download CV",
-      contact: "Contact Me",
+        "Building full-stack web applications with React, Node.js and PostgreSQL.",
+      viewProjects: "View Projects",
+      downloadCV: "Download Resume",
       alt: "Photo of Alejandro Camacho",
     },
     about: {
       title: "About Me",
-      p1: "I'm an Electronic Engineer turned Full Stack Developer. I build modern, scalable web applications with React, Node.js, Express and PostgreSQL, following clean and maintainable coding practices.",
-      p2: "My 6+ years as a Network Engineer and Systems Administrator (2016–2022) gave me deep, hands-on experience with corporate networks, servers, virtualization and production infrastructure — a foundation I now apply to building reliable backends and robust software.",
-      p3: "I'm focused on growing as a full-stack developer, delivering solutions that combine solid engineering with modern, user-centered experiences.",
-      p4: "I integrate AI tools into my workflow (GitHub Copilot, Claude, ChatGPT, Gemini) to accelerate development, automate repetitive tasks and optimize delivery times — while keeping code quality and a solid command of fundamentals.",
+      p1: "I'm an Electronic Engineer who built my career in networking and infrastructure before moving into software development.",
+      p2: "For over six years I worked as a Network Engineer and in technical support — designing, deploying and maintaining enterprise networks, servers and critical systems.",
+      p3: "Today I build full-stack web applications with React, Node.js and PostgreSQL, applying the same engineering discipline I used in infrastructure to every layer of software.",
       facts: [
         { label: "Location", value: "Bolivia" },
         { label: "Engineering Degree", value: "Electronic Engineer" },
@@ -34,11 +35,53 @@ const translations = {
         { label: "Email", value: "alejandrocc1955@gmail.com" },
       ],
     },
+    background: {
+      title: "Engineering Background",
+      subtitle:
+        "An engineer with real technical experience, now specialized in software development.",
+      steps: [
+        {
+          title: "Electronic Engineering",
+          description: "University degree in Electronic Engineering (UMSS).",
+        },
+        {
+          title: "Networking",
+          description:
+            "Network Engineer — designed, deployed and maintained enterprise networks.",
+        },
+        {
+          title: "Infrastructure & Technical Support",
+          description:
+            "Servers, systems administration and technical support for critical infrastructure.",
+        },
+        {
+          title: "Software Development",
+          description:
+            "Building full-stack web applications with React, Node.js and PostgreSQL.",
+        },
+      ],
+    },
     projects: {
-      title: "Web Projects",
-      subtitle: "Some things I've built recently.",
+      title: "Projects",
+      subtitle: "Selected work — quality over quantity.",
       view: "Repository",
       viewApp: "Live Demo",
+      featured: {
+        tag: "Featured Project",
+        problemLabel: "Problem",
+        solutionLabel: "Solution",
+        contributionLabel: "My Contribution",
+        challengesLabel: "Technical Challenges",
+        technologiesLabel: "Technologies",
+        title: "",
+        problem: "",
+        solution: "",
+        contribution: "",
+        challenges: "",
+        technologies: [],
+        demo: "",
+        repo: "",
+      },
       items: [
         {
           title: "Pokemón App",
@@ -53,10 +96,10 @@ const translations = {
           tech: ["React", "Vite", "Tailwind CSS", "REST API"],
         },
         {
-          title: "Portfolio Website",
+          title: "To Do App",
           description:
-            "Personal portfolio built with React and Vite, styled entirely with CSS. It showcases component-based architecture and clean code.",
-          tech: ["React", "Vite", "CSS3"],
+            "React application that lets users add, complete and delete tasks efficiently, demonstrating state management and a clean component architecture.",
+          tech: ["React", "CSS3"],
         },
         {
           title: "Calculator App",
@@ -64,84 +107,50 @@ const translations = {
             "React application built with reusable components that performs real-time arithmetic operations, demonstrating state management and component composition.",
           tech: ["React", "CSS3"],
         },
-        {
-          title: "To Do App",
-          description:
-            "React application that lets users add, complete and delete tasks efficiently, demonstrating state management and a clean component architecture.",
-          tech: ["React", "CSS3"],
-        },
-        {
-          title: "Testimonials App",
-          description:
-            "Built with React, reusable components and CSS for layout and styling.",
-          tech: ["React", "CSS3"],
-        },
-        {
-          title: "Click Counter App",
-          description:
-            "React app using state management and functional components with CSS styling.",
-          tech: ["React", "CSS3"],
-        },
       ],
     },
     skills: {
       title: "Skills",
-      subtitle: "Technologies and tools I work with.",
-      technicalTitle: "Technical Skills",
-      softTitle: "Soft Skills",
-      aiTitle: "AI & Development Tools",
-      devopsTitle: "DevOps & Testing",
-      technical: {
-        react: "React.js",
+      subtitle: "The technologies I build software with.",
+      frontendTitle: "Frontend",
+      backendTitle: "Backend",
+      databaseTitle: "Database",
+      cloudTitle: "Cloud & Tools",
+      frontend: {
         javascript: "JavaScript",
-        node: "Node.js",
-        express: "Express.js",
-        postgresql: "PostgreSQL",
-        css: "CSS3",
+        react: "React",
         tailwind: "Tailwind CSS",
+      },
+      backend: {
+        node: "Node.js",
+        rest: "REST APIs",
+      },
+      database: {
+        postgresql: "PostgreSQL",
+        supabase: "Supabase",
+      },
+      cloud: {
+        aws: "AWS",
+        git: "Git",
         github: "GitHub",
-        jira: "Jira",
-        scrum: "Scrum",
-      },
-      soft: {
-        teamwork: "Teamwork",
-        communication: "Effective Communication",
-        pressure: "Work Under Pressure",
-        support: "User Support",
-        resolution: "Technical Issue Resolution",
-        trust: "User Trust",
-        time: "Time Management",
-      },
-      ai: {
-        copilot: "GitHub Copilot",
-        claude: "Claude",
-        chatgpt: "ChatGPT",
-        gemini: "Google Gemini",
-      },
-      devops: {
-        docker: "Docker",
-        githubactions: "GitHub Actions",
-        jest: "Jest",
-        testingLibrary: "Testing Library",
-        vercel: "Vercel",
-        netlify: "Netlify",
-        githubpages: "GitHub Pages",
+        linux: "Linux",
       },
     },
     experience: {
-      title: "Experience",
-      subtitle: "Where I've worked and what I've built.",
+      title: "Professional Experience",
+      subtitle: "Real-world experience in networks, infrastructure and support.",
       jobs: [
         {
-          role: "Network Engineer & Systems Administrator",
+          role: "Network Engineer / Technical Support",
           company: "Electric Utility Company",
           period: "2016 – 2022",
           description:
-            "6+ years owning the company's network infrastructure, servers and IT systems — guaranteeing availability, security and performance across critical services. Hands-on with routers, switches, virtualization and production infrastructure.",
+            "Over six years responsible for the company's network infrastructure, servers and IT systems — guaranteeing availability, security and performance across critical services.",
           achievements: [
-            "Kept corporate networks, servers and critical systems running with high availability.",
+            "Designed and maintained enterprise networks and critical systems with high availability.",
+            "Solved technical issues across infrastructure, servers and end-user systems.",
             "Automated operational processes, cutting downtime and manual work.",
-            "Led infrastructure projects and provided technical support to the whole organization.",
+            "Led infrastructure projects and supported the whole organization.",
           ],
           tech: ["Networking", "Servers", "Systems Administration", "Automation"],
         },
@@ -154,11 +163,6 @@ const translations = {
         {
           degree: "Electronic Engineering",
           institution: "Universidad Mayor de San Simón (UMSS)",
-          year: "",
-        },
-        {
-          degree: "Professional Certifications",
-          institution: "Cisco and other networking certifications",
           year: "",
         },
         {
@@ -182,6 +186,7 @@ const translations = {
     nav: {
       home: "Inicio",
       hero: "Inicio",
+      background: "Trayectoria",
       about: "Sobre mí",
       projects: "Proyectos",
       skills: "Habilidades",
@@ -192,19 +197,19 @@ const translations = {
     hero: {
       greeting: "Hola, soy",
       name: "Alejandro Camacho",
-      role: "Ingeniero & Desarrollador Full Stack",
+      role: "Ingeniero Electrónico | Desarrollador Full Stack",
+      subtitle: "Formación en Redes e Infraestructura",
       summary:
-        "Ingeniero Electrónico con más de 6 años dirigiendo redes empresariales, servidores e infraestructura. Hoy construyo aplicaciones web full-stack con React, Node.js, Express y PostgreSQL — disciplina de ingeniería en cada capa.",
+        "Construyendo aplicaciones web full-stack con React, Node.js y PostgreSQL.",
+      viewProjects: "Ver Proyectos",
       downloadCV: "Descargar CV",
-      contact: "Contáctame",
       alt: "Foto de Alejandro Camacho",
     },
     about: {
       title: "Sobre mí",
-      p1: "Soy Ingeniero Electrónico y Desarrollador Full Stack. Construyo aplicaciones web modernas y escalables con React, Node.js, Express y PostgreSQL, siguiendo prácticas de código limpio y mantenible.",
-      p2: "Mis más de 6 años como Ingeniero de Redes y Responsable de Sistemas (2016–2022) me dieron experiencia práctica profunda en redes corporativas, servidores, virtualización e infraestructura de producción — una base que hoy aplico al construir backends confiables y software robusto.",
-      p3: "Estoy enfocado en crecer como desarrollador full-stack, entregando soluciones que combinan ingeniería sólida con experiencias modernas centradas en el usuario.",
-      p4: "Integro herramientas de IA en mi flujo de trabajo (GitHub Copilot, Claude, ChatGPT, Gemini) para acelerar el desarrollo, automatizar tareas repetitivas y optimizar los tiempos de entrega — manteniendo la calidad del código y un sólido dominio de los fundamentos.",
+      p1: "Soy un Ingeniero Electrónico que construyó su carrera en redes e infraestructura antes de dedicarse al desarrollo de software.",
+      p2: "Durante más de seis años trabajé como Ingeniero de Redes y en soporte técnico — diseñando, implementando y manteniendo redes empresariales, servidores y sistemas críticos.",
+      p3: "Hoy construyo aplicaciones web full-stack con React, Node.js y PostgreSQL, aplicando en cada capa del software la misma disciplina de ingeniería que usé en infraestructura.",
       facts: [
         { label: "Ubicación", value: "Bolivia" },
         { label: "Título de Ingeniero", value: "Ingeniero Electrónico" },
@@ -213,11 +218,53 @@ const translations = {
         { label: "Email", value: "alejandrocc1955@gmail.com" },
       ],
     },
+    background: {
+      title: "Trayectoria de Ingeniería",
+      subtitle:
+        "Un ingeniero con experiencia técnica real, ahora especializado en desarrollo de software.",
+      steps: [
+        {
+          title: "Ingeniería Electrónica",
+          description: "Título universitario en Ingeniería Electrónica (UMSS).",
+        },
+        {
+          title: "Redes",
+          description:
+            "Ingeniero de Redes — diseñé, implementé y mantuve redes empresariales.",
+        },
+        {
+          title: "Infraestructura y Soporte Técnico",
+          description:
+            "Servidores, administración de sistemas y soporte técnico de infraestructura crítica.",
+        },
+        {
+          title: "Desarrollo de Software",
+          description:
+            "Construyendo aplicaciones web full-stack con React, Node.js y PostgreSQL.",
+        },
+      ],
+    },
     projects: {
-      title: "Proyectos Web",
-      subtitle: "Algunas cosas que he construido recientemente.",
+      title: "Proyectos",
+      subtitle: "Trabajo seleccionado — calidad sobre cantidad.",
       view: "Repositorio",
       viewApp: "Demo en vivo",
+      featured: {
+        tag: "Proyecto Destacado",
+        problemLabel: "Problema",
+        solutionLabel: "Solución",
+        contributionLabel: "Mi Contribución",
+        challengesLabel: "Desafíos Técnicos",
+        technologiesLabel: "Tecnologías",
+        title: "",
+        problem: "",
+        solution: "",
+        contribution: "",
+        challenges: "",
+        technologies: [],
+        demo: "",
+        repo: "",
+      },
       items: [
         {
           title: "Pokemón App",
@@ -232,10 +279,10 @@ const translations = {
           tech: ["React", "Vite", "Tailwind CSS", "REST API"],
         },
         {
-          title: "Portfolio Website",
+          title: "To Do App",
           description:
-            "Portafolio personal construido con React y Vite, estilizado enteramente con CSS. Muestra arquitectura basada en componentes y código limpio.",
-          tech: ["React", "Vite", "CSS3"],
+            "Aplicación React que permite añadir, completar y eliminar tareas de forma eficiente, demostrando gestión de estado y una arquitectura de componentes limpia.",
+          tech: ["React", "CSS3"],
         },
         {
           title: "Calculator App",
@@ -243,84 +290,50 @@ const translations = {
             "Aplicación React construida con componentes reutilizables que realiza operaciones aritméticas en tiempo real, demostrando gestión de estado y composición de componentes.",
           tech: ["React", "CSS3"],
         },
-        {
-          title: "To Do App",
-          description:
-            "Aplicación React que permite añadir, completar y eliminar tareas de forma eficiente, demostrando gestión de estado y una arquitectura de componentes limpia.",
-          tech: ["React", "CSS3"],
-        },
-        {
-          title: "Testimonials App",
-          description:
-            "Construida con React, componentes reutilizables y CSS para el layout y el estilo.",
-          tech: ["React", "CSS3"],
-        },
-        {
-          title: "Click Counter App",
-          description:
-            "Aplicación React que usa gestión de estado y componentes funcionales con estilos CSS.",
-          tech: ["React", "CSS3"],
-        },
       ],
     },
     skills: {
       title: "Habilidades",
-      subtitle: "Tecnologías y herramientas con las que trabajo.",
-      technicalTitle: "Habilidades Técnicas",
-      softTitle: "Habilidades Blandas",
-      aiTitle: "IA y Herramientas de Desarrollo",
-      devopsTitle: "DevOps y Testing",
-      technical: {
-        react: "React.js",
+      subtitle: "Las tecnologías con las que construyo software.",
+      frontendTitle: "Frontend",
+      backendTitle: "Backend",
+      databaseTitle: "Base de Datos",
+      cloudTitle: "Cloud y Herramientas",
+      frontend: {
         javascript: "JavaScript",
-        node: "Node.js",
-        express: "Express.js",
-        postgresql: "PostgreSQL",
-        css: "CSS3",
+        react: "React",
         tailwind: "Tailwind CSS",
+      },
+      backend: {
+        node: "Node.js",
+        rest: "APIs REST",
+      },
+      database: {
+        postgresql: "PostgreSQL",
+        supabase: "Supabase",
+      },
+      cloud: {
+        aws: "AWS",
+        git: "Git",
         github: "GitHub",
-        jira: "Jira",
-        scrum: "Scrum",
-      },
-      soft: {
-        teamwork: "Trabajo en equipo",
-        communication: "Comunicación efectiva",
-        pressure: "Trabajo bajo presión",
-        support: "Soporte al usuario",
-        resolution: "Resolución de problemas técnicos",
-        trust: "Confianza del usuario",
-        time: "Gestión del tiempo",
-      },
-      ai: {
-        copilot: "GitHub Copilot",
-        claude: "Claude",
-        chatgpt: "ChatGPT",
-        gemini: "Google Gemini",
-      },
-      devops: {
-        docker: "Docker",
-        githubactions: "GitHub Actions",
-        jest: "Jest",
-        testingLibrary: "Testing Library",
-        vercel: "Vercel",
-        netlify: "Netlify",
-        githubpages: "GitHub Pages",
+        linux: "Linux",
       },
     },
     experience: {
-      title: "Experiencia",
-      subtitle: "Dónde he trabajado y qué he construido.",
+      title: "Experiencia Profesional",
+      subtitle: "Experiencia real en redes, infraestructura y soporte.",
       jobs: [
         {
-          role: "Ingeniero de Redes y Responsable de Sistemas",
+          role: "Ingeniero de Redes / Soporte Técnico",
           company: "Empresa Eléctrica",
           period: "2016 – 2022",
           description:
-            "Más de 6 años a cargo de la infraestructura de red, los servidores y los sistemas de TI de la empresa — garantizando disponibilidad, seguridad y rendimiento de los servicios críticos. Experiencia operativa con routers, switches, virtualización e infraestructura de producción.",
+            "Más de seis años a cargo de la infraestructura de red, los servidores y los sistemas de TI de la empresa — garantizando disponibilidad, seguridad y rendimiento de los servicios críticos.",
           achievements: [
-            "Mantuve redes corporativas, servidores y sistemas críticos operando con alta disponibilidad.",
+            "Diseñé y mantuve redes empresariales y sistemas críticos con alta disponibilidad.",
+            "Resolví problemas técnicos de infraestructura, servidores y sistemas de los usuarios finales.",
             "Automaticé procesos operativos, reduciendo tiempos de inactividad y trabajo manual.",
-            "Lideré proyectos de infraestructura y brindé soporte técnico a toda la organización.",
+            "Lideré proyectos de infraestructura y brindé soporte a toda la organización.",
           ],
           tech: ["Redes", "Servidores", "Administración de Sistemas", "Automatización"],
         },
@@ -333,11 +346,6 @@ const translations = {
         {
           degree: "Ingeniería Electrónica",
           institution: "Universidad Mayor de San Simón (UMSS)",
-          year: "",
-        },
-        {
-          degree: "Certificaciones Profesionales",
-          institution: "Cisco y otras certificaciones de redes",
           year: "",
         },
         {
