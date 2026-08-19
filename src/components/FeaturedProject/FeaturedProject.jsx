@@ -33,7 +33,7 @@ function FeaturedProject() {
     <section className="featured" id="featured">
       <div className="featured-container" ref={revealRef}>
         <p className="featured-tag">{t('projects.featured.tag')}</p>
-        <h2 className="section-title" data-index="05">
+        <h2 className="section-title" data-index="01">
           {featured.title}
         </h2>
 

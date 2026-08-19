@@ -36,7 +36,7 @@ function Experience() {
 
   return (
     <section className="experience" id="experience">
-      <h2 className="section-title" data-index="03">{t('experience.title')}</h2>
+      <h2 className="section-title" data-index="02">{t('experience.title')}</h2>
       <p className="section-subtitle">{t('experience.subtitle')}</p>
 
       <div className="timeline">

@@ -4,11 +4,11 @@ const translations = {
       home: "Home",
       hero: "Home",
       background: "Background",
-      about: "About",
       projects: "Projects",
       skills: "Skills",
       experience: "Experience",
       education: "Education",
+      certifications: "Certifications",
       contact: "Contact",
     },
     hero: {
@@ -17,23 +17,10 @@ const translations = {
       role: "Electronic Engineer | Full-Stack Developer",
       subtitle: "Networking & Infrastructure Background",
       summary:
-        "Building full-stack web applications with React, Node.js and PostgreSQL.",
+        "As an Electronic Engineer who has worked in networking, infrastructure and technical support, I bring real engineering experience to software. I've already built applications that solve practical problems, and I'm committed to making software development the next chapter of my career.",
       viewProjects: "View Projects",
       downloadCV: "Download Resume",
       alt: "Photo of Alejandro Camacho",
-    },
-    about: {
-      title: "About Me",
-      p1: "I'm an Electronic Engineer who built my career in networking and infrastructure before moving into software development.",
-      p2: "For over six years I worked as a Network Engineer and in technical support — designing, deploying and maintaining enterprise networks, servers and critical systems.",
-      p3: "Today I build full-stack web applications with React, Node.js and PostgreSQL, applying the same engineering discipline I used in infrastructure to every layer of software.",
-      facts: [
-        { label: "Location", value: "Bolivia" },
-        { label: "Engineering Degree", value: "Electronic Engineer" },
-        { label: "Experience", value: "6+ years as Network Engineer" },
-        { label: "Focus", value: "Full Stack Web Development" },
-        { label: "Email", value: "alejandrocc1955@gmail.com" },
-      ],
     },
     background: {
       title: "Engineering Background",
@@ -95,17 +82,16 @@ const translations = {
             "React application built with Vite and Tailwind CSS that consumes the OpenWeatherMap API. Users can check current weather and forecasts for any city.",
           tech: ["React", "Vite", "Tailwind CSS", "REST API"],
         },
+      ],
+    },
+    certifications: {
+      title: "Certifications",
+      subtitle: "Professional certifications.",
+      items: [
         {
-          title: "To Do App",
-          description:
-            "React application that lets users add, complete and delete tasks efficiently, demonstrating state management and a clean component architecture.",
-          tech: ["React", "CSS3"],
-        },
-        {
-          title: "Calculator App",
-          description:
-            "React application built with reusable components that performs real-time arithmetic operations, demonstrating state management and component composition.",
-          tech: ["React", "CSS3"],
+          degree: "Cisco Certified Network Associate (CCNA)",
+          institution: "Cisco",
+          year: "",
         },
       ],
     },
@@ -157,8 +143,8 @@ const translations = {
       ],
     },
     education: {
-      title: "Education",
-      subtitle: "My academic and professional training.",
+      title: "Education & Certifications",
+      subtitle: "Academic background and certifications.",
       items: [
         {
           degree: "Electronic Engineering",
@@ -187,11 +173,11 @@ const translations = {
       home: "Inicio",
       hero: "Inicio",
       background: "Trayectoria",
-      about: "Sobre mí",
       projects: "Proyectos",
       skills: "Habilidades",
       experience: "Experiencia",
       education: "Educación",
+      certifications: "Certificaciones",
       contact: "Contacto",
     },
     hero: {
@@ -200,23 +186,10 @@ const translations = {
       role: "Ingeniero Electrónico | Desarrollador Full Stack",
       subtitle: "Formación en Redes e Infraestructura",
       summary:
-        "Construyendo aplicaciones web full-stack con React, Node.js y PostgreSQL.",
+        "Como Ingeniero Electrónico que ha trabajado en redes, infraestructura y soporte técnico, aporto experiencia real de ingeniería al software. Ya he construido aplicaciones que resuelven problemas prácticos, y estoy decidido a hacer del desarrollo de software el próximo capítulo de mi carrera.",
       viewProjects: "Ver Proyectos",
       downloadCV: "Descargar CV",
       alt: "Foto de Alejandro Camacho",
-    },
-    about: {
-      title: "Sobre mí",
-      p1: "Soy un Ingeniero Electrónico que construyó su carrera en redes e infraestructura antes de dedicarse al desarrollo de software.",
-      p2: "Durante más de seis años trabajé como Ingeniero de Redes y en soporte técnico — diseñando, implementando y manteniendo redes empresariales, servidores y sistemas críticos.",
-      p3: "Hoy construyo aplicaciones web full-stack con React, Node.js y PostgreSQL, aplicando en cada capa del software la misma disciplina de ingeniería que usé en infraestructura.",
-      facts: [
-        { label: "Ubicación", value: "Bolivia" },
-        { label: "Título de Ingeniero", value: "Ingeniero Electrónico" },
-        { label: "Experiencia", value: "6+ años como Ingeniero de Redes" },
-        { label: "Enfoque", value: "Desarrollo Web Full Stack" },
-        { label: "Email", value: "alejandrocc1955@gmail.com" },
-      ],
     },
     background: {
       title: "Trayectoria de Ingeniería",
@@ -278,17 +251,16 @@ const translations = {
             "Aplicación React construida con Vite y Tailwind CSS que consume la API de OpenWeatherMap. Los usuarios pueden consultar el clima actual y el pronóstico de cualquier ciudad.",
           tech: ["React", "Vite", "Tailwind CSS", "REST API"],
         },
+      ],
+    },
+    certifications: {
+      title: "Certificaciones",
+      subtitle: "Certificaciones profesionales.",
+      items: [
         {
-          title: "To Do App",
-          description:
-            "Aplicación React que permite añadir, completar y eliminar tareas de forma eficiente, demostrando gestión de estado y una arquitectura de componentes limpia.",
-          tech: ["React", "CSS3"],
-        },
-        {
-          title: "Calculator App",
-          description:
-            "Aplicación React construida con componentes reutilizables que realiza operaciones aritméticas en tiempo real, demostrando gestión de estado y composición de componentes.",
-          tech: ["React", "CSS3"],
+          degree: "Cisco Certified Network Associate (CCNA)",
+          institution: "Cisco",
+          year: "",
         },
       ],
     },
@@ -340,8 +312,8 @@ const translations = {
       ],
     },
     education: {
-      title: "Educación",
-      subtitle: "Mi formación académica y profesional.",
+      title: "Educación y Certificaciones",
+      subtitle: "Formación académica y certificaciones.",
       items: [
         {
           degree: "Ingeniería Electrónica",

@@ -8,11 +8,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const SECTION_IDS = [
   "hero",
-  "background",
   "experience",
-  "skills",
   "projects",
-  "about",
+  "background",
+  "skills",
   "education",
   "contact",
 ];
