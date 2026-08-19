@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../../public/logoaledev26.png";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import { useLanguage } from "../../i18n/useLanguage";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -71,6 +72,7 @@ export default function Navbar() {
         ))}
       </ul>
       <div className="navbar-right">
+        <ThemeToggle />
         <LanguageSwitcher />
         <button
           className="hamburger"

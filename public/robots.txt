@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alejandrocamachodev.vercel.app/sitemap.xml

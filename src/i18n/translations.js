@@ -174,7 +174,7 @@ const translations = {
         "Have a project in mind? Let's take it from idea to a working web app — send me a message.",
     },
     footer: {
-      rights: "© 2025 Alejandro Camacho. All rights reserved.",
+      rights: "© 2026 Alejandro Camacho. Almost all rights reserved.",
       sig: "</AlejandroCamacho>",
     },
   },
@@ -353,7 +353,7 @@ const translations = {
         "¿Tienes un proyecto en mente? Llevémoslo de la idea a una app web funcionando — escríbeme.",
     },
     footer: {
-      rights: "© 2025 Alejandro Camacho. Todos los derechos reservados.",
+      rights: "© 2026 Alejandro Camacho. Casi todos los derechos reservados.",
       sig: "</AlejandroCamacho>",
     },
   },

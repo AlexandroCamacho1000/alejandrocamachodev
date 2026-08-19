@@ -1,5 +1,6 @@
 import React from "react";
 import { LanguageProvider } from "./i18n/LanguageContext";
+import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
@@ -15,6 +16,7 @@ import "./App.css";
 function App() {
   return (
     <LanguageProvider>
+      <ThemeProvider>
       <div className="app-container">
       <ScrollProgress />
       <Navbar />
@@ -27,6 +29,7 @@ function App() {
       <Contact />
       <Footer />
       </div>
+      </ThemeProvider>
     </LanguageProvider>
   );
 }

@@ -14,7 +14,7 @@
 }
 
 .navbar.scrolled {
-  background: rgba(11, 17, 32, 0.9);
+  background: var(--nav-bg-scrolled);
   backdrop-filter: blur(12px);
   box-shadow: var(--shadow);
   border-bottom: 1px solid var(--border);
@@ -125,7 +125,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    background: rgba(10, 15, 30, 0.98);
+    background: var(--drawer-bg);
     box-shadow: var(--shadow);
     transform: translateX(100%);
     transition: transform 0.3s ease;
