@@ -54,7 +54,7 @@ const translations = {
       openImage: "View project image",
       closeImage: "Close",
       featured: {
-        tag: "Featured Project",
+        tag: "Team Project",
         technologiesLabel: "Technologies",
         featuresLabel: "Features",
         title: "App BiT",
@@ -70,6 +70,7 @@ const translations = {
       items: [
         {
           title: "Weather App",
+          tag: "Personal Project",
           short:
             "Interactive weather app for current conditions and forecasts in cities worldwide. It consumes the OpenWeatherMap API and lets you search any city instantly.",
           description:
@@ -79,6 +80,7 @@ const translations = {
         },
         {
           title: "Pokémon App",
+          tag: "Personal Project",
           short:
             "Full-stack app that acts as an interactive Pokédex. It consumes the official PokéAPI and uses a custom backend with PostgreSQL and Sequelize for data persistence, enabling full CRUD and advanced search.",
           description:
@@ -230,7 +232,7 @@ const translations = {
       openImage: "Ver imagen del proyecto",
       closeImage: "Cerrar",
       featured: {
-        tag: "Proyecto Destacado",
+        tag: "Proyecto en Equipo",
         technologiesLabel: "Tecnologías",
         featuresLabel: "Funcionalidad",
         title: "App BiT",
@@ -246,6 +248,7 @@ const translations = {
       items: [
         {
           title: "Weather App",
+          tag: "Proyecto Personal",
           short:
             "Aplicación web interactiva del clima con condiciones actuales y pronósticos en ciudades de todo el mundo. Consume la API de OpenWeatherMap y permite buscar cualquier ciudad al instante.",
           description:
@@ -255,6 +258,7 @@ const translations = {
         },
         {
           title: "Pokémon App",
+          tag: "Proyecto Personal",
           short:
             "Aplicación full-stack que actúa como Pokedex interactivo. Consume la PokéAPI oficial y utiliza un backend propio con PostgreSQL y Sequelize para gestionar la persistencia de datos, permitiendo un CRUD completo y búsqueda avanzada.",
           description:
