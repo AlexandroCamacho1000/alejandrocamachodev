@@ -1,5 +1,6 @@
 import './Projects.css';
 import ProjectCard from './Projectcard';
+import bitImg from "../../assets/bit.png";
 import pokemonImg from "../../assets/pokemon.jpg";
 import weatherImg from "../../assets/weather.jpg";
 import { useLanguage } from '../../i18n/useLanguage';
@@ -14,17 +15,19 @@ function Projects() {
   if (featured.title) {
     projects.push({
       ...featured,
-      image: pokemonImg,
+      image: bitImg,
       tag: t('projects.featured.tag'),
       tech: featured.technologies,
       link: featured.repo,
       linkApp: featured.demo,
+      linkPlatform: featured.platform,
       featured: true,
     });
   }
 
   const secondaryMeta = [
-    { link: "https://github.com/AlexandroCamacho1000/WeatherAppByAle", image: weatherImg, featured: true },
+    { link: "https://github.com/AlexandroCamacho1000/WeatherAppByAle", image: weatherImg },
+    { link: "https://github.com/AlexandroCamacho1000/PokemonAppByAle", linkApp: "https://pokemon-app-by-ale-ncp5.vercel.app/", image: pokemonImg },
   ];
 
   items.forEach((item, i) => {

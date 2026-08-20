@@ -244,6 +244,18 @@
   background: var(--accent-soft);
 }
 
+.project-links .link-platform {
+  color: var(--accent);
+  border: 1px solid rgba(79, 141, 255, 0.4);
+  background: transparent;
+}
+
+.project-links .link-platform:hover {
+  border-color: var(--accent);
+  color: #fff;
+  background: var(--gradient);
+}
+
 .project-links .link-demo {
   color: #fff;
   background: var(--gradient);

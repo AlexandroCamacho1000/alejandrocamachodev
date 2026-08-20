@@ -6,20 +6,27 @@ import {
   FaCode,
   FaDatabase,
   FaExternalLinkAlt,
+  FaFileAlt,
   FaFilter,
   FaGithub,
   FaGlobe,
+  FaRobot,
   FaSearch,
   FaSort,
+  FaTable,
   FaTimes,
+  FaUsers,
 } from 'react-icons/fa';
 import {
+  SiDocker,
   SiExpress,
   SiJavascript,
   SiNodedotjs,
   SiPostgresql,
   SiReact,
   SiSequelize,
+  SiSupabase,
+  SiTailwindcss,
 } from 'react-icons/si';
 import { useLanguage } from '../../i18n/useLanguage';
 
@@ -31,6 +38,10 @@ const TECH_META = {
   PostgreSQL: { icon: SiPostgresql, color: '#699ECA' },
   Sequelize: { icon: SiSequelize, color: '#52B0E7' },
   'REST API': { icon: FaGlobe, color: '#F7DF1E' },
+  'Tailwind CSS': { icon: SiTailwindcss, color: '#38BDF8' },
+  Supabase: { icon: SiSupabase, color: '#3ECF8E' },
+  'Express.js': { icon: SiExpress, color: '#9CA3AF' },
+  Docker: { icon: SiDocker, color: '#2496ED' },
 };
 
 const DEFAULT_TECH = { icon: FaCode, color: 'var(--accent)' };
@@ -49,9 +60,15 @@ const FEATURE_ICONS = {
   "Condiciones actuales": FaCloudSun,
   Forecasts: FaCalendarAlt,
   Pronóstico: FaCalendarAlt,
+  "Zone Comparison": FaTable,
+  "Comparación de zonas": FaTable,
+  "AI Chat": FaRobot,
+  "Chat IA": FaRobot,
+  "Data Reports": FaFileAlt,
+  "Reportes de datos": FaFileAlt,
 };
 
-function ProjectCard({ title, short, description, tech, highlights, link, linkApp, image, tag, featured }) {
+function ProjectCard({ title, short, description, tech, highlights, link, linkApp, linkPlatform, image, tag, featured }) {
   const { t } = useLanguage();
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
@@ -140,6 +157,11 @@ function ProjectCard({ title, short, description, tech, highlights, link, linkAp
           {link && (
             <a href={link} target="_blank" rel="noopener noreferrer" className="link-github">
               <FaGithub aria-hidden="true" /> {t('projects.view')}
+            </a>
+          )}
+          {linkPlatform && (
+            <a href={linkPlatform} target="_blank" rel="noopener noreferrer" className="link-platform">
+              <FaUsers aria-hidden="true" /> {t('projects.viewPlatform')}
             </a>
           )}
           {linkApp && (
