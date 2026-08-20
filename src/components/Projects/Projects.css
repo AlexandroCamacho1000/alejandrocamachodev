@@ -22,7 +22,6 @@
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
   border-color: rgba(61, 139, 255, 0.5);
   box-shadow: var(--shadow);
 }
