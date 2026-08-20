@@ -1,5 +1,5 @@
 .hero {
-  min-height: 100vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +9,7 @@
     radial-gradient(900px 500px at 80% -10%, rgba(124, 92, 255, 0.18), transparent 60%),
     radial-gradient(800px 500px at 10% 110%, rgba(61, 139, 255, 0.16), transparent 60%),
     var(--bg-primary);
-  padding: 120px 24px 60px;
+  padding: 120px 24px 48px;
 }
 
 .hero::before {

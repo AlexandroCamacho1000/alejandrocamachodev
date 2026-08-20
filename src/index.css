@@ -103,7 +103,7 @@ button:focus-visible {
 }
 
 section {
-  padding: 96px 24px;
+  padding: 72px 24px;
   position: relative;
 }
 
@@ -166,7 +166,7 @@ section {
 
 @media (max-width: 768px) {
   section {
-    padding: 72px 20px;
+    padding: 56px 20px;
   }
 
   .section-title {
