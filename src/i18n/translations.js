@@ -16,7 +16,7 @@ const translations = {
       name: "Alejandro Camacho",
       role: "Electronic Engineer | Full-Stack Developer",
       summary:
-        "I build software solutions that turn technical challenges into practical, reliable products. As an Electronic Engineer, I combine hands-on software development with professional experience in networking and infrastructure, bringing a systems-oriented mindset to every solution I build.",
+        "I build software solutions that turn technical challenges into practical, reliable products. As an Electronic Engineer, I combine hands-on software development with professional experience in networking and infrastructure, applying an engineering mindset focused on architecture, security, and reliability.",
       viewProjects: "View Projects",
       downloadCV: "Download Resume",
       alt: "Photo of Alejandro Camacho",
@@ -184,7 +184,7 @@ const translations = {
       name: "Alejandro Camacho",
       role: "Ingeniero Electrónico | Desarrollador Full Stack",
       summary:
-        "Construyo soluciones de software que convierten desafíos técnicos en productos prácticos y confiables. Como Ingeniero Electrónico, combino experiencia práctica en desarrollo de software con experiencia profesional en redes e infraestructura, aportando una perspectiva integral para diseñar y resolver problemas técnicos.",
+        "Construyo soluciones de software que convierten desafíos técnicos en productos prácticos y confiables. Como Ingeniero Electrónico, combino experiencia práctica en desarrollo de software con experiencia profesional en redes e infraestructura, aplicando una mentalidad de ingeniería enfocada en arquitectura, seguridad y confiabilidad.",
       viewProjects: "Ver Proyectos",
       downloadCV: "Descargar CV",
       alt: "Foto de Alejandro Camacho",
