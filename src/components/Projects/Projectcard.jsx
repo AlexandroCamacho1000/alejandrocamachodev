@@ -2,11 +2,9 @@ import { useEffect, useState } from 'react';
 import './Projects.css';
 import { FaTimes } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
-import { useReveal } from '../../hooks/useReveal';
 
 function ProjectCard({ title, description, tech, link, linkApp, image }) {
   const { t } = useLanguage();
-  const cardRef = useReveal();
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
   useEffect(() => {
@@ -20,7 +18,7 @@ function ProjectCard({ title, description, tech, link, linkApp, image }) {
 
   return (
     <>
-      <div className="project-card" ref={cardRef}>
+      <div className="project-card">
         <div className="project-image">
           <button
             type="button"
@@ -28,7 +26,7 @@ function ProjectCard({ title, description, tech, link, linkApp, image }) {
             onClick={() => setLightboxOpen(true)}
             aria-label={`${title} image`}
           >
-            <img src={image} alt={title} loading="lazy" />
+            <img src={image} alt={title} />
           </button>
         </div>
         <div className="project-body">
