@@ -28,22 +28,19 @@ const translations = {
       steps: [
         {
           title: "Electronic Engineering",
-          description: "University degree in Electronic Engineering (UMSS).",
+          description: "Engineering degree (UMSS) — the foundation of my technical career.",
         },
         {
           title: "Networking",
-          description:
-            "Network Engineer — designed, deployed and maintained enterprise networks.",
+          description: "Professional experience working with enterprise networks.",
         },
         {
           title: "Infrastructure & Technical Support",
-          description:
-            "Servers, systems administration and technical support for critical infrastructure.",
+          description: "Systems administration and technical support for critical services.",
         },
         {
           title: "Software Development",
-          description:
-            "Building full-stack web applications with React, Node.js and PostgreSQL.",
+          description: "My current focus — building software solutions.",
         },
       ],
     },
@@ -54,20 +51,23 @@ const translations = {
       viewApp: "Live Demo",
       featured: {
         tag: "Featured Project",
-        problemLabel: "Problem",
+        overviewLabel: "Project Overview",
+        problemLabel: "Problem / Goal",
         solutionLabel: "Solution",
         contributionLabel: "My Contribution",
-        challengesLabel: "Technical Challenges",
+        featuresLabel: "Key Technical Features",
         technologiesLabel: "Technologies",
         title: "",
+        overview: "",
         problem: "",
         solution: "",
         contribution: "",
-        challenges: "",
+        features: [],
         technologies: [],
         demo: "",
         repo: "",
       },
+      othersTitle: "Other Projects",
       items: [
         {
           title: "Pokemón App",
@@ -196,22 +196,20 @@ const translations = {
       steps: [
         {
           title: "Ingeniería Electrónica",
-          description: "Título universitario en Ingeniería Electrónica (UMSS).",
+          description: "Título de ingeniería (UMSS) — la base de mi carrera técnica.",
         },
         {
           title: "Redes",
-          description:
-            "Ingeniero de Redes — diseñé, implementé y mantuve redes empresariales.",
+          description: "Experiencia profesional trabajando con redes empresariales.",
         },
         {
           title: "Infraestructura y Soporte Técnico",
           description:
-            "Servidores, administración de sistemas y soporte técnico de infraestructura crítica.",
+            "Administración de sistemas y soporte técnico de servicios críticos.",
         },
         {
           title: "Desarrollo de Software",
-          description:
-            "Construyendo aplicaciones web full-stack con React, Node.js y PostgreSQL.",
+          description: "Mi foco actual — construir soluciones de software.",
         },
       ],
     },
@@ -222,20 +220,23 @@ const translations = {
       viewApp: "Demo en vivo",
       featured: {
         tag: "Proyecto Destacado",
-        problemLabel: "Problema",
+        overviewLabel: "Resumen del Proyecto",
+        problemLabel: "Problema / Objetivo",
         solutionLabel: "Solución",
         contributionLabel: "Mi Contribución",
-        challengesLabel: "Desafíos Técnicos",
+        featuresLabel: "Características Técnicas Clave",
         technologiesLabel: "Tecnologías",
         title: "",
+        overview: "",
         problem: "",
         solution: "",
         contribution: "",
-        challenges: "",
+        features: [],
         technologies: [],
         demo: "",
         repo: "",
       },
+      othersTitle: "Otros Proyectos",
       items: [
         {
           title: "Pokemón App",

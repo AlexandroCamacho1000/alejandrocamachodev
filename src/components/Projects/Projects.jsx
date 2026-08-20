@@ -16,7 +16,7 @@ function Projects() {
 
   return (
     <section className="projects" id="projects">
-      <h2 className="section-title" data-index="03">{t('projects.title')}</h2>
+      <h2 className="section-title" data-index="01">{t('projects.title')}</h2>
       <p className="section-subtitle">{t('projects.subtitle')}</p>
       <div className="projects-grid">
         {items.map((item, i) => (

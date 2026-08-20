@@ -3,9 +3,8 @@ import { LanguageProvider } from "./i18n/LanguageContext";
 import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import FeaturedProject from "./components/FeaturedProject/FeaturedProject";
-import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
+import Experience from "./components/Experience/Experience";
 import EngineeringBackground from "./components/EngineeringBackground/EngineeringBackground";
 import Skills from "./components/Skills/Skills";
 import Education from "./components/Education/Education";
@@ -22,9 +21,8 @@ function App() {
       <ScrollProgress />
       <Navbar />
       <Hero />
-      <FeaturedProject />
-      <Experience />
       <Projects />
+      <Experience />
       <EngineeringBackground />
       <Skills />
       <Education />

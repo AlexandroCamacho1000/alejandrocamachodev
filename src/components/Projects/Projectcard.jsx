@@ -1,52 +1,93 @@
+import { useEffect, useState } from 'react';
 import './Projects.css';
+import { FaTimes } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
 import { useReveal } from '../../hooks/useReveal';
 
 function ProjectCard({ title, description, tech, link, linkApp, image }) {
   const { t } = useLanguage();
   const cardRef = useReveal();
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
+  useEffect(() => {
+    if (!lightboxOpen) return;
+    const onKey = (e) => {
+      if (e.key === 'Escape') setLightboxOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [lightboxOpen]);
 
   return (
-    <div className="project-card" ref={cardRef}>
-      <div className="project-image">
-        <img src={image} alt={title} loading="lazy" />
-      </div>
-      <div className="project-body">
-        <h3>{title}</h3>
-        <p>{description}</p>
-
-        {tech && tech.length > 0 && (
-          <div className="project-tech">
-            {tech.map((tag) => (
-              <span className="tech-tag" key={tag}>
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
-
-        <div className="project-links">
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-repo"
+    <>
+      <div className="project-card" ref={cardRef}>
+        <div className="project-image">
+          <button
+            type="button"
+            className="project-image-button"
+            onClick={() => setLightboxOpen(true)}
+            aria-label={`${title} image`}
           >
-            {t('projects.view')}
-          </a>
-          {linkApp && (
+            <img src={image} alt={title} loading="lazy" />
+          </button>
+        </div>
+        <div className="project-body">
+          <h3>{title}</h3>
+          <p>{description}</p>
+
+          {tech && tech.length > 0 && (
+            <div className="project-tech">
+              {tech.map((tag) => (
+                <span className="tech-tag" key={tag}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+
+          <div className="project-links">
             <a
-              href={linkApp}
+              href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="link-demo"
+              className="link-repo"
             >
-              {t('projects.viewApp')}
+              {t('projects.view')}
             </a>
-          )}
+            {linkApp && (
+              <a
+                href={linkApp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-demo"
+              >
+                {t('projects.viewApp')}
+              </a>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+
+      {lightboxOpen && (
+        <div
+          className="lightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-label={title}
+          onClick={() => setLightboxOpen(false)}
+        >
+          <button
+            type="button"
+            className="lightbox-close"
+            onClick={() => setLightboxOpen(false)}
+            aria-label="Close"
+          >
+            <FaTimes />
+          </button>
+          <img src={image} alt={title} onClick={(e) => e.stopPropagation()} />
+        </div>
+      )}
+    </>
   );
 }
 
