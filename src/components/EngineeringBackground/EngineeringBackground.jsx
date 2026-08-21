@@ -1,17 +1,17 @@
 import './EngineeringBackground.css';
-import { FaGraduationCap, FaNetworkWired, FaServer, FaCode } from 'react-icons/fa';
+import { FaBrain, FaServer, FaCode } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
 import { useReveal } from '../../hooks/useReveal';
 
-const icons = [FaGraduationCap, FaNetworkWired, FaServer, FaCode];
+const icons = [FaBrain, FaServer, FaCode];
 
 function EngineeringBackground() {
   const { t } = useLanguage();
   const revealRef = useReveal();
 
-  const steps = [0, 1, 2, 3].map((i) => ({
-    title: t(`background.steps.${i}.title`),
-    description: t(`background.steps.${i}.description`),
+  const blocks = [0, 1, 2].map((i) => ({
+    title: t(`background.blocks.${i}.title`),
+    tags: t(`background.blocks.${i}.tags`),
     Icon: icons[i],
   }));
 
@@ -23,18 +23,17 @@ function EngineeringBackground() {
         </h2>
         <p className="section-subtitle">{t('background.subtitle')}</p>
 
-        <div className="background-steps">
-          {steps.map((step, index) => (
-            <div className="background-step" key={index}>
-              <div className="background-step-icon">
-                <step.Icon />
+        <div className="background-blocks">
+          {blocks.map((block, index) => (
+            <div className="background-block" key={index}>
+              <div className="background-block-icon">
+                <block.Icon />
               </div>
-              <div className="background-step-content">
-                <span className="background-step-index">
-                  0{index + 1}
-                </span>
-                <h3>{step.title}</h3>
-                <p>{step.description}</p>
+              <h3 className="background-block-title">{block.title}</h3>
+              <div className="background-block-tags">
+                {block.tags.map((tag, i) => (
+                  <span className="background-tag" key={i}>{tag}</span>
+                ))}
               </div>
             </div>
           ))}

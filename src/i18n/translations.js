@@ -22,25 +22,20 @@ const translations = {
       alt: "Photo of Alejandro Camacho",
     },
     background: {
-      title: "Engineering Background",
-      subtitle:
-        "An engineer with real technical experience, now specialized in software development.",
-      steps: [
+      title: "Applying Engineering to Software Development",
+      subtitle: "Building software with an engineering mindset.",
+      blocks: [
         {
-          title: "Electronic Engineering",
-          description: "Engineering degree (UMSS) — the foundation of my technical career.",
+          title: "Engineering Mindset",
+          tags: ["Analytical thinking", "Problem solving", "Systems thinking"],
         },
         {
-          title: "Networking",
-          description: "Professional experience working with enterprise networks.",
-        },
-        {
-          title: "Infrastructure & Technical Support",
-          description: "Systems administration and technical support for critical services.",
+          title: "Technical Foundation",
+          tags: ["Systems", "Networks", "Infrastructure"],
         },
         {
           title: "Software Development",
-          description: "My current focus — building software solutions.",
+          tags: ["React", "Node.js", "PostgreSQL", "REST APIs"],
         },
       ],
     },
@@ -199,26 +194,20 @@ const translations = {
       alt: "Foto de Alejandro Camacho",
     },
     background: {
-      title: "Trayectoria de Ingeniería",
-      subtitle:
-        "Un ingeniero con experiencia técnica real, ahora especializado en desarrollo de software.",
-      steps: [
+      title: "Aplicando Ingeniería al Desarrollo de Software",
+      subtitle: "Construyendo software con mentalidad de ingeniero.",
+      blocks: [
         {
-          title: "Ingeniería Electrónica",
-          description: "Título de ingeniería (UMSS) — la base de mi carrera técnica.",
+          title: "Mentalidad de Ingeniería",
+          tags: ["Pensamiento analítico", "Resolución de problemas", "Pensamiento sistémico"],
         },
         {
-          title: "Redes",
-          description: "Experiencia profesional trabajando con redes empresariales.",
-        },
-        {
-          title: "Infraestructura y Soporte Técnico",
-          description:
-            "Administración de sistemas y soporte técnico de servicios críticos.",
+          title: "Fundamentos Técnicos",
+          tags: ["Sistemas", "Redes", "Infraestructura"],
         },
         {
           title: "Desarrollo de Software",
-          description: "Mi foco actual — construir soluciones de software.",
+          tags: ["React", "Node.js", "PostgreSQL", "API REST"],
         },
       ],
     },
