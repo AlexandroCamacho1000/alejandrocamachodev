@@ -160,8 +160,13 @@ const translations = {
           year: "",
         },
         {
-          degree: "Full Stack Development Bootcamp",
+          degree: "Full Stack Development",
           institution: "Henry",
+          year: "",
+        },
+        {
+          degree: "CCNA — Cisco Certified Network Associate",
+          institution: "Cisco",
           year: "",
         },
       ],
@@ -337,8 +342,13 @@ const translations = {
           year: "",
         },
         {
-          degree: "Bootcamp de Desarrollo Full Stack",
+          degree: "Desarrollo Full Stack",
           institution: "Henry",
+          year: "",
+        },
+        {
+          degree: "CCNA — Cisco Certified Network Associate",
+          institution: "Cisco",
           year: "",
         },
       ],
