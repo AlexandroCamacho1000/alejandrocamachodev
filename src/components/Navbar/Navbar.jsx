@@ -9,9 +9,9 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const SECTION_IDS = [
   "hero",
   "projects",
-  "experience",
   "background",
   "skills",
+  "journey",
   "education",
   "contact",
 ];

@@ -3,10 +3,10 @@ const translations = {
     nav: {
       home: "Home",
       hero: "Home",
-      background: "Background",
+      background: "Engineering",
       projects: "Projects",
       skills: "Skills",
-      experience: "Experience",
+      experience: "Journey",
       education: "Education",
       certifications: "Certifications",
       contact: "Contact",
@@ -172,9 +172,8 @@ const translations = {
       ],
     },
     contact: {
-      title: "Contact Me",
-      subtitle:
-        "Have a project in mind? Let's take it from idea to a working web app — send me a message.",
+      title: "Let's Work Together",
+      subtitle: "Let's build something meaningful.",
     },
     footer: {
       rights: "© 2026 Alejandro Camacho. Almost all rights reserved.",
@@ -185,10 +184,10 @@ const translations = {
     nav: {
       home: "Inicio",
       hero: "Inicio",
-      background: "Trayectoria",
+      background: "Ingeniería",
       projects: "Proyectos",
       skills: "Habilidades",
-      experience: "Experiencia",
+      experience: "Trayectoria",
       education: "Educación",
       certifications: "Certificaciones",
       contact: "Contacto",
@@ -354,9 +353,8 @@ const translations = {
       ],
     },
     contact: {
-      title: "Contáctame",
-      subtitle:
-        "¿Tienes un proyecto en mente? Llevémoslo de la idea a una app web funcionando — escríbeme.",
+      title: "Trabajemos Juntos",
+      subtitle: "Construyamos algo significativo.",
     },
     footer: {
       rights: "© 2026 Alejandro Camacho. Casi todos los derechos reservados.",

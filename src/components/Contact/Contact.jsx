@@ -1,5 +1,5 @@
 import './Contact.css';
-import { FaLinkedin, FaGithub, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
 import { useReveal } from '../../hooks/useReveal';
 
@@ -9,13 +9,19 @@ function Contact() {
 
   return (
     <section className="contact" id="contact">
-      <h2 className="section-title" data-index="06">{t('contact.title')}</h2>
+      <h2 className="section-title" data-index="07">{t('contact.title')}</h2>
       <p className="section-subtitle">{t('contact.subtitle')}</p>
 
       <ul className="contact-list" ref={listRef}>
         <li className="contact-item">
-          <FaEnvelope className="contact-icon" />
-          <a href="mailto:alejandrocc1955@gmail.com">alejandrocc1955@gmail.com</a>
+          <FaGithub className="contact-icon" />
+          <a
+            href="https://github.com/AlexandroCamacho1000"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
         </li>
         <li className="contact-item">
           <FaLinkedin className="contact-icon" />
@@ -24,28 +30,12 @@ function Contact() {
             target="_blank"
             rel="noreferrer"
           >
-            Alejandro Camacho
+            LinkedIn
           </a>
         </li>
         <li className="contact-item">
-          <FaGithub className="contact-icon" />
-          <a
-            href="https://github.com/AlexandroCamacho1000"
-            target="_blank"
-            rel="noreferrer"
-          >
-            AlexandroCamacho1000
-          </a>
-        </li>
-        <li className="contact-item">
-          <FaWhatsapp className="contact-icon" />
-          <a
-            href="https://wa.me/59176486766?text=Hola%20Alejandro"
-            target="_blank"
-            rel="noreferrer"
-          >
-            +591 76486766
-          </a>
+          <FaEnvelope className="contact-icon" />
+          <a href="mailto:alejandrocc1955@gmail.com">Email</a>
         </li>
       </ul>
     </section>
