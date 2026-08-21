@@ -6,7 +6,7 @@ const translations = {
       background: "Engineering",
       projects: "Projects",
       skills: "Skills",
-      experience: "Journey",
+      journey: "My Journey",
       education: "Education",
       certifications: "Certifications",
       contact: "Contact",
@@ -16,7 +16,7 @@ const translations = {
       name: "Alejandro Camacho",
       role: "Electronic Engineer | Full-Stack Developer",
       summary:
-        "I build software solutions that turn technical challenges into practical, reliable products. As an Electronic Engineer, I combine hands-on software development with professional experience in networking and infrastructure, applying an engineering mindset focused on architecture, security, and reliability.",
+        "I build software that turns complex technical challenges into reliable products. With a background as an Electronic Engineer and hands-on experience in networking and infrastructure, I now focus on full-stack development.",
       viewProjects: "View Projects",
       downloadCV: "Download Resume",
       alt: "Photo of Alejandro Camacho",
@@ -41,7 +41,7 @@ const translations = {
     },
     projects: {
       title: "Projects",
-      subtitle: "End-to-end solutions.",
+      subtitle: "A selection of applications built with modern technologies.",
       view: "View Code",
       viewApp: "Live Demo",
       viewVideo: "Demo Video",
@@ -54,7 +54,7 @@ const translations = {
         featuresLabel: "Features",
         title: "App BiT",
         short:
-          "B2G platform that helps public managers decide where to invest. It crosses territorial connectivity data with key social indicators and an AI assistant that answers in natural language to generate reports in seconds.",
+          "B2G platform helping public managers decide where to invest. It unifies public connectivity and social data, and an AI assistant turns it into clear reports in natural language — built full-stack by a team.",
         highlights: ["Zone Comparison", "AI Chat", "Data Reports"],
         technologies: ["JavaScript", "React", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "Supabase", "Docker"],
         demo: "https://s06-26-nc-equipo-69-b2g-frontend.vercel.app/",
@@ -146,7 +146,7 @@ const translations = {
         {
           title: "Full Stack Developer",
           meta: "",
-          description: "Building modern web applications.",
+          description: "Building modern full-stack applications.",
         },
       ],
     },
@@ -187,7 +187,7 @@ const translations = {
       background: "Ingeniería",
       projects: "Proyectos",
       skills: "Habilidades",
-      experience: "Trayectoria",
+      journey: "Mi Trayectoria",
       education: "Educación",
       certifications: "Certificaciones",
       contact: "Contacto",
@@ -197,7 +197,7 @@ const translations = {
       name: "Alejandro Camacho",
       role: "Ingeniero Electrónico | Desarrollador Full Stack",
       summary:
-        "Construyo soluciones de software que convierten desafíos técnicos en productos prácticos y confiables. Como Ingeniero Electrónico, combino experiencia práctica en desarrollo de software con experiencia profesional en redes e infraestructura, aplicando una mentalidad de ingeniería enfocada en arquitectura, seguridad y confiabilidad.",
+        "Construyo software que convierte desafíos técnicos complejos en productos confiables. Con una formación como Ingeniero Electrónico y experiencia práctica en redes e infraestructura, ahora me enfoco en el desarrollo full-stack.",
       viewProjects: "Ver Proyectos",
       downloadCV: "Descargar CV",
       alt: "Foto de Alejandro Camacho",
@@ -222,7 +222,7 @@ const translations = {
     },
     projects: {
       title: "Proyectos",
-      subtitle: "Soluciones integrales.",
+      subtitle: "Una selección de aplicaciones construidas con tecnologías modernas.",
       view: "Ver Código",
       viewApp: "Ver Demo",
       viewVideo: "Video Demo",
@@ -235,7 +235,7 @@ const translations = {
         featuresLabel: "Funcionalidad",
         title: "App BiT",
         short:
-          "Plataforma B2G que ayuda a gestores públicos a decidir dónde invertir. Cruza datos territoriales de conectividad con indicadores sociales clave y un asistente de IA que responde en lenguaje natural para generar reportes en segundos.",
+          "Plataforma B2G que ayuda a gestores públicos a decidir dónde invertir. Unifica datos públicos de conectividad y sociales, y un asistente de IA los convierte en reportes claros en lenguaje natural — construida full-stack por un equipo.",
         highlights: ["Comparación de zonas", "Chat IA", "Reportes de datos"],
         technologies: ["JavaScript", "React", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "Supabase", "Docker"],
         demo: "https://s06-26-nc-equipo-69-b2g-frontend.vercel.app/",
@@ -327,7 +327,7 @@ const translations = {
         {
           title: "Desarrollador Full Stack",
           meta: "",
-          description: "Construyendo aplicaciones web modernas.",
+          description: "Construyendo aplicaciones full-stack modernas.",
         },
       ],
     },
