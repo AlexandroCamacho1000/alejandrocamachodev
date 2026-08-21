@@ -129,23 +129,24 @@ const translations = {
         docker: "Docker",
       },
     },
-    experience: {
-      title: "Professional Experience",
-      subtitle: "Real-world experience in networks, infrastructure and support.",
-      jobs: [
+    journey: {
+      title: "My Journey",
+      subtitle: "From Engineering to Software Development.",
+      nodes: [
         {
-          role: "Network Engineer / Technical Support",
-          company: "Electric Utility Company",
-          period: "2016 – 2022",
-          description:
-            "Over six years responsible for the company's network infrastructure, servers and IT systems — guaranteeing availability, security and performance across critical services.",
-          achievements: [
-            "Designed and maintained enterprise networks and critical systems with high availability.",
-            "Solved technical issues across infrastructure, servers and end-user systems.",
-            "Automated operational processes, cutting downtime and manual work.",
-            "Led infrastructure projects and supported the whole organization.",
-          ],
-          tech: ["Networking", "Servers", "Systems Administration", "Automation"],
+          title: "Electronic Engineer",
+          meta: "UMSS",
+          description: "Engineering foundation.",
+        },
+        {
+          title: "Systems & Network Engineer",
+          meta: "2016 – 2022",
+          tags: ["Networks", "Systems", "Infrastructure", "Technical Problem Solving"],
+        },
+        {
+          title: "Full Stack Developer",
+          meta: "",
+          description: "Building modern web applications.",
         },
       ],
     },
@@ -305,23 +306,24 @@ const translations = {
         docker: "Docker",
       },
     },
-    experience: {
-      title: "Experiencia Profesional",
-      subtitle: "Experiencia real en redes, infraestructura y soporte.",
-      jobs: [
+    journey: {
+      title: "Mi Trayectoria",
+      subtitle: "De la Ingeniería al Desarrollo de Software.",
+      nodes: [
         {
-          role: "Ingeniero de Redes / Soporte Técnico",
-          company: "Empresa Eléctrica",
-          period: "2016 – 2022",
-          description:
-            "Más de seis años a cargo de la infraestructura de red, los servidores y los sistemas de TI de la empresa — garantizando disponibilidad, seguridad y rendimiento de los servicios críticos.",
-          achievements: [
-            "Diseñé y mantuve redes empresariales y sistemas críticos con alta disponibilidad.",
-            "Resolví problemas técnicos de infraestructura, servidores y sistemas de los usuarios finales.",
-            "Automaticé procesos operativos, reduciendo tiempos de inactividad y trabajo manual.",
-            "Lideré proyectos de infraestructura y brindé soporte a toda la organización.",
-          ],
-          tech: ["Redes", "Servidores", "Administración de Sistemas", "Automatización"],
+          title: "Ingeniero Electrónico",
+          meta: "UMSS",
+          description: "Base de ingeniería.",
+        },
+        {
+          title: "Ingeniero de Sistemas y Redes",
+          meta: "2016 – 2022",
+          tags: ["Redes", "Sistemas", "Infraestructura", "Resolución de Problemas Técnicos"],
+        },
+        {
+          title: "Desarrollador Full Stack",
+          meta: "",
+          description: "Construyendo aplicaciones web modernas.",
         },
       ],
     },

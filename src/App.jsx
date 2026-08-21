@@ -4,9 +4,9 @@ import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
-import Experience from "./components/Experience/Experience";
 import EngineeringBackground from "./components/EngineeringBackground/EngineeringBackground";
 import Skills from "./components/Skills/Skills";
+import MyJourney from "./components/MyJourney/MyJourney";
 import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -22,9 +22,9 @@ function App() {
       <Navbar />
       <Hero />
       <Projects />
-      <Experience />
       <EngineeringBackground />
       <Skills />
+      <MyJourney />
       <Education />
       <Contact />
       <Footer />
