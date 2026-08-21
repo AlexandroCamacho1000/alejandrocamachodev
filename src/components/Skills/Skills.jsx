@@ -2,16 +2,19 @@ import './Skills.css';
 import {
   SiJavascript,
   SiReact,
+  SiHtml5,
+  SiCss3,
   SiTailwindcss,
   SiNodedotjs,
+  SiExpress,
   SiPostgresql,
-  SiSupabase,
+  SiSqlite,
   SiAmazonwebservices,
   SiGit,
   SiGithub,
-  SiLinux,
+  SiDocker,
 } from 'react-icons/si';
-import { FaServer } from 'react-icons/fa';
+import { FaServer, FaDatabase } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
 import { useReveal } from '../../hooks/useReveal';
 
@@ -29,6 +32,8 @@ function Skills() {
       skills: [
         { nameKey: 'skills.frontend.javascript', icon: <SiJavascript /> },
         { nameKey: 'skills.frontend.react', icon: <SiReact /> },
+        { nameKey: 'skills.frontend.html', icon: <SiHtml5 /> },
+        { nameKey: 'skills.frontend.css', icon: <SiCss3 /> },
         { nameKey: 'skills.frontend.tailwind', icon: <SiTailwindcss /> },
       ],
     },
@@ -37,6 +42,7 @@ function Skills() {
       ref: backendRef,
       skills: [
         { nameKey: 'skills.backend.node', icon: <SiNodedotjs /> },
+        { nameKey: 'skills.backend.express', icon: <SiExpress /> },
         { nameKey: 'skills.backend.rest', icon: <FaServer /> },
       ],
     },
@@ -45,17 +51,18 @@ function Skills() {
       ref: databaseRef,
       skills: [
         { nameKey: 'skills.database.postgresql', icon: <SiPostgresql /> },
-        { nameKey: 'skills.database.supabase', icon: <SiSupabase /> },
+        { nameKey: 'skills.database.sql', icon: <SiSqlite /> },
+        { nameKey: 'skills.database.sequelize', icon: <FaDatabase /> },
       ],
     },
     {
       titleKey: 'skills.cloudTitle',
       ref: cloudRef,
       skills: [
-        { nameKey: 'skills.cloud.aws', icon: <SiAmazonwebservices /> },
         { nameKey: 'skills.cloud.git', icon: <SiGit /> },
         { nameKey: 'skills.cloud.github', icon: <SiGithub /> },
-        { nameKey: 'skills.cloud.linux', icon: <SiLinux /> },
+        { nameKey: 'skills.cloud.aws', icon: <SiAmazonwebservices /> },
+        { nameKey: 'skills.cloud.docker', icon: <SiDocker /> },
       ],
     },
   ];
