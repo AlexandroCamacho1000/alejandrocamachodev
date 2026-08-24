@@ -25,11 +25,11 @@ const translations = {
       title: "Applying Engineering to Software Development",
       subtitle: "Building software with an engineering mindset.",
       note:
-        "My background in networking, infrastructure, and servers provides a strong foundation for modern deployment and DevOps practices.",
+        "Engineering experience in networking, infrastructure, and security provides a strong foundation for modern software deployment and DevOps practices.",
       blocks: [
         {
           title: "Engineering Mindset",
-          tags: ["Systems thinking", "Problem solving", "Solution design", "Reliability"],
+          tags: ["Systems thinking", "Problem solving", "Technical decision-making", "Reliability"],
         },
         {
           title: "Technical Foundation",
@@ -209,11 +209,11 @@ const translations = {
       title: "Aplicando Ingeniería al Desarrollo de Software",
       subtitle: "Construyendo software con mentalidad de ingeniero.",
       note:
-        "Mi experiencia en redes, infraestructura y servidores me proporciona una base sólida para el despliegue moderno y las prácticas DevOps.",
+        "La experiencia en ingeniería aplicada a redes, infraestructura y seguridad proporciona una base sólida para el despliegue moderno de software y las prácticas DevOps.",
       blocks: [
         {
           title: "Mentalidad de Ingeniería",
-          tags: ["Pensamiento sistémico", "Resolución de problemas", "Diseño de soluciones", "Confiabilidad"],
+          tags: ["Pensamiento sistémico", "Resolución de problemas", "Toma de decisiones técnicas", "Confiabilidad"],
         },
         {
           title: "Fundamentos Técnicos",
@@ -221,7 +221,7 @@ const translations = {
         },
         {
           title: "Desarrollo de Software",
-          tags: ["Arquitectura", "APIs", "Bases de datos", "Deployment"],
+          tags: ["Arquitectura", "APIs", "Bases de datos", "Despliegue"],
         },
       ],
     },
