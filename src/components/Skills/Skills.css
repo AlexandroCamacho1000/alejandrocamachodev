@@ -2,48 +2,86 @@
   background: var(--bg-primary);
 }
 
-.skills-subtitle {
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-align: center;
-  color: var(--text-primary);
-  margin: 0 0 20px;
-}
-
-.skills-grid {
+.stack-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 16px;
-  max-width: 900px;
-  margin: 0 auto 48px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 48px auto 0;
 }
 
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  background: linear-gradient(180deg, var(--bg-card-hover), var(--bg-card));
+@media (min-width: 961px) {
+  .stack-card:nth-child(4) {
+    grid-column: span 2;
+  }
+}
+
+.stack-card {
+  background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 20px 12px;
-  text-align: center;
-  box-shadow: var(--shadow-soft);
-  transition: var(--transition);
+  border-radius: 14px;
+  padding: 24px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.skill-item:hover {
-  border-color: var(--accent);
+.stack-card:hover {
   transform: translateY(-4px);
+  border-color: rgba(79, 141, 255, 0.5);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
-.skill-icon {
-  font-size: 2rem;
+.stack-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.stack-card-num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
   color: var(--accent);
 }
 
-.skill-name {
-  font-size: 0.9rem;
-  font-weight: 600;
+.stack-card-title {
+  font-size: 1.02rem;
+  font-weight: 700;
   color: var(--text-primary);
+}
+
+.stack-card-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stack-item {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  background: var(--accent-soft);
+  border: 1px solid rgba(79, 141, 255, 0.3);
+  border-radius: 999px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+
+@media (max-width: 960px) {
+  .stack-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stack-grid {
+    grid-template-columns: 1fr;
+    margin-top: 36px;
+  }
+
+  .stack-card {
+    padding: 20px;
+  }
 }

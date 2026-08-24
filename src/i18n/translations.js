@@ -103,34 +103,33 @@ const translations = {
     skills: {
       title: "Technical Stack",
       subtitle: "Technologies I use to build modern applications.",
-      frontendTitle: "Frontend",
-      backendTitle: "Backend",
-      databaseTitle: "Database",
-      cloudTitle: "Tools & Cloud",
-      frontend: {
-        javascript: "JavaScript",
-        react: "React",
-        html: "HTML",
-        css: "CSS",
-        tailwind: "Tailwind CSS",
-      },
-      backend: {
-        node: "Node.js",
-        express: "Express",
-        rest: "REST APIs",
-      },
-      database: {
-        postgresql: "PostgreSQL",
-        sql: "SQL",
-        sequelize: "Sequelize",
-      },
-      cloud: {
-        git: "Git",
-        github: "GitHub",
-        aws: "AWS",
-        docker: "Docker",
-        ai: "AI-Assisted Development",
-      },
+      groups: [
+        {
+          num: "01",
+          title: "Frontend",
+          items: ["React", "JavaScript", "Redux", "Tailwind CSS", "Vite"],
+        },
+        {
+          num: "02",
+          title: "Backend",
+          items: ["Node.js", "Express", "REST APIs"],
+        },
+        {
+          num: "03",
+          title: "Data",
+          items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
+        },
+        {
+          num: "04",
+          title: "DevOps & Deployment",
+          items: ["Git", "GitHub", "Docker", "CI/CD", "GitHub Actions", "Vercel"],
+        },
+        {
+          num: "05",
+          title: "AI-Assisted Development",
+          items: ["AI-assisted coding", "Debugging", "Code review", "Development workflows"],
+        },
+      ],
     },
     journey: {
       title: "My Journey",
@@ -287,34 +286,33 @@ const translations = {
     skills: {
       title: "Stack Técnico",
       subtitle: "Tecnologías que uso para construir aplicaciones modernas.",
-      frontendTitle: "Frontend",
-      backendTitle: "Backend",
-      databaseTitle: "Base de Datos",
-      cloudTitle: "Herramientas y Cloud",
-      frontend: {
-        javascript: "JavaScript",
-        react: "React",
-        html: "HTML",
-        css: "CSS",
-        tailwind: "Tailwind CSS",
-      },
-      backend: {
-        node: "Node.js",
-        express: "Express",
-        rest: "APIs REST",
-      },
-      database: {
-        postgresql: "PostgreSQL",
-        sql: "SQL",
-        sequelize: "Sequelize",
-      },
-      cloud: {
-        git: "Git",
-        github: "GitHub",
-        aws: "AWS",
-        docker: "Docker",
-        ai: "Desarrollo Asistido por IA",
-      },
+      groups: [
+        {
+          num: "01",
+          title: "Frontend",
+          items: ["React", "JavaScript", "Redux", "Tailwind CSS", "Vite"],
+        },
+        {
+          num: "02",
+          title: "Backend",
+          items: ["Node.js", "Express", "REST APIs"],
+        },
+        {
+          num: "03",
+          title: "Datos",
+          items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
+        },
+        {
+          num: "04",
+          title: "DevOps y Despliegue",
+          items: ["Git", "GitHub", "Docker", "CI/CD", "GitHub Actions", "Vercel"],
+        },
+        {
+          num: "05",
+          title: "Desarrollo Asistido por IA",
+          items: ["Código asistido con IA", "Debugging", "Revisión de código", "Workflows de desarrollo"],
+        },
+      ],
     },
     journey: {
       title: "Mi Trayectoria",
