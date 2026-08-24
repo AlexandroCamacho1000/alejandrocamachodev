@@ -38,6 +38,8 @@ function EngineeringBackground() {
             </div>
           ))}
         </div>
+
+        <p className="background-note">{t('background.note')}</p>
       </div>
     </section>
   );

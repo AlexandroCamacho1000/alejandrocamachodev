@@ -14,7 +14,7 @@ import {
   SiGithub,
   SiDocker,
 } from 'react-icons/si';
-import { FaServer, FaDatabase } from 'react-icons/fa';
+import { FaServer, FaDatabase, FaRobot } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
 import { useReveal } from '../../hooks/useReveal';
 
@@ -63,6 +63,7 @@ function Skills() {
         { nameKey: 'skills.cloud.github', icon: <SiGithub /> },
         { nameKey: 'skills.cloud.aws', icon: <SiAmazonwebservices /> },
         { nameKey: 'skills.cloud.docker', icon: <SiDocker /> },
+        { nameKey: 'skills.cloud.ai', icon: <FaRobot /> },
       ],
     },
   ];

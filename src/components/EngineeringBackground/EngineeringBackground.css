@@ -71,3 +71,12 @@
     grid-template-columns: 1fr;
   }
 }
+
+.background-note {
+  margin: 28px auto 0;
+  max-width: 720px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

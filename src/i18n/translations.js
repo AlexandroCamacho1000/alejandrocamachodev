@@ -24,18 +24,20 @@ const translations = {
     background: {
       title: "Applying Engineering to Software Development",
       subtitle: "Building software with an engineering mindset.",
+      note:
+        "My background in networking, infrastructure, and servers provides a strong foundation for modern deployment and DevOps practices.",
       blocks: [
         {
           title: "Engineering Mindset",
-          tags: ["Analytical thinking", "Problem solving", "Systems thinking"],
+          tags: ["Systems thinking", "Problem solving", "Solution design", "Reliability"],
         },
         {
           title: "Technical Foundation",
-          tags: ["Systems", "Networks", "Infrastructure"],
+          tags: ["Networking", "Infrastructure", "Servers", "Security"],
         },
         {
           title: "Software Development",
-          tags: ["Architecture", "APIs", "Databases"],
+          tags: ["Architecture", "APIs", "Databases", "Deployment"],
         },
       ],
     },
@@ -127,6 +129,7 @@ const translations = {
         github: "GitHub",
         aws: "AWS",
         docker: "Docker",
+        ai: "AI-Assisted Development",
       },
     },
     journey: {
@@ -205,18 +208,20 @@ const translations = {
     background: {
       title: "Aplicando Ingeniería al Desarrollo de Software",
       subtitle: "Construyendo software con mentalidad de ingeniero.",
+      note:
+        "Mi experiencia en redes, infraestructura y servidores me proporciona una base sólida para el despliegue moderno y las prácticas DevOps.",
       blocks: [
         {
           title: "Mentalidad de Ingeniería",
-          tags: ["Pensamiento analítico", "Resolución de problemas", "Pensamiento sistémico"],
+          tags: ["Pensamiento sistémico", "Resolución de problemas", "Diseño de soluciones", "Confiabilidad"],
         },
         {
           title: "Fundamentos Técnicos",
-          tags: ["Sistemas", "Redes", "Infraestructura"],
+          tags: ["Redes", "Infraestructura", "Servidores", "Seguridad"],
         },
         {
           title: "Desarrollo de Software",
-          tags: ["Arquitectura", "APIs", "Bases de datos"],
+          tags: ["Arquitectura", "APIs", "Bases de datos", "Deployment"],
         },
       ],
     },
@@ -308,6 +313,7 @@ const translations = {
         github: "GitHub",
         aws: "AWS",
         docker: "Docker",
+        ai: "Desarrollo Asistido por IA",
       },
     },
     journey: {
