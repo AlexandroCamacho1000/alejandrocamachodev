@@ -120,10 +120,6 @@ const translations = {
           title: "DevOps & Deployment",
           items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel"],
         },
-        {
-          title: "AI-Assisted Development",
-          items: ["Task Automation", "Code Generation", "Debugging", "Code Optimization"],
-        },
       ],
     },
     journey: {
@@ -297,10 +293,6 @@ const translations = {
         {
           title: "DevOps y Despliegue",
           items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel"],
-        },
-        {
-          title: "Desarrollo Asistido por IA",
-          items: ["Automatización de tareas", "Generación de código", "Debugging", "Optimización de código"],
         },
       ],
     },
