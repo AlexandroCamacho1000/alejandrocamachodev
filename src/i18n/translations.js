@@ -25,7 +25,7 @@ const translations = {
       title: "Applying Engineering to Software Development",
       subtitle: "Building software with an engineering mindset.",
       note:
-        "Engineering experience in networking, infrastructure, and security provides a strong foundation for modern software deployment and DevOps practices.",
+        "My engineering background in networking, infrastructure, and security gives me a strong foundation for modern software deployment and DevOps practices.",
       blocks: [
         {
           title: "Engineering Mindset",
@@ -209,7 +209,7 @@ const translations = {
       title: "Aplicando Ingeniería al Desarrollo de Software",
       subtitle: "Construyendo software con mentalidad de ingeniero.",
       note:
-        "La experiencia en ingeniería aplicada a redes, infraestructura y seguridad proporciona una base sólida para el despliegue moderno de software y las prácticas DevOps.",
+        "Mi experiencia en ingeniería, redes, infraestructura y seguridad me proporciona una base sólida para el despliegue moderno de software y las prácticas DevOps.",
       blocks: [
         {
           title: "Mentalidad de Ingeniería",
