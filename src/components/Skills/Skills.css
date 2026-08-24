@@ -10,8 +10,8 @@
   margin: 48px auto 0;
 }
 
-.stack-card:nth-child(5) {
-  grid-column: span 2;
+.stack-card:nth-child(4) {
+  grid-column: 1 / -1;
 }
 
 .stack-card {
@@ -81,10 +81,6 @@
   .stack-grid {
     grid-template-columns: 1fr;
     margin-top: 36px;
-  }
-
-  .stack-card:nth-child(5) {
-    grid-column: auto;
   }
 
   .stack-card {

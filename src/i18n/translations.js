@@ -117,12 +117,8 @@ const translations = {
           items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
         },
         {
-          title: "DevOps & Deployment",
-          items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel"],
-        },
-        {
-          title: "Development Practices",
-          items: ["Agile", "Scrum", "Jira"],
+          title: "Workflow & Collaboration",
+          items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel", "Agile", "Scrum", "Jira", "Trello"],
         },
       ],
     },
@@ -295,12 +291,8 @@ const translations = {
           items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
         },
         {
-          title: "DevOps y Despliegue",
-          items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel"],
-        },
-        {
-          title: "Prácticas de Desarrollo",
-          items: ["Agile", "Scrum", "Jira"],
+          title: "Flujo de Trabajo y Colaboración",
+          items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel", "Agile", "Scrum", "Jira", "Trello"],
         },
       ],
     },
