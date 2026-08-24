@@ -10,6 +10,10 @@
   margin: 48px auto 0;
 }
 
+.stack-card:nth-child(5) {
+  grid-column: 1 / -1;
+}
+
 .stack-card {
   background: var(--bg-card);
   border: 1px solid var(--border);

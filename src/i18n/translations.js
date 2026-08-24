@@ -120,6 +120,10 @@ const translations = {
           title: "DevOps & Deployment",
           items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel"],
         },
+        {
+          title: "Development Practices",
+          items: ["Agile", "Scrum", "Jira"],
+        },
       ],
     },
     journey: {
@@ -293,6 +297,10 @@ const translations = {
         {
           title: "DevOps y Despliegue",
           items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel"],
+        },
+        {
+          title: "Prácticas de Desarrollo",
+          items: ["Agile", "Scrum", "Jira"],
         },
       ],
     },
