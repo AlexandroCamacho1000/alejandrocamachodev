@@ -117,7 +117,7 @@ const translations = {
           items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
         },
         {
-          title: "Workflow & Collaboration",
+          title: "Tools & Practices",
           items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel", "Agile", "Scrum", "Jira", "Trello"],
         },
       ],
@@ -291,7 +291,7 @@ const translations = {
           items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
         },
         {
-          title: "Flujo de Trabajo y Colaboración",
+          title: "Herramientas y Prácticas",
           items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel", "Agile", "Scrum", "Jira", "Trello"],
         },
       ],
