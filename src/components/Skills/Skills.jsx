@@ -2,6 +2,7 @@ import './Skills.css';
 import {
   SiDocker,
   SiExpress,
+  SiFirebase,
   SiGithub,
   SiGithubactions,
   SiGit,
@@ -33,6 +34,7 @@ const TECH_ICONS = {
   SQL: { Icon: FaDatabase, color: 'var(--accent)' },
   Sequelize: { Icon: SiSequelize, color: '#52B0E7' },
   Supabase: { Icon: SiSupabase, color: '#3ECF8E' },
+  Firebase: { Icon: SiFirebase, color: '#FFCA28' },
   Git: { Icon: SiGit, color: '#F05032' },
   GitHub: { Icon: SiGithub, color: 'var(--text-primary)' },
   Docker: { Icon: SiDocker, color: '#2496ED' },

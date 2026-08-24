@@ -114,7 +114,7 @@ const translations = {
         },
         {
           title: "Data",
-          items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
+          items: ["PostgreSQL", "SQL", "Sequelize", "Supabase", "Firebase"],
         },
         {
           title: "Tools & Practices",
@@ -288,7 +288,7 @@ const translations = {
         },
         {
           title: "Datos",
-          items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
+          items: ["PostgreSQL", "SQL", "Sequelize", "Supabase", "Firebase"],
         },
         {
           title: "Herramientas y Prácticas",
