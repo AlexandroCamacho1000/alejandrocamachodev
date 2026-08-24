@@ -118,11 +118,11 @@ const translations = {
         },
         {
           title: "DevOps & Deployment",
-          items: ["Git", "GitHub", "Docker", "CI/CD", "GitHub Actions", "Vercel"],
+          items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel"],
         },
         {
           title: "AI-Assisted Development",
-          items: ["Task Automation", "Rapid Prototyping", "Debugging", "Code Review"],
+          items: ["Task Automation", "Code Generation", "Debugging", "Code Optimization"],
         },
       ],
     },
@@ -296,11 +296,11 @@ const translations = {
         },
         {
           title: "DevOps y Despliegue",
-          items: ["Git", "GitHub", "Docker", "CI/CD", "GitHub Actions", "Vercel"],
+          items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel"],
         },
         {
           title: "Desarrollo Asistido por IA",
-          items: ["Automatización de tareas", "Prototipado rápido", "Debugging", "Revisión de código"],
+          items: ["Automatización de tareas", "Generación de código", "Debugging", "Optimización de código"],
         },
       ],
     },
