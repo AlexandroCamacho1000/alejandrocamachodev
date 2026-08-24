@@ -18,7 +18,7 @@ function EngineeringBackground() {
   return (
     <section className="background" id="background">
       <div className="background-container" ref={revealRef}>
-        <h2 className="section-title" data-index="03">
+        <h2 className="section-title" data-index="02">
           {t('background.title')}
         </h2>
         <p className="section-subtitle">{t('background.subtitle')}</p>

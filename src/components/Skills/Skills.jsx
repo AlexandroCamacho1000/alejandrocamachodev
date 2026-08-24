@@ -69,7 +69,7 @@ function Skills() {
 
   return (
     <section className="skills" id="skills">
-      <h2 className="section-title" data-index="04">{t('skills.title')}</h2>
+      <h2 className="section-title" data-index="03">{t('skills.title')}</h2>
       <p className="section-subtitle">{t('skills.subtitle')}</p>
 
       {groups.map((group) => (

@@ -5,7 +5,7 @@ const translations = {
       hero: "Home",
       background: "Engineering",
       projects: "Projects",
-      skills: "Skills",
+      skills: "Stack",
       journey: "My Journey",
       education: "Education",
       certifications: "Certifications",
@@ -35,7 +35,7 @@ const translations = {
         },
         {
           title: "Software Development",
-          tags: ["React", "Node.js", "PostgreSQL", "REST APIs"],
+          tags: ["Modern web apps", "APIs", "Databases"],
         },
       ],
     },
@@ -99,7 +99,7 @@ const translations = {
       ],
     },
     skills: {
-      title: "Technical Skills",
+      title: "Technical Stack",
       subtitle: "Technologies I use to build modern applications.",
       frontendTitle: "Frontend",
       backendTitle: "Backend",
@@ -186,7 +186,7 @@ const translations = {
       hero: "Inicio",
       background: "Ingeniería",
       projects: "Proyectos",
-      skills: "Habilidades",
+      skills: "Stack",
       journey: "Mi Trayectoria",
       education: "Educación",
       certifications: "Certificaciones",
@@ -216,7 +216,7 @@ const translations = {
         },
         {
           title: "Desarrollo de Software",
-          tags: ["React", "Node.js", "PostgreSQL", "API REST"],
+          tags: ["Aplicaciones web modernas", "APIs", "Bases de datos"],
         },
       ],
     },
@@ -280,7 +280,7 @@ const translations = {
       ],
     },
     skills: {
-      title: "Habilidades Técnicas",
+      title: "Stack Técnico",
       subtitle: "Tecnologías que uso para construir aplicaciones modernas.",
       frontendTitle: "Frontend",
       backendTitle: "Backend",

@@ -1,5 +1,5 @@
 .background {
-  padding: 72px 24px;
+  background: var(--bg-secondary);
 }
 
 .background-container {

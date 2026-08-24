@@ -32,7 +32,7 @@ function MyJourney() {
 
   return (
     <section className="experience" id="journey">
-      <h2 className="section-title" data-index="05">{t('journey.title')}</h2>
+      <h2 className="section-title" data-index="04">{t('journey.title')}</h2>
       <p className="section-subtitle">{t('journey.subtitle')}</p>
 
       <div className="timeline">
