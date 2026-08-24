@@ -102,32 +102,27 @@ const translations = {
     },
     skills: {
       title: "Technical Stack",
-      subtitle: "Technologies I use to build modern applications.",
+      subtitle: "Technologies and practices I use to build reliable software.",
       groups: [
         {
-          num: "01",
           title: "Frontend",
           items: ["React", "JavaScript", "Redux", "Tailwind CSS", "Vite"],
         },
         {
-          num: "02",
           title: "Backend",
           items: ["Node.js", "Express", "REST APIs"],
         },
         {
-          num: "03",
           title: "Data",
           items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
         },
         {
-          num: "04",
           title: "DevOps & Deployment",
           items: ["Git", "GitHub", "Docker", "CI/CD", "GitHub Actions", "Vercel"],
         },
         {
-          num: "05",
           title: "AI-Assisted Development",
-          items: ["AI-assisted coding", "Debugging", "Code review", "Development workflows"],
+          items: ["Task Automation", "Rapid Prototyping", "Debugging", "Code Review"],
         },
       ],
     },
@@ -285,32 +280,27 @@ const translations = {
     },
     skills: {
       title: "Stack Técnico",
-      subtitle: "Tecnologías que uso para construir aplicaciones modernas.",
+      subtitle: "Tecnologías y prácticas que uso para construir software confiable.",
       groups: [
         {
-          num: "01",
           title: "Frontend",
           items: ["React", "JavaScript", "Redux", "Tailwind CSS", "Vite"],
         },
         {
-          num: "02",
           title: "Backend",
           items: ["Node.js", "Express", "REST APIs"],
         },
         {
-          num: "03",
           title: "Datos",
           items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
         },
         {
-          num: "04",
           title: "DevOps y Despliegue",
           items: ["Git", "GitHub", "Docker", "CI/CD", "GitHub Actions", "Vercel"],
         },
         {
-          num: "05",
           title: "Desarrollo Asistido por IA",
-          items: ["Código asistido con IA", "Debugging", "Revisión de código", "Workflows de desarrollo"],
+          items: ["Automatización de tareas", "Prototipado rápido", "Debugging", "Revisión de código"],
         },
       ],
     },

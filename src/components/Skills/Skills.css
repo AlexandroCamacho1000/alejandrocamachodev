@@ -31,18 +31,9 @@
 }
 
 .stack-card-header {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
   margin-bottom: 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--border);
-}
-
-.stack-card-num {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--accent);
 }
 
 .stack-card-title {

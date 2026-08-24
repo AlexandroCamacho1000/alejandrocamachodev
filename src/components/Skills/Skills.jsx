@@ -14,9 +14,8 @@ function Skills() {
 
       <div className="stack-grid" ref={gridRef}>
         {groups.map((group) => (
-          <div className="stack-card" key={group.num}>
+          <div className="stack-card" key={group.title}>
             <div className="stack-card-header">
-              <span className="stack-card-num">{group.num}</span>
               <h3 className="stack-card-title">{group.title}</h3>
             </div>
             <div className="stack-card-items">
