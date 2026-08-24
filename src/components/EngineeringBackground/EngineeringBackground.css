@@ -70,13 +70,33 @@
   .background-blocks {
     grid-template-columns: 1fr;
   }
+
+  .background-note {
+    margin-top: 36px;
+    padding-top: 18px;
+    font-size: 0.95rem;
+  }
 }
 
 .background-note {
-  margin: 28px auto 0;
-  max-width: 720px;
+  margin: 44px auto 0;
+  max-width: 700px;
+  padding-top: 22px;
+  position: relative;
   text-align: center;
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  line-height: 1.6;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.background-note::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 0 auto 16px;
+  background: var(--gradient);
+  opacity: 0.85;
 }
