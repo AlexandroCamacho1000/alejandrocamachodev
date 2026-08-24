@@ -35,7 +35,7 @@ const translations = {
         },
         {
           title: "Software Development",
-          tags: ["Modern web apps", "APIs", "Databases"],
+          tags: ["Architecture", "APIs", "Databases"],
         },
       ],
     },
@@ -216,7 +216,7 @@ const translations = {
         },
         {
           title: "Desarrollo de Software",
-          tags: ["Aplicaciones web modernas", "APIs", "Bases de datos"],
+          tags: ["Arquitectura", "APIs", "Bases de datos"],
         },
       ],
     },
