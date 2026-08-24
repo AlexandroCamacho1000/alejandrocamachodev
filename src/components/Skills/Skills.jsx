@@ -18,11 +18,11 @@ function Skills() {
             <div className="stack-card-header">
               <h3 className="stack-card-title">{group.title}</h3>
             </div>
-            <div className="stack-card-items">
+            <ul className="stack-card-items">
               {group.items.map((item) => (
-                <span className="stack-item" key={item}>{item}</span>
+                <li className="stack-item" key={item}>{item}</li>
               ))}
-            </div>
+            </ul>
           </div>
         ))}
       </div>
