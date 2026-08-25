@@ -129,24 +129,28 @@ const translations = {
     },
     journey: {
       title: "My Journey",
-      subtitle: "From Engineering to Software Development.",
-      nodes: [
+      subtitle: "From networking infrastructure to building software.",
+      stages: [
         {
-          title: "Electronic Engineer",
-          meta: "UMSS",
-          description: "Engineering foundation.",
+          num: "01",
+          title: "Engineering Foundation",
+          label: "Electronic Engineer",
+          tags: ["Systems", "Networks", "Infrastructure"],
         },
         {
-          title: "Systems & Network Engineer",
-          meta: "2016 – 2022",
-          tags: ["Networks", "Systems", "Infrastructure", "Technical Problem Solving"],
+          num: "02",
+          title: "Expanding into Software",
+          label: "Full Stack Development",
+          tags: ["React", "Node.js", "PostgreSQL"],
         },
         {
-          title: "Full Stack Developer",
-          meta: "",
-          description: "Building modern full-stack applications.",
+          num: "03",
+          title: "Collaborative Development",
+          label: "Team-based projects",
+          tags: ["Agile", "Scrum", "Git", "GitHub"],
         },
       ],
+      closing: "Engineering experience. Software development. One technical mindset.",
     },
     education: {
       title: "Education & Certifications",
@@ -308,24 +312,28 @@ const translations = {
     },
     journey: {
       title: "Mi Trayectoria",
-      subtitle: "De la Ingeniería al Desarrollo de Software.",
-      nodes: [
+      subtitle: "De la infraestructura de redes a construir software.",
+      stages: [
         {
-          title: "Ingeniero Electrónico",
-          meta: "UMSS",
-          description: "Base de ingeniería.",
+          num: "01",
+          title: "Base de Ingeniería",
+          label: "Ingeniero Electrónico",
+          tags: ["Sistemas", "Redes", "Infraestructura"],
         },
         {
-          title: "Ingeniero de Sistemas y Redes",
-          meta: "2016 – 2022",
-          tags: ["Redes", "Sistemas", "Infraestructura", "Resolución de Problemas Técnicos"],
+          num: "02",
+          title: "Expansión hacia el Software",
+          label: "Desarrollo Full Stack",
+          tags: ["React", "Node.js", "PostgreSQL"],
         },
         {
-          title: "Desarrollador Full Stack",
-          meta: "",
-          description: "Construyendo aplicaciones full-stack modernas.",
+          num: "03",
+          title: "Desarrollo Colaborativo",
+          label: "Proyectos en equipo",
+          tags: ["Agile", "Scrum", "Git", "GitHub"],
         },
       ],
+      closing: "Experiencia en ingeniería. Desarrollo de software. Una sola mentalidad técnica.",
     },
     education: {
       title: "Educación y Certificaciones",
