@@ -114,11 +114,11 @@ const translations = {
         },
         {
           title: "Data",
-          items: ["PostgreSQL", "SQL", "Sequelize", "Supabase", "Firebase"],
+          items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
         },
         {
           title: "Tools & Practices",
-          items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel", "Agile", "Scrum", "Jira", "Trello"],
+          items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel", "Agile", "Scrum", "Jira"],
         },
       ],
     },
@@ -288,11 +288,11 @@ const translations = {
         },
         {
           title: "Datos",
-          items: ["PostgreSQL", "SQL", "Sequelize", "Supabase", "Firebase"],
+          items: ["PostgreSQL", "SQL", "Sequelize", "Supabase"],
         },
         {
           title: "Herramientas y Prácticas",
-          items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel", "Agile", "Scrum", "Jira", "Trello"],
+          items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel", "Agile", "Scrum", "Jira"],
         },
       ],
     },

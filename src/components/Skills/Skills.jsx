@@ -2,7 +2,6 @@ import './Skills.css';
 import {
   SiDocker,
   SiExpress,
-  SiFirebase,
   SiGithub,
   SiGithubactions,
   SiGit,
@@ -17,7 +16,7 @@ import {
   SiVercel,
   SiVite,
 } from 'react-icons/si';
-import { FaDatabase, FaInfinity, FaJira, FaServer, FaTrello, FaUsers } from 'react-icons/fa';
+import { FaDatabase, FaInfinity, FaJira, FaServer, FaUsers } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
 import { useReveal } from '../../hooks/useReveal';
 
@@ -34,7 +33,6 @@ const TECH_ICONS = {
   SQL: { Icon: FaDatabase, color: 'var(--accent)' },
   Sequelize: { Icon: SiSequelize, color: '#52B0E7' },
   Supabase: { Icon: SiSupabase, color: '#3ECF8E' },
-  Firebase: { Icon: SiFirebase, color: '#FFCA28' },
   Git: { Icon: SiGit, color: '#F05032' },
   GitHub: { Icon: SiGithub, color: 'var(--text-primary)' },
   Docker: { Icon: SiDocker, color: '#2496ED' },
@@ -43,7 +41,6 @@ const TECH_ICONS = {
   Agile: { Icon: FaInfinity, color: 'var(--accent)' },
   Scrum: { Icon: FaUsers, color: 'var(--accent)' },
   Jira: { Icon: FaJira, color: '#2684FF' },
-  Trello: { Icon: FaTrello, color: '#0079BF' },
 };
 
 function Skills() {
