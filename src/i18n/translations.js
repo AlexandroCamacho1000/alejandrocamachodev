@@ -122,6 +122,11 @@ const translations = {
         },
       ],
     },
+    tools: {
+      title: "Modern Development Tools",
+      subtitle: "Tools I use to improve development efficiency and streamline my workflow.",
+      items: ["GitHub Copilot", "Cursor", "OpenCode", "Claude Code", "ChatGPT"],
+    },
     journey: {
       title: "My Journey",
       subtitle: "From Engineering to Software Development.",
@@ -295,6 +300,11 @@ const translations = {
           items: ["Git", "GitHub", "Docker", "GitHub Actions", "Vercel", "Agile", "Scrum", "Jira"],
         },
       ],
+    },
+    tools: {
+      title: "Herramientas de Desarrollo Modernas",
+      subtitle: "Herramientas que uso para mejorar mi eficiencia y agilizar mi flujo de trabajo.",
+      items: ["GitHub Copilot", "Cursor", "OpenCode", "Claude Code", "ChatGPT"],
     },
     journey: {
       title: "Mi Trayectoria",
