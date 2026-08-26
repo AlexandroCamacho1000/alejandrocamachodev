@@ -9,9 +9,6 @@ function JourneyStage({ stage }) {
       <span className="journey-dot" aria-hidden="true" />
       <h3 className="journey-title">{stage.title}</h3>
       <p className="journey-role">{stage.label}</p>
-      {stage.tags && (
-        <p className="journey-meta">{stage.tags.join(' · ')}</p>
-      )}
     </div>
   );
 }
@@ -19,6 +16,7 @@ function JourneyStage({ stage }) {
 function MyJourney() {
   const { t } = useLanguage();
   const headerRef = useReveal();
+  const trackRef = useReveal();
   const stages = t('journey.stages');
 
   return (
@@ -27,7 +25,7 @@ function MyJourney() {
         <h2 className="section-title" data-index="04">{t('journey.title')}</h2>
         <p className="section-subtitle">{t('journey.subtitle')}</p>
       </div>
-      <div className="journey-track">
+      <div className="journey-track" ref={trackRef}>
         {stages.map((stage) => (
           <JourneyStage key={stage.title} stage={stage} />
         ))}

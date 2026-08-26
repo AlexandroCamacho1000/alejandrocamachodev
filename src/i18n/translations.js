@@ -134,7 +134,6 @@ const translations = {
         {
           title: "Engineering Foundation",
           label: "Electronic Engineer",
-          tags: ["Networking", "Infrastructure", "Technical Operations"],
         },
         {
           title: "Software Development",
@@ -311,7 +310,6 @@ const translations = {
         {
           title: "Base de Ingeniería",
           label: "Ingeniero Electrónico",
-          tags: ["Redes", "Infraestructura", "Operaciones Técnicas"],
         },
         {
           title: "Desarrollo de Software",
