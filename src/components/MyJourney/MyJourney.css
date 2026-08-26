@@ -1,226 +1,171 @@
-.journey-section {
+.experience {
   background: var(--bg-secondary);
-  padding: 0 24px 80px;
-}
-
-.journey-header {
-  max-width: 1040px;
-  margin: 0 auto 48px;
-  text-align: center;
 }
 
 .journey-timeline {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
   max-width: 1040px;
-  margin: 0 auto;
+  margin: 56px auto 0;
 }
 
-/* Horizontal connecting line (desktop) */
 .journey-timeline::before {
   content: "";
   position: absolute;
-  top: 72px;
+  top: 62px;
   left: calc(100% / 6);
   right: calc(100% / 6);
   height: 2px;
+  border-radius: 2px;
   background: linear-gradient(
     90deg,
-    transparent,
-    color-mix(in srgb, var(--accent) 40%, transparent) 15%,
-    color-mix(in srgb, var(--accent) 40%, transparent) 50%,
-    color-mix(in srgb, var(--accent) 40%, transparent) 85%,
-    transparent
+    color-mix(in srgb, var(--accent) 8%, transparent),
+    color-mix(in srgb, var(--accent) 55%, transparent) 18%,
+    color-mix(in srgb, var(--accent) 55%, transparent) 82%,
+    color-mix(in srgb, var(--accent) 8%, transparent)
   );
 }
 
-.journey-stages {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  position: relative;
-  z-index: 1;
-}
-
-.journey-stage {
+.journey-step {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 100px; /* space for the line above */
 }
 
-.journey-stage-marker {
-  position: relative;
+.journey-rail {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 24px;
 }
 
-.journey-stage-number {
+.journey-step-num {
+  height: 42px;
   font-family: var(--font-mono);
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 42px;
   color: var(--accent);
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
-.journey-stage-dot {
+.journey-node {
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background: var(--gradient);
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 15%, transparent);
-  position: relative;
-  z-index: 1;
 }
 
-.journey-stage-content {
-  max-width: 280px;
-  margin: 0 auto;
-}
-
-.journey-stage-title {
-  font-size: 1.1rem;
+.journey-stage {
+  font-size: 1.08rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin: 24px 0 6px;
-  line-height: 1.3;
+  margin-top: 20px;
+  margin-bottom: 6px;
 }
 
-.journey-stage-label {
+.journey-label {
   color: var(--accent);
   font-size: 0.9rem;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
-.journey-stage-techs {
+.journey-tech {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-muted);
+  font-size: 0.75rem;
   letter-spacing: 0.02em;
-  line-height: 1.6;
+  color: var(--text-muted);
 }
 
 .journey-closing {
-  margin: 64px auto 0;
+  margin: 44px auto 0;
   max-width: 700px;
+  padding-top: 22px;
+  position: relative;
   text-align: center;
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  letter-spacing: 0.02em;
-  line-height: 1.8;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.7;
 }
 
-/* Mobile / Tablet */
+.journey-closing::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 0 auto 16px;
+  background: var(--gradient);
+  opacity: 0.85;
+}
+
 @media (max-width: 900px) {
+  .journey-timeline {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 560px;
+    margin-top: 44px;
+  }
+
   .journey-timeline::before {
     display: none;
   }
 
-  .journey-stages {
-    grid-template-columns: 1fr;
-    gap: 48px;
-    max-width: 520px;
-    margin: 40px auto 0;
+  .journey-step {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 18px;
+  }
+
+  .journey-rail {
+    position: relative;
+    width: 52px;
+    flex-shrink: 0;
+  }
+
+  .journey-step-num {
+    order: 2;
+    height: auto;
+    font-size: 2.2rem;
+    line-height: 1;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .journey-node {
+    order: 1;
   }
 
   .journey-stage {
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 16px;
-    position: relative;
+    margin-top: 4px;
   }
 
-  .journey-stage::before {
+  .journey-step:not(:last-child) .journey-rail::after {
     content: "";
     position: absolute;
-    left: 8px;
-    top: 48px;
-    bottom: -24px;
+    top: 22px;
+    bottom: -46px;
+    left: calc(50% - 1px);
     width: 2px;
-    background: linear-gradient(
-      180deg,
-      transparent,
-      color-mix(in srgb, var(--accent) 35%, transparent) 20%,
-      color-mix(in srgb, var(--accent) 35%, transparent) 80%,
-      transparent
-    );
-  }
-
-  .journey-stage:last-child::before {
-    display: none;
-  }
-
-  .journey-marker {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-    position: relative;
-    padding-left: 16px;
-    z-index: 1;
-  }
-
-  .journey-stage-number {
-    font-family: var(--font-mono);
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1;
-    color: var(--accent);
-    margin-bottom: -4px;
-  }
-
-  .journey-stage-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--gradient);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 15%, transparent);
-  }
-
-  .journey-stage-content {
-    margin-left: 40px;
-    max-width: none;
-  }
-
-  .journey-stage-title {
-    font-size: 1.05rem;
-    margin-top: 0;
-  }
-
-  .journey-stage-label {
-    margin-bottom: 12px;
-  }
-
-  .journey-stage-techs {
-    font-size: 0.7rem;
+    background: color-mix(in srgb, var(--accent) 35%, transparent);
   }
 }
 
 @media (max-width: 600px) {
   .journey-timeline {
-    padding: 0 8px;
+    gap: 32px;
+    margin-top: 36px;
   }
 
-  .journey-stage-title {
-    font-size: 1rem;
-  }
-
-  .journey-stage-techs {
-    font-size: 0.68rem;
-  }
-}
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .journey-stage-wrapper {
-    transition: none !important;
+  .journey-closing {
+    margin-top: 36px;
+    padding-top: 18px;
+    font-size: 0.95rem;
   }
 }
