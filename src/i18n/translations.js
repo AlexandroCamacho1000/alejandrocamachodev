@@ -129,7 +129,7 @@ const translations = {
     },
     journey: {
       title: "My Journey",
-      subtitle: "From networking infrastructure to building software.",
+      subtitle: "Building on my engineering background through software development.",
       stages: [
         {
           num: "01",
@@ -139,18 +139,18 @@ const translations = {
         },
         {
           num: "02",
-          title: "Expanding into Software",
+          title: "Software Development",
           label: "Full Stack Development",
           tags: ["React", "Node.js", "PostgreSQL"],
         },
         {
           num: "03",
-          title: "Collaborative Development",
-          label: "Team-based projects",
-          tags: ["Agile", "Scrum", "Git", "GitHub"],
+          title: "Applying Engineering Principles",
+          label: "Software Development",
+          tags: ["Systems thinking", "Problem solving", "Solution design"],
         },
       ],
-      closing: "Engineering experience. Software development. One technical mindset.",
+      closing: "Systems thinking · Problem solving · Solution design",
     },
     education: {
       title: "Education & Certifications",
@@ -312,7 +312,7 @@ const translations = {
     },
     journey: {
       title: "Mi Trayectoria",
-      subtitle: "De la infraestructura de redes a construir software.",
+      subtitle: "Aplicando mi formación de ingeniería al desarrollo de software.",
       stages: [
         {
           num: "01",
@@ -322,18 +322,18 @@ const translations = {
         },
         {
           num: "02",
-          title: "Expansión hacia el Software",
+          title: "Desarrollo de Software",
           label: "Desarrollo Full Stack",
           tags: ["React", "Node.js", "PostgreSQL"],
         },
         {
           num: "03",
-          title: "Desarrollo Colaborativo",
-          label: "Proyectos en equipo",
-          tags: ["Agile", "Scrum", "Git", "GitHub"],
+          title: "Aplicando Principios de Ingeniería",
+          label: "Desarrollo de Software",
+          tags: ["Pensamiento sistémico", "Resolución de problemas", "Diseño de soluciones"],
         },
       ],
-      closing: "Experiencia en ingeniería. Desarrollo de software. Una sola mentalidad técnica.",
+      closing: "Pensamiento sistémico · Resolución de problemas · Diseño de soluciones",
     },
     education: {
       title: "Educación y Certificaciones",
