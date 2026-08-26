@@ -2,19 +2,20 @@ import './MyJourney.css';
 import { useLanguage } from '../../i18n/useLanguage';
 import { useReveal } from '../../hooks/useReveal';
 
-function StageCard({ stage }) {
+function JourneyStep({ stage }) {
   const ref = useReveal();
 
   return (
-    <div className="journey-card" ref={ref}>
-      <span className="journey-num">{stage.num}</span>
-      <h3 className="journey-stage">{stage.title}</h3>
-      <p className="journey-label">{stage.label}</p>
-      <ul className="journey-tags">
-        {stage.tags.map((tag) => (
-          <li className="journey-tag" key={tag}>{tag}</li>
-        ))}
-      </ul>
+    <div className="journey-step" ref={ref}>
+      <div className="journey-rail">
+        <span className="journey-step-num">{stage.num}</span>
+        <span className="journey-node" />
+      </div>
+      <div className="journey-step-body">
+        <h3 className="journey-stage">{stage.title}</h3>
+        <p className="journey-label">{stage.label}</p>
+        <p className="journey-tech">{stage.tags.join(' · ')}</p>
+      </div>
     </div>
   );
 }
@@ -29,9 +30,9 @@ function MyJourney() {
       <h2 className="section-title" data-index="04">{t('journey.title')}</h2>
       <p className="section-subtitle">{t('journey.subtitle')}</p>
 
-      <div className="journey-grid" ref={gridRef}>
+      <div className="journey-timeline" ref={gridRef}>
         {stages.map((stage) => (
-          <StageCard key={stage.num} stage={stage} />
+          <JourneyStep key={stage.num} stage={stage} />
         ))}
       </div>
 
