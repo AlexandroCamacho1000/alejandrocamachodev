@@ -129,28 +129,22 @@ const translations = {
     },
     journey: {
       title: "My Journey",
-      subtitle: "Building on my engineering background through software development.",
+      subtitle: "Building on my engineering foundation and professional experience through software development.",
       stages: [
         {
-          num: "01",
           title: "Engineering Foundation",
           label: "Electronic Engineer",
-          tags: ["Systems", "Networks", "Infrastructure"],
+          tags: ["Networking", "Infrastructure", "Technical Operations"],
         },
         {
-          num: "02",
           title: "Software Development",
           label: "Full Stack Development",
-          tags: ["React", "Node.js", "PostgreSQL"],
         },
         {
-          num: "03",
           title: "Applying Engineering Principles",
           label: "Software Development",
-          tags: ["Systems thinking", "Problem solving", "Solution design"],
         },
       ],
-      closing: "Systems thinking · Problem solving · Solution design",
     },
     education: {
       title: "Education & Certifications",
@@ -312,28 +306,22 @@ const translations = {
     },
     journey: {
       title: "Mi Trayectoria",
-      subtitle: "Aplicando mi formación de ingeniería al desarrollo de software.",
+      subtitle: "Construyendo sobre mi base de ingeniería y experiencia profesional a través del desarrollo de software.",
       stages: [
         {
-          num: "01",
           title: "Base de Ingeniería",
           label: "Ingeniero Electrónico",
-          tags: ["Sistemas", "Redes", "Infraestructura"],
+          tags: ["Redes", "Infraestructura", "Operaciones Técnicas"],
         },
         {
-          num: "02",
           title: "Desarrollo de Software",
           label: "Desarrollo Full Stack",
-          tags: ["React", "Node.js", "PostgreSQL"],
         },
         {
-          num: "03",
           title: "Aplicando Principios de Ingeniería",
           label: "Desarrollo de Software",
-          tags: ["Pensamiento sistémico", "Resolución de problemas", "Diseño de soluciones"],
         },
       ],
-      closing: "Pensamiento sistémico · Resolución de problemas · Diseño de soluciones",
     },
     education: {
       title: "Educación y Certificaciones",
