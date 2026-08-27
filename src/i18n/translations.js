@@ -141,7 +141,7 @@ const translations = {
         },
         {
           title: "Applying Engineering Principles",
-          label: "Software Development",
+          label: "Engineering + Software",
         },
       ],
     },
@@ -317,7 +317,7 @@ const translations = {
         },
         {
           title: "Aplicando Principios de Ingeniería",
-          label: "Desarrollo de Software",
+          label: "Ingeniería + Software",
         },
       ],
     },
