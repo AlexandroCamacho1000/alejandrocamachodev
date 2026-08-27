@@ -6,7 +6,7 @@ function JourneyStage({ stage }) {
   const ref = useReveal();
   return (
     <div className="journey-stage" ref={ref}>
-      <span className="journey-dot" aria-hidden="true" />
+      <span className="journey-dot" aria-hidden="true"><span className="journey-dot-code">&lt;/&gt;</span></span>
       <span className="journey-stem" aria-hidden="true" />
       <h3 className="journey-title">{stage.title}</h3>
       <p className="journey-role">{stage.label}</p>
