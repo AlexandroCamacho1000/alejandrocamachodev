@@ -6,9 +6,18 @@ function EducationItem({ item }) {
   const ref = useReveal();
 
   return (
-    <div className="education-card" ref={ref}>
+    <div
+      className={`education-card${item.featured ? ' education-card--featured' : ''}`}
+      ref={ref}
+    >
       <h3>{item.degree}</h3>
       <span className="education-institution">{item.institution}</span>
+      {item.description && (
+        <p className="education-description">{item.description}</p>
+      )}
+      {item.note && (
+        <p className="education-note">{item.note}</p>
+      )}
     </div>
   );
 }

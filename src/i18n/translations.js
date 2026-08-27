@@ -146,23 +146,20 @@ const translations = {
       ],
     },
     education: {
-      title: "Education & Certifications",
-      subtitle: "Academic background and certifications.",
+      title: "Education",
+      subtitle: "The technical foundation behind my work.",
       items: [
         {
           degree: "Electronic Engineering",
           institution: "Universidad Mayor de San Simón (UMSS)",
-          year: "",
+          description: "Engineering principles, electronics, technical analysis, and problem-solving.",
+          featured: true,
         },
         {
           degree: "Full Stack Development",
-          institution: "Henry",
-          year: "",
-        },
-        {
-          degree: "CCNA — Cisco Certified Network Associate",
-          institution: "Cisco",
-          year: "",
+          institution: "University Diploma — Universidad del Valle (Univalle)",
+          description: "Applied training in modern web technologies and collaborative projects.",
+          note: "Complemented by intensive training at Henry Bootcamp.",
         },
       ],
     },
@@ -322,23 +319,20 @@ const translations = {
       ],
     },
     education: {
-      title: "Educación y Certificaciones",
-      subtitle: "Formación académica y certificaciones.",
+      title: "Educación",
+      subtitle: "La base técnica detrás de mi trabajo.",
       items: [
         {
           degree: "Ingeniería Electrónica",
           institution: "Universidad Mayor de San Simón (UMSS)",
-          year: "",
+          description: "Principios de ingeniería, electrónica, análisis técnico y resolución de problemas.",
+          featured: true,
         },
         {
           degree: "Desarrollo Full Stack",
-          institution: "Henry",
-          year: "",
-        },
-        {
-          degree: "CCNA — Cisco Certified Network Associate",
-          institution: "Cisco",
-          year: "",
+          institution: "Diplomado Universitario — Universidad del Valle (Univalle)",
+          description: "Formación aplicada en tecnologías web modernas y proyectos colaborativos.",
+          note: "Complementado con formación intensiva en Henry Bootcamp.",
         },
       ],
     },
