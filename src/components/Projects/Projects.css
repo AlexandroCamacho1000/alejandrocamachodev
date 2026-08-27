@@ -2,6 +2,19 @@
   background: var(--bg-primary);
 }
 
+.section-title-code {
+  font-family: var(--font-mono);
+  font-size: 0.52em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: color-mix(in srgb, var(--accent) 38%, #8a9bb5 62%);
+  opacity: 0.55;
+  margin-left: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
