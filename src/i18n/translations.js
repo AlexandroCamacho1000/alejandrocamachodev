@@ -152,14 +152,12 @@ const translations = {
         {
           degree: "Electronic Engineering",
           institution: "Universidad Mayor de San Simón (UMSS)",
-          description: "Engineering principles, electronics, technical analysis, and problem-solving.",
           featured: true,
         },
         {
           degree: "Full Stack Development",
           institution: "University Diploma — Universidad del Valle (Univalle)",
-          description: "Applied training in modern web technologies and collaborative projects.",
-          note: "Complemented by intensive training at Henry Bootcamp.",
+          note: "Additional Full Stack training · Henry",
         },
       ],
     },
@@ -325,14 +323,12 @@ const translations = {
         {
           degree: "Ingeniería Electrónica",
           institution: "Universidad Mayor de San Simón (UMSS)",
-          description: "Principios de ingeniería, electrónica, análisis técnico y resolución de problemas.",
           featured: true,
         },
         {
           degree: "Desarrollo Full Stack",
           institution: "Diplomado Universitario — Universidad del Valle (Univalle)",
-          description: "Formación aplicada en tecnologías web modernas y proyectos colaborativos.",
-          note: "Complementado con formación intensiva en Henry Bootcamp.",
+          note: "Formación Full Stack adicional · Henry",
         },
       ],
     },
