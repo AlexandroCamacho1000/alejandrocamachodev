@@ -10,6 +10,7 @@ function EducationItem({ item }) {
       className={`education-card${item.featured ? ' education-card--featured' : ''}`}
       ref={ref}
     >
+      <span className="education-code" aria-hidden="true">&lt;/&gt;</span>
       <h3>{item.degree}</h3>
       <span className="education-institution">{item.institution}</span>
       {item.description && (
