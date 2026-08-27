@@ -21,8 +21,8 @@
   content: "";
   position: absolute;
   top: 9px;
-  left: calc(100% / 6);
-  right: calc(100% / 6);
+  left: calc(100% / 6 + 10px);
+  right: calc(100% / 6 + 10px);
   height: 1.5px;
   background: var(--border);
   opacity: 0.9;
@@ -40,7 +40,7 @@
   content: "";
   position: absolute;
   top: 4px;
-  right: calc(100% / 6 - 8px);
+  right: calc(100% / 6 + 2px);
   width: 8px;
   height: 8px;
   border-top: 1.5px solid var(--border);
@@ -155,7 +155,7 @@
 
   .journey-track::before {
     top: 8px;
-    bottom: 8px;
+    bottom: 18px;
     left: 8px;
     right: auto;
     width: 1.5px;
@@ -170,7 +170,7 @@
 
   .journey-track::after {
     top: auto;
-    bottom: -1px;
+    bottom: 10px;
     right: auto;
     left: 4px;
     border-top: none;
