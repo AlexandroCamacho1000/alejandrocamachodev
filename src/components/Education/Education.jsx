@@ -1,17 +1,22 @@
 import './Education.css';
+import { FaCode, FaGraduationCap } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
 import { useReveal } from '../../hooks/useReveal';
 
 function EducationItem({ item }) {
   const ref = useReveal();
+  const Icon = item.featured ? FaGraduationCap : FaCode;
 
   return (
     <div
       className={`education-card${item.featured ? ' education-card--featured' : ''}`}
       ref={ref}
     >
+      <span className="education-icon" aria-hidden="true"><Icon /></span>
       <h3>{item.degree}</h3>
       <span className="education-institution">{item.institution}</span>
+      <div className="education-divider" aria-hidden="true" />
+      <span className="education-location">{item.location}</span>
       {item.note && (
         <p className="education-note">{item.note}</p>
       )}
