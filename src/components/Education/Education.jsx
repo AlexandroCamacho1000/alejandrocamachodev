@@ -15,8 +15,6 @@ function EducationItem({ item }) {
       <span className="education-icon" aria-hidden="true"><Icon /></span>
       <h3>{item.degree}</h3>
       <span className="education-institution">{item.institution}</span>
-      <div className="education-divider" aria-hidden="true" />
-      <span className="education-location">{item.location}</span>
       {item.note && (
         <p className="education-note">{item.note}</p>
       )}

@@ -151,13 +151,11 @@ const translations = {
         {
           degree: "Electronic Engineering",
           institution: "Universidad Mayor de San Simón (UMSS)",
-          location: "Bolivia",
           featured: true,
         },
         {
           degree: "Full Stack Development",
           institution: "University Diploma — Universidad del Valle (Univalle)",
-          location: "Bolivia",
           note: "Additional Full Stack training · Henry",
         },
       ],
@@ -323,13 +321,11 @@ const translations = {
         {
           degree: "Ingeniería Electrónica",
           institution: "Universidad Mayor de San Simón (UMSS)",
-          location: "Bolivia",
           featured: true,
         },
         {
           degree: "Desarrollo Full Stack",
           institution: "Diplomado Universitario — Universidad del Valle (Univalle)",
-          location: "Bolivia",
           note: "Formación Full Stack adicional · Henry",
         },
       ],
