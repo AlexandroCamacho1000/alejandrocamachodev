@@ -1,11 +1,11 @@
 import './Education.css';
-import { FaCode, FaGraduationCap } from 'react-icons/fa';
+import { FaAward, FaGraduationCap } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
 import { useReveal } from '../../hooks/useReveal';
 
 function EducationItem({ item }) {
   const ref = useReveal();
-  const Icon = item.featured ? FaGraduationCap : FaCode;
+  const Icon = item.featured ? FaGraduationCap : FaAward;
 
   return (
     <div
