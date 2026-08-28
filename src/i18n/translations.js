@@ -147,7 +147,6 @@ const translations = {
     },
     education: {
       title: "Education",
-      subtitle: "The technical foundation behind my work.",
       items: [
         {
           degree: "Electronic Engineering",
@@ -318,7 +317,6 @@ const translations = {
     },
     education: {
       title: "Educación",
-      subtitle: "La base técnica detrás de mi trabajo.",
       items: [
         {
           degree: "Ingeniería Electrónica",

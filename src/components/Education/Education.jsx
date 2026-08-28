@@ -10,12 +10,8 @@ function EducationItem({ item }) {
       className={`education-card${item.featured ? ' education-card--featured' : ''}`}
       ref={ref}
     >
-      <span className="education-code" aria-hidden="true">&lt;/&gt;</span>
       <h3>{item.degree}</h3>
       <span className="education-institution">{item.institution}</span>
-      {item.description && (
-        <p className="education-description">{item.description}</p>
-      )}
       {item.note && (
         <p className="education-note">{item.note}</p>
       )}
@@ -30,8 +26,6 @@ function Education() {
   return (
     <section className="education" id="education">
       <h2 className="section-title" data-index="05">{t('education.title')}</h2>
-      <p className="section-subtitle">{t('education.subtitle')}</p>
-
       <div className="education-grid">
         {items.map((item, i) => (
           <EducationItem key={i} item={item} />
