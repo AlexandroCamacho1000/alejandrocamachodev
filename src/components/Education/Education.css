@@ -41,9 +41,9 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
+  height: 1px;
   background: var(--gradient);
-  opacity: 0.7;
+  opacity: 0.35;
 }
 
 .education-icon {
