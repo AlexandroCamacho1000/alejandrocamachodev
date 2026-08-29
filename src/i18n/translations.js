@@ -332,8 +332,8 @@ const translations = {
       ],
     },
     contact: {
-      title: "Ponte en Contacto",
-      subtitle: "Contacto profesional y colaboración.",
+      title: "Contacto",
+      subtitle: "",
     },
     footer: {
       name: "Alejandro Camacho",
