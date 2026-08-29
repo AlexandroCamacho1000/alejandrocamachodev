@@ -10,7 +10,6 @@ function Footer() {
         <p className="footer-name">{t('footer.name')}</p>
         <p className="footer-role">{t('footer.role')}</p>
         <p className="footer-copy">{t('footer.copy')}</p>
-        <p className="footer-built">{t('footer.built')}</p>
       </div>
     </footer>
   );

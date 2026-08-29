@@ -28,17 +28,11 @@
 }
 
 .footer-copy {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  margin-top: 14px;
-}
-
-.footer-built {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   opacity: 0.65;
-  letter-spacing: 0.03em;
+  margin-top: 18px;
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 600px) {

@@ -167,8 +167,7 @@ const translations = {
     footer: {
       name: "Alejandro Camacho",
       role: "Electronic Engineer · Full Stack Developer",
-      copy: "© 2026 Alejandro Camacho",
-      built: "Built with React · Vite · Tailwind CSS",
+      copy: "© 2026",
     },
   },
   es: {
@@ -339,8 +338,7 @@ const translations = {
     footer: {
       name: "Alejandro Camacho",
       role: "Ingeniero Electrónico · Desarrollador Full Stack",
-      copy: "© 2026 Alejandro Camacho",
-      built: "Built with React · Vite · Tailwind CSS",
+      copy: "© 2026",
     },
   },
 };
