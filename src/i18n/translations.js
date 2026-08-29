@@ -161,8 +161,8 @@ const translations = {
       ],
     },
     contact: {
-      title: "Let's Work Together",
-      subtitle: "Let's build something meaningful.",
+      title: "Get in Touch",
+      subtitle: "Professional contact and collaboration.",
     },
     footer: {
       rights: "© 2026 Alejandro Camacho. Almost all rights reserved.",
@@ -331,8 +331,8 @@ const translations = {
       ],
     },
     contact: {
-      title: "Trabajemos Juntos",
-      subtitle: "Construyamos algo significativo.",
+      title: "Ponte en Contacto",
+      subtitle: "Contacto profesional y colaboración.",
     },
     footer: {
       rights: "© 2026 Alejandro Camacho. Casi todos los derechos reservados.",

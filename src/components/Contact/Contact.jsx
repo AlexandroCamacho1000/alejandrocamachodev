@@ -1,5 +1,5 @@
 import './Contact.css';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
 import { useReveal } from '../../hooks/useReveal';
 
@@ -36,6 +36,16 @@ function Contact() {
         <li className="contact-item">
           <FaEnvelope className="contact-icon" />
           <a href="mailto:alejandrocc1955@gmail.com">Email</a>
+        </li>
+        <li className="contact-item">
+          <FaWhatsapp className="contact-icon" />
+          <a
+            href="https://wa.me/59176486766?text=Hola%20Alejandro"
+            target="_blank"
+            rel="noreferrer"
+          >
+            WhatsApp
+          </a>
         </li>
       </ul>
     </section>
