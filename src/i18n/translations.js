@@ -165,8 +165,10 @@ const translations = {
       subtitle: "Professional contact and collaboration.",
     },
     footer: {
-      rights: "© 2026 Alejandro Camacho. Almost all rights reserved.",
-      sig: "</AlejandroCamacho>",
+      name: "Alejandro Camacho",
+      role: "Electronic Engineer · Full Stack Developer",
+      copy: "© 2026 Alejandro Camacho",
+      built: "Built with React · Vite · Tailwind CSS",
     },
   },
   es: {
@@ -335,8 +337,10 @@ const translations = {
       subtitle: "Contacto profesional y colaboración.",
     },
     footer: {
-      rights: "© 2026 Alejandro Camacho. Casi todos los derechos reservados.",
-      sig: "</AlejandroCamacho>",
+      name: "Alejandro Camacho",
+      role: "Ingeniero Electrónico · Desarrollador Full Stack",
+      copy: "© 2026 Alejandro Camacho",
+      built: "Built with React · Vite · Tailwind CSS",
     },
   },
 };

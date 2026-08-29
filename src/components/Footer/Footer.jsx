@@ -1,5 +1,4 @@
 import './Footer.css';
-import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { useLanguage } from '../../i18n/useLanguage';
 
 function Footer() {
@@ -7,37 +6,12 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className="footer-socials">
-        <a
-          href="https://github.com/AlexandroCamacho1000"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="GitHub"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/alejandro-camacho19/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="LinkedIn"
-        >
-          <FaLinkedin />
-        </a>
-        <a href="mailto:alejandrocc1955@gmail.com" aria-label="Email">
-          <FaEnvelope />
-        </a>
-        <a
-          href="https://wa.me/59176486766"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="WhatsApp"
-        >
-          <FaWhatsapp />
-        </a>
+      <div className="footer-inner">
+        <p className="footer-name">{t('footer.name')}</p>
+        <p className="footer-role">{t('footer.role')}</p>
+        <p className="footer-copy">{t('footer.copy')}</p>
+        <p className="footer-built">{t('footer.built')}</p>
       </div>
-      <p className="footer-sig">{t('footer.sig')}</p>
-      <p>{t('footer.rights')}</p>
     </footer>
   );
 }
