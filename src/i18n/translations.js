@@ -22,7 +22,7 @@ const translations = {
       alt: "Photo of Alejandro Camacho",
     },
     background: {
-      title: "Applying Engineering to Software Development",
+      title: "Applying Engineering Principles to Software Development",
       subtitle: "Building software with an engineering mindset.",
       note:
         "My engineering background in networking, infrastructure, and security gives me a strong foundation for modern software deployment and DevOps practices.",
@@ -129,7 +129,7 @@ const translations = {
     },
     journey: {
       title: "My Journey",
-      subtitle: "Building on my engineering foundation and professional experience through software development.",
+      subtitle: "Applying my engineering foundation and professional experience to software development.",
       stages: [
         {
           title: "Engineering Foundation",
@@ -162,7 +162,7 @@ const translations = {
     },
     contact: {
       title: "Get in Touch",
-      subtitle: "Professional contact and collaboration.",
+      subtitle: "Professional contact.",
     },
     footer: {
       name: "Alejandro Camacho",
