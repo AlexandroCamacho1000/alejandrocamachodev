@@ -193,17 +193,17 @@ const translations = {
       alt: "Foto de Alejandro Camacho",
     },
     background: {
-      title: "Aplicando Ingeniería al Desarrollo de Software",
+      title: "Aplicando la Ingeniería al Desarrollo de Software",
       subtitle: "Construyendo software con mentalidad de ingeniero.",
       note:
         "Mi experiencia en ingeniería, redes, infraestructura y seguridad me proporciona una base sólida para el despliegue moderno de software y las prácticas DevOps.",
       blocks: [
         {
-          title: "Mentalidad de Ingeniería",
+          title: "Mentalidad de Ingeniero",
           tags: ["Pensamiento sistémico", "Resolución de problemas", "Toma de decisiones técnicas", "Confiabilidad"],
         },
         {
-          title: "Fundamentos Técnicos",
+          title: "Experiencia Técnica",
           tags: ["Redes", "Infraestructura", "Servidores", "Seguridad"],
         },
         {
@@ -294,13 +294,13 @@ const translations = {
       ],
     },
     tools: {
-      title: "Herramientas de Desarrollo Modernas",
+      title: "Herramientas de Desarrollo",
       subtitle: "Herramientas que uso para mejorar mi eficiencia y agilizar mi flujo de trabajo.",
       items: ["GitHub Copilot", "Cursor", "OpenCode", "Claude Code", "ChatGPT"],
     },
     journey: {
       title: "Mi Trayectoria",
-      subtitle: "Construyendo sobre mi base de ingeniería y experiencia profesional a través del desarrollo de software.",
+      subtitle: "Ampliando mi experiencia en ingeniería con el desarrollo de software.",
       stages: [
         {
           title: "Base de Ingeniería",
@@ -311,7 +311,7 @@ const translations = {
           label: "Desarrollo Full Stack",
         },
         {
-          title: "Aplicando Principios de Ingeniería",
+          title: "Integrando Ingeniería y Software",
           label: "Ingeniería + Software",
         },
       ],
