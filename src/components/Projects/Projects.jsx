@@ -27,7 +27,7 @@ function Projects() {
 
   const secondaryMeta = [
     { link: "https://github.com/AlexandroCamacho1000/WeatherAppByAle", image: weatherImg },
-    { link: "https://github.com/AlexandroCamacho1000/PokemonAppByAle", linkApp: "https://pokemon-app-by-ale-ncp5.vercel.app/", image: pokemonImg },
+    { link: "https://github.com/AlexandroCamacho1000/PokemonAppByAle", linkApp: "https://pokemon-app-by-ale.vercel.app/", image: pokemonImg },
   ];
 
   items.forEach((item, i) => {
