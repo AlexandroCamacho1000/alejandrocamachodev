@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import './Projects.css';
 import {
   FaCalendarAlt,
+  FaCheckCircle,
   FaCloudSun,
   FaCode,
+  FaCreditCard,
   FaDatabase,
   FaExternalLinkAlt,
   FaFileAlt,
@@ -12,9 +14,11 @@ import {
   FaGlobe,
   FaRobot,
   FaSearch,
+  FaShoppingCart,
   FaSort,
   FaTable,
   FaTimes,
+  FaUserShield,
   FaUsers,
 } from 'react-icons/fa';
 import {
@@ -25,8 +29,10 @@ import {
   SiPostgresql,
   SiReact,
   SiSequelize,
+  SiStripe,
   SiSupabase,
   SiTailwindcss,
+  SiVite,
 } from 'react-icons/si';
 import { useLanguage } from '../../i18n/useLanguage';
 
@@ -42,6 +48,8 @@ const TECH_META = {
   Supabase: { icon: SiSupabase, color: '#3ECF8E' },
   'Express.js': { icon: SiExpress, color: '#9CA3AF' },
   Docker: { icon: SiDocker, color: '#2496ED' },
+  Stripe: { icon: SiStripe, color: '#635BFF' },
+  Vite: { icon: SiVite, color: '#646CFF' },
 };
 
 const DEFAULT_TECH = { icon: FaCode, color: 'var(--accent)' };
@@ -66,6 +74,14 @@ const FEATURE_ICONS = {
   "Chat IA": FaRobot,
   "Data Reports": FaFileAlt,
   "Reportes de datos": FaFileAlt,
+  "E-commerce & Catalog": FaShoppingCart,
+  "E-commerce y Catálogo": FaShoppingCart,
+  "Stripe Payments": FaCreditCard,
+  "Pagos con Stripe": FaCreditCard,
+  "Admin Panel": FaUserShield,
+  "Panel Admin": FaUserShield,
+  "CI/CD & Tests": FaCheckCircle,
+  "CI/CD y Tests": FaCheckCircle,
 };
 
 function ProjectCard({ title, short, description, tech, highlights, link, linkApp, linkPlatform, image, tag, featured }) {

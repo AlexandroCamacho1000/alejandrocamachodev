@@ -88,6 +88,18 @@ const translations = {
           demo: "https://pokemon-app-by-ale.vercel.app/",
           repo: "https://github.com/AlexandroCamacho1000/PokemonAppByAle",
         },
+        {
+          title: "FoodApp — Bolivian Market",
+          tag: "Personal Project",
+          short:
+            "Production-ready SaaS-style e-commerce for traditional Bolivian food. Bilingual catalog (33 products), Stripe checkout, JWT role-based admin and CI/CD with 49 automated tests.",
+          description:
+            "SaaS-style e-commerce with bilingual catalog, Stripe payments, JWT role-based admin panel and automated CI/CD pipeline with 49 tests, deployed on Vercel and Railway.",
+          tech: ["JavaScript", "React", "Node.js", "PostgreSQL", "Stripe", "Docker", "Tailwind CSS"],
+          highlights: ["E-commerce & Catalog", "Stripe Payments", "Admin Panel", "CI/CD & Tests"],
+          demo: "https://food-app-by-ale.vercel.app/",
+          repo: "https://github.com/AlexandroCamacho1000/FoodAppByAle",
+        },
       ],
     },
     certifications: {
@@ -259,6 +271,18 @@ const translations = {
           highlights: ["Búsqueda", "Filtrado", "Ordenamiento", "CRUD"],
           demo: "https://pokemon-app-by-ale.vercel.app/",
           repo: "https://github.com/AlexandroCamacho1000/PokemonAppByAle",
+        },
+        {
+          title: "FoodApp — Mercado Boliviano",
+          tag: "Proyecto Personal",
+          short:
+            "E-commerce tipo SaaS listo para producción de comida tradicional boliviana. Catálogo bilingüe (33 productos), pagos con Stripe, panel admin con roles y CI/CD con 49 tests automatizados.",
+          description:
+            "E-commerce tipo SaaS con catálogo bilingüe, pagos con Stripe, autenticación JWT con panel admin y pipeline CI/CD automatizado con 49 tests, desplegado en Vercel y Railway.",
+          tech: ["JavaScript", "React", "Node.js", "PostgreSQL", "Stripe", "Docker", "Tailwind CSS"],
+          highlights: ["E-commerce y Catálogo", "Pagos con Stripe", "Panel Admin", "CI/CD y Tests"],
+          demo: "https://food-app-by-ale.vercel.app/",
+          repo: "https://github.com/AlexandroCamacho1000/FoodAppByAle",
         },
       ],
     },
