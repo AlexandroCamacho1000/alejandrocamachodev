@@ -74,6 +74,7 @@ const translations = {
             "Weather application that provides current conditions and forecasts for cities around the world through the OpenWeatherMap API.",
           tech: ["JavaScript", "React", "Vite", "Tailwind CSS", "REST API"],
           highlights: ["City Search", "Current Conditions", "Forecasts"],
+          demo: "https://weather-app-by-ale-seven.vercel.app/",
         },
         {
           title: "Pokémon App",
@@ -245,6 +246,7 @@ const translations = {
             "Aplicación de clima que muestra las condiciones actuales y pronósticos para ciudades de todo el mundo a través de la API de OpenWeatherMap.",
           tech: ["JavaScript", "React", "Vite", "Tailwind CSS", "REST API"],
           highlights: ["Búsqueda de ciudad", "Condiciones actuales", "Pronóstico"],
+          demo: "https://weather-app-by-ale-seven.vercel.app/",
         },
         {
           title: "Pokémon App",
