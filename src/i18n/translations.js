@@ -66,15 +66,16 @@ const translations = {
       othersTitle: "Selected Projects",
       items: [
         {
-          title: "Weather App",
+          title: "FoodApp — Bolivian Market",
           tag: "Personal Project",
           short:
-            "Interactive weather app for current conditions and forecasts in cities worldwide. It consumes the OpenWeatherMap API and lets you search any city instantly.",
+            "Production-ready SaaS-style e-commerce for traditional Bolivian food. Bilingual catalog (33 products), Stripe checkout, JWT role-based admin and CI/CD with 49 automated tests.",
           description:
-            "Weather application that provides current conditions and forecasts for cities around the world through the OpenWeatherMap API.",
-          tech: ["JavaScript", "React", "Vite", "Tailwind CSS", "REST API"],
-          highlights: ["City Search", "Current Conditions", "Forecasts"],
-          demo: "https://weather-app-by-ale-seven.vercel.app/",
+            "SaaS-style e-commerce with bilingual catalog, Stripe payments, JWT role-based admin panel and automated CI/CD pipeline with 49 tests, deployed on Vercel and Railway.",
+          tech: ["JavaScript", "React", "Node.js", "PostgreSQL", "Stripe", "Docker", "Tailwind CSS"],
+          highlights: ["E-commerce & Catalog", "Stripe Payments", "Admin Panel", "CI/CD & Tests"],
+          demo: "https://food-app-by-ale.vercel.app/",
+          repo: "https://github.com/AlexandroCamacho1000/FoodAppByAle",
         },
         {
           title: "Pokémon App",
@@ -89,16 +90,15 @@ const translations = {
           repo: "https://github.com/AlexandroCamacho1000/PokemonAppByAle",
         },
         {
-          title: "FoodApp — Bolivian Market",
+          title: "Weather App",
           tag: "Personal Project",
           short:
-            "Production-ready SaaS-style e-commerce for traditional Bolivian food. Bilingual catalog (33 products), Stripe checkout, JWT role-based admin and CI/CD with 49 automated tests.",
+            "Interactive weather app for current conditions and forecasts in cities worldwide. It consumes the OpenWeatherMap API and lets you search any city instantly.",
           description:
-            "SaaS-style e-commerce with bilingual catalog, Stripe payments, JWT role-based admin panel and automated CI/CD pipeline with 49 tests, deployed on Vercel and Railway.",
-          tech: ["JavaScript", "React", "Node.js", "PostgreSQL", "Stripe", "Docker", "Tailwind CSS"],
-          highlights: ["E-commerce & Catalog", "Stripe Payments", "Admin Panel", "CI/CD & Tests"],
-          demo: "https://food-app-by-ale.vercel.app/",
-          repo: "https://github.com/AlexandroCamacho1000/FoodAppByAle",
+            "Weather application that provides current conditions and forecasts for cities around the world through the OpenWeatherMap API.",
+          tech: ["JavaScript", "React", "Vite", "Tailwind CSS", "REST API"],
+          highlights: ["City Search", "Current Conditions", "Forecasts"],
+          demo: "https://weather-app-by-ale-seven.vercel.app/",
         },
       ],
     },
@@ -250,15 +250,16 @@ const translations = {
       othersTitle: "Proyectos Seleccionados",
       items: [
         {
-          title: "Weather App",
+          title: "FoodApp — Mercado Boliviano",
           tag: "Proyecto Personal",
           short:
-            "Aplicación web interactiva del clima con condiciones actuales y pronósticos en ciudades de todo el mundo. Consume la API de OpenWeatherMap y permite buscar cualquier ciudad al instante.",
+            "E-commerce tipo SaaS listo para producción de comida tradicional boliviana. Catálogo bilingüe (33 productos), pagos con Stripe, panel admin con roles y CI/CD con 49 tests automatizados.",
           description:
-            "Aplicación de clima que muestra las condiciones actuales y pronósticos para ciudades de todo el mundo a través de la API de OpenWeatherMap.",
-          tech: ["JavaScript", "React", "Vite", "Tailwind CSS", "REST API"],
-          highlights: ["Búsqueda de ciudad", "Condiciones actuales", "Pronóstico"],
-          demo: "https://weather-app-by-ale-seven.vercel.app/",
+            "E-commerce tipo SaaS con catálogo bilingüe, pagos con Stripe, autenticación JWT con panel admin y pipeline CI/CD automatizado con 49 tests, desplegado en Vercel y Railway.",
+          tech: ["JavaScript", "React", "Node.js", "PostgreSQL", "Stripe", "Docker", "Tailwind CSS"],
+          highlights: ["E-commerce y Catálogo", "Pagos con Stripe", "Panel Admin", "CI/CD y Tests"],
+          demo: "https://food-app-by-ale.vercel.app/",
+          repo: "https://github.com/AlexandroCamacho1000/FoodAppByAle",
         },
         {
           title: "Pokémon App",
@@ -273,16 +274,15 @@ const translations = {
           repo: "https://github.com/AlexandroCamacho1000/PokemonAppByAle",
         },
         {
-          title: "FoodApp — Mercado Boliviano",
+          title: "Weather App",
           tag: "Proyecto Personal",
           short:
-            "E-commerce tipo SaaS listo para producción de comida tradicional boliviana. Catálogo bilingüe (33 productos), pagos con Stripe, panel admin con roles y CI/CD con 49 tests automatizados.",
+            "Aplicación web interactiva del clima con condiciones actuales y pronósticos en ciudades de todo el mundo. Consume la API de OpenWeatherMap y permite buscar cualquier ciudad al instante.",
           description:
-            "E-commerce tipo SaaS con catálogo bilingüe, pagos con Stripe, autenticación JWT con panel admin y pipeline CI/CD automatizado con 49 tests, desplegado en Vercel y Railway.",
-          tech: ["JavaScript", "React", "Node.js", "PostgreSQL", "Stripe", "Docker", "Tailwind CSS"],
-          highlights: ["E-commerce y Catálogo", "Pagos con Stripe", "Panel Admin", "CI/CD y Tests"],
-          demo: "https://food-app-by-ale.vercel.app/",
-          repo: "https://github.com/AlexandroCamacho1000/FoodAppByAle",
+            "Aplicación de clima que muestra las condiciones actuales y pronósticos para ciudades de todo el mundo a través de la API de OpenWeatherMap.",
+          tech: ["JavaScript", "React", "Vite", "Tailwind CSS", "REST API"],
+          highlights: ["Búsqueda de ciudad", "Condiciones actuales", "Pronóstico"],
+          demo: "https://weather-app-by-ale-seven.vercel.app/",
         },
       ],
     },
