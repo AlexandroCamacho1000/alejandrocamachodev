@@ -3,6 +3,7 @@ import ProjectCard from './Projectcard';
 import bitImg from "../../assets/bit.png";
 import pokemonImg from "../../assets/pokemon.jpg";
 import weatherImg from "../../assets/weather.jpg";
+import foodImg from "../../assets/food.jpg";
 import { useLanguage } from '../../i18n/useLanguage';
 
 function Projects() {
@@ -28,7 +29,7 @@ function Projects() {
   const secondaryMeta = [
     { link: "https://github.com/AlexandroCamacho1000/WeatherAppByAle", linkApp: "https://weather-app-by-ale-seven.vercel.app/", image: weatherImg },
     { link: "https://github.com/AlexandroCamacho1000/PokemonAppByAle", linkApp: "https://pokemon-app-by-ale.vercel.app/", image: pokemonImg },
-    { link: "https://github.com/AlexandroCamacho1000/FoodAppByAle", linkApp: "https://food-app-by-ale.vercel.app/", image: weatherImg },
+    { link: "https://github.com/AlexandroCamacho1000/FoodAppByAle", linkApp: "https://food-app-by-ale.vercel.app/", image: foodImg },
   ];
 
   items.forEach((item, i) => {
